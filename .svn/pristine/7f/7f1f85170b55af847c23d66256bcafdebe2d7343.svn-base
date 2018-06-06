@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+<title>局部刷新(直接数据渲染)</title>
+{%>template/common/Head.html%}
+<script type="text/javascript" src="biz/js/more/scene/templateRefresh.js"></script>
+</head>
+<body>
+	<div class="c_navBar">
+		<div class="left">
+			<div class="back">
+				<span class="e_ico-back"></span> 
+				<span class="text">局部刷新(直接数据渲染)</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="m_content m_content-nofooter" id="content">
+		<div>
+			<div class="c_title">人员列表</div>
+			<div class="c_table">
+				<table>
+					<thead>
+						<tr>
+							<th>姓名</th>
+							<th>年龄</th>
+							<th>性别</th>
+						</tr>
+					</thead>
+					<tbody id="tbody">
+						<tr data-id="1">
+							<th>小胖</th>
+							<th>20</th>
+							<th>男</th>
+						</tr>
+						<tr data-id="2">
+							<th>张三</th>
+							<th>22</th>
+							<th>男</th>
+						</tr>
+						<tr data-id="3">
+							<th>李四</th>
+							<th>24</th>
+							<th>女</th>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	
+	<div class="c_scroll c_scroll-mix c_scroll-fixed l_padding" style="top:3rem; bottom:0;" id="content2">
+	</div>
+</body>
+<script type="text/javascript">
+</script>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>icon组件</title>
+	{%>template/common/Head.html%}
+	<script type="text/javascript" src="biz/js/ui/ui.js"></script>
+</head>
+<body>
+
+<div class="c_navBar">
+	<div class="left">
+		<div class="back">
+			<span class="e_ico-back"></span>
+			<span class="text">图标</span>
+		</div>
+	</div>
+</div>
+
+<div class="m_content m_content-nofooter" id="content">
+	<div class="c_list c_list-col-3 c_list-euilateral e_center l_mt">
+		<ul>
+			<li ontap=";">
+				<div class="content">
+					<div class="ico">
+						<div class="e_ico-back"></div>
+						<div class="text">返回</div>
+					</div>
+				</div>
+			</li>
+			<li ontap=";">
+				<div class="content">
+					<div class="ico">
+						<div class="e_ico-check"></div>
+						<div class="text">查找</div>
+					</div>
+				</div>
+			</li>
+			<li ontap=";">
+				<div class="content">
+					<div class="ico">
+						<div class="e_ico-config"></div>
+						<div class="text">配置</div>
+					</div>
+				</div>
+			</li>
+			<li ontap=";">
+				<div class="content">
+					<div class="ico">
+						<div class="e_ico-delete"></div>
+						<div class="text">删除</div>
+					</div>
+				</div>
+			</li>
+			<li ontap=";">
+				<div class="content">
+					<div class="ico">
+						<div class="e_ico-edit"></div>
+						<div class="text">编辑</div>
+					</div>
+				</div>
+			</li>
+			<li ontap=";">
+				<div class="content">
+					<div class="ico">
+						<div class="e_ico-warn"></div>
+						<div class="text">警示</div>
+					</div>
+				</div>
+			</li>
+			<li ontap=";">
+				<div class="content">
+					<div class="ico">
+						<div class="e_ico-exit"></div>
+						<div class="text">退出</div>
+					</div>
+				</div>
+			</li>
+			<li ontap=";">
+				<div class="content">
+					<div class="ico">
+						<div class="e_ico-notice"></div>
+						<div class="text">公告</div>
+					</div>
+				</div>
+			</li>
+			<li ontap=";">
+				<div class="content">
+					<div class="ico">
+						<div class="e_ico-resent"></div>
+						<div class="text">最近</div>
+					</div>
+				</div>
+			</li>
+			<li ontap=";">
+				<div class="content">
+					<div class="ico">
+						<div class="e_ico-reset"></div>
+						<div class="text">重置</div>
+					</div>
+				</div>
+			</li>
+			<li ontap=";">
+				<div class="content">
+					<div class="ico">
+						<div class="e_ico-search"></div>
+						<div class="text">搜索</div>
+					</div>
+				</div>
+			</li>
+			<li ontap=";">
+				<div class="content">
+					<div class="ico">
+						<div class="e_ico-star"></div>
+						<div class="text">标记</div>
+					</div>
+				</div>
+			</li>
+			<li ontap=";">
+				<div class="content">
+					<div class="ico">
+						<div class="e_ico-checkbox"></div>
+						<div class="text">选择</div>
+					</div>
+				</div>
+			</li>
+			<li ontap=";">
+				<div class="content">
+					<div class="ico">
+						<div class="e_ico-task"></div>
+						<div class="text">任务</div>
+					</div>
+				</div>
+			</li>
+			<li ontap=";">
+				<div class="content">
+					<div class="ico">
+						<div class="e_ico-user"></div>
+						<div class="text">用户</div>
+					</div>
+				</div>
+			</li>
+			<li ontap=";">
+				<div class="content">
+					<div class="ico">
+						<div class="e_ico-msg"></div>
+						<div class="text">信息</div>
+					</div>
+				</div>
+			</li>
+			<li ontap=";">
+				<div class="content">
+					<div class="ico">
+						<div class="e_ico-flow"></div>
+						<div class="text">流量</div>
+					</div>
+				</div>
+			</li>
+			<li ontap=";">
+				<div class="content">
+					<div class="ico">
+						<div class="e_ico-voice"></div>
+						<div class="text">语音</div>
+					</div>
+				</div>
+			</li>
+			<li ontap=";">
+				<div class="content">
+					<div class="ico">
+						<div class="e_ico-more"></div>
+						<div class="text">更多</div>
+					</div>
+				</div>
+			</li>
+			<li ontap=";">
+				<div class="content">
+					<div class="ico">
+						<div class="e_ico-camera"></div>
+						<div class="text">拍照</div>
+					</div>
+				</div>
+			</li>
+			<li ontap=";">
+				<div class="content">
+					<div class="ico">
+						<div class="e_ico-add"></div>
+						<div class="text">新增</div>
+					</div>
+				</div>
+			</li>
+			<li ontap=";">
+				<div class="content">
+					<div class="ico">
+						<div class="e_ico-close"></div>
+						<div class="text">关闭</div>
+					</div>
+				</div>
+			</li>
+			<li ontap=";">
+				<div class="content">
+					<div class="ico">
+						<div class="e_ico-swipe"></div>
+						<div class="text">滑动</div>
+					</div>
+				</div>
+			</li>
+			<li ontap=";">
+				<div class="content">
+					<div class="ico">
+						<div class="e_ico-close2"></div>
+						<div class="text">关闭</div>
+					</div>
+				</div>
+			</li>
+			<li ontap=";">
+				<div class="content">
+					<div class="ico">
+						<div class="e_ico-reduce"></div>
+						<div class="text">减少</div>
+					</div>
+				</div>
+			</li>
+			<li ontap=";">
+				<div class="content">
+					<div class="ico">
+						<div class="e_ico-scan"></div>
+						<div class="text">扫描</div>
+					</div>
+				</div>
+			</li>
+			<li ontap=";">
+				<div class="content">
+					<div class="ico">
+						<div class="e_ico-date"></div>
+						<div class="text">日期</div>
+					</div>
+				</div>
+			</li>
+			<li ontap=";">
+				<div class="content">
+					<div class="ico">
+						<div class="e_ico-pic"></div>
+						<div class="text">图片</div>
+					</div>
+				</div>
+			</li>
+			<li ontap=";">
+				<div class="content">
+					<div class="ico">
+						<div class="e_ico-tip"></div>
+						<div class="text">提示</div>
+					</div>
+				</div>
+			</li>
+			<li ontap=";">
+				<div class="content">
+					<div class="ico">
+						<div class="e_ico-qr"></div>
+						<div class="text">二维码</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>

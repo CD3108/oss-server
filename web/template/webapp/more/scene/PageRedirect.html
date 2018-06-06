@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>页面跳转</title>
+	{%>template/common/Head.html%}
+	<style>
+		.ui-input {
+			padding: 6px 9px;
+			line-height: 0.22rem;
+		    height: 0.4rem;
+			width: 3rem;
+			border: 1px solid #BBBBBB;
+			font-size: 0.22rem;
+		    color: #777;
+		    background: transparent;
+		    font-size: 0.22rem;
+		}
+		.reg_form {
+			background-color: #fff;
+			font-size: 0.22rem;
+			padding-top: 0.12rem;
+			box-shadow: 0 0.02rem 0 rgba(0,0,0,0.1);
+		    line-height: 1;
+		    border: 1px solid #ccc;
+		    overflow: hidden;
+		    background: #fff;
+		}
+		.reg_form .reg_table {
+		}
+		.reg_form .reg_table td {
+			padding: 0 0 8px 0;
+			height: 32px;
+		}
+		.reg_form .reg_table td label.des {
+			text-align: right;
+			display: table-cell;
+		    width: 1.5rem;
+		    padding: 0.16rem;
+		    line-height: 0.28rem;
+		}
+		.reg_form .reg_table .J_ver-wrap .ui-input {
+			width: 2rem;
+		}
+		.reg_form .reg_table td span.num {
+			padding: 0.16rem;
+		    line-height: 0.28rem;
+		    display: inline-block;
+		}
+	</style>
+</head>
+<body>
+<div class="c_navBar">
+	<div class="left">
+		<div class="back">
+			<span class="e_ico-back"></span>
+			<span class="text">页面跳转(调用数据接口)</span>
+		</div>
+	</div>
+</div>
+<div class="m_content m_content-nofooter" id="content">
+	<form class="reg_form">
+		<table class="reg_table" cellpadding="0" cellspacing="0" border="0" width="100%" id="loginForm">
+			<tbody>
+				<tr>
+					<td width="30%"><label class="des">脑筋急转弯：</label></td>
+					<td>空着肚子能吃几个鸡蛋？</td>
+				</tr>
+				<tr>
+					<td><label class="des">请回答：</label></td>
+					<td class="J_ver-wrap">
+						<input value="" type="text" id="J_answer" name="J_answer" class="ui-input" maxlength="4" /><span class="num">个</span>
+					</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>
+						<button class="e_button-ok" id="testPageRedirectBtn" onclick="javascript:return false;">确定</button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</form>
+</div>
+
+</body>
+<script type="text/javascript">
+require(["mobile","util"], function(Mobile) {
+	
+	$("#testPageRedirectBtn").tap(function(){
+		var param = new Wade.DataMap();
+		param.put("data", $("#J_answer").val());
+		Mobile.openPage("SceneBean_PageRedirectResult",param);
+	});
+});
+</script>
+</html>

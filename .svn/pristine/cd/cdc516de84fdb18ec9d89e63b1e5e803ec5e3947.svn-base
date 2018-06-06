@@ -1,0 +1,60 @@
+<ul id="plugin-menu">
+	<li action="WmTabbar">
+		<div class="pic"><span class="e_ico-ui-tabbar"></span></div>
+		<div class="text">WmTabbar</div>
+	</li>
+	<li action="WmNavBar">
+		<div class="pic"><span class="e_ico-ui-navbar"></span></div>
+		<div class="text">WmNavBar</div>
+	</li>
+	<li action="WmTab">
+		<div class="pic"><span class="e_ico-ui-tab"></span></div>
+		<div class="text">WmTab</div>
+	</li>
+	<li action="WmSlider">
+		<div class="pic"><span class="e_ico-ui-slide"></span></div>
+		<div class="text">WmSlider</div>
+	</li>
+	<li action="WmDropmenu">
+		<div class="pic"><span class="e_ico-ui-dropmenu"></span></div>
+		<div class="text">WmDropmenu</div>
+	</li>
+	<li action="WmSwitch">
+		<div class="pic"><span class="e_ico-ui-switch"></span></div>
+		<div class="text">WmSwitch</div>
+	</li>
+	<li action="WmDialog">
+		<div class="pic"><span class="e_ico-ui-popup"></span></div>
+		<div class="text">WmDialog</div>
+	</li>
+	<li action="WmToolTip">
+		<div class="pic"><span class="e_ico-ui-tip"></span></div>
+		<div class="text">WmToolTip</div>
+	</li>
+	<li action="WmProgress">
+		<div class="pic"><span class="e_ico-ui-progress"></span></div>
+		<div class="text">WmProgress</div>
+	</li>
+	<!-- <li action="WmSlidingmenu">
+		<div class="pic"><span class="e_ico-ui-slidingmenu"></span></div>
+		<div class="text">WmSlidingmenu</div>
+	</li> -->
+	<li action="WmSegment">
+		<div class="pic"><span class="e_ico-ui-segement"></span></div>
+		<div class="text">WmSegment</div>
+	</li>
+	<!-- 
+	<li action="WmFlip">
+		<div class="pic"><span class="e_ico-ui-flip"></span></div>
+		<div class="text">WmFlip</div>
+	</li>
+	<li action="WmRange">
+		<div class="pic"><span class="e_ico-ui-range"></span></div>
+		<div class="text">WmRange</div>
+	</li>
+	 -->
+	<li action="WmRefresh">
+		<div class="pic"><span class="e_ico-ui-refresh"></span></div>
+		<div class="text">WmRefresh</div>
+	</li>
+</ul>

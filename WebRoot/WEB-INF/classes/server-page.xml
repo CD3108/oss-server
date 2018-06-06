@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pages>
+    
+     <action name="Login" template="template/app/Login.html"></action>
+     
+	<!-- 告警报表 -->
+	<action name="AlarmList" template="template/app/report/AlarmList.html"></action>
+	<action name="AlarmTrueTime" template="template/app/report/AlarmTrueTime.html" data ="AlarmBean.getAlarmTrueTime"></action>
+	<action name="AlarmTrueTimeEasy" template="template/app/report/AlarmTrueTimeEasy.html" data ="AlarmBean.getAlarmTrueTime"></action>
+	<action name="TrueTimeOutVillge" template="template/app/report/TrueTimeOutVillge.html" data ="AlarmBean.getTrueTimeOutVillge"></action>
+	<action name="TrueTimeOutVillgeK" template="template/app/report/TrueTimeOutVillgeK.html"></action>
+     
+     <!-- 铁塔报表 -->
+     <action name="TowerReportList" template="template/app/report/TowerReportList.html"></action>
+     <action name="OrderReportList" template="template/app/report/OrderReportList.html"></action>
+     <action name="TowerHireFee" template="template/app/report/TowerHireFee.html"></action>
+     <action name="TowerNum" template="template/app/report/TowerNum.html"></action>
+     <action name="TestIScroll" template="template/app/report/TestIScroll.html"></action>
+     <action name="TowerHireFeeAll" template="template/app/report/TowerHireFeeAll.html" data ="TowerBean.getTowerHireFeeAll"></action>
+     <action name="TowerNumAll" template="template/app/report/TowerNumAll.html" data ="TowerBean.getTowerNumAll"></action>
+     <action name="ResourceAdapter" template="template/app/report/ResourceAdapter.html" data="TowerBean.getResourceAdapter"></action>
+
+     <action name="MonitorDayReport" template="template/app/report/MonitorDayReport.html" data="OrderBean.getMonitorDayReport"></action>
+     
+     <action name="chaidongtest" template="template/app/report/chaidong.html" data ="AlarmBean.getTowerNumAll"></action>
+     <action name="TowerProductRate" template="template/app/report/TowerProductRate.html" data="TowerBean.getTowerProductRate"></action>
+     <action name="TowerFeesRate" template="template/app/report/TowerFeesRate.html" data="TowerBean.getTowerFeesRate"></action>
+     <action name="TowerImportResSuccess" template="template/app/report/TowerImportResSuccess.html" data="TowerBean.getTowerImportResSuccess"></action>
+     <action name="BaseStationRate" template="template/app/report/BaseStationRate.html" data="TowerBean.getBaseStationRate"></action>
+     <action name="BaseRoomRate" template="template/app/report/BaseRoomRate.html" data="TowerBean.getBaseRoomRate"></action>
+     <action name="TowerNumber" template="template/app/report/TowerNumber.html" data="TowerBean.getTowerNumber"></action>
+     <action name="RoomNum" template="template/app/report/RoomNum.html" data="TowerBean.getRoomNum"></action>
+     <action name="AntennaAndCell" template="template/app/report/Antenna.html" data ="AntennaBean.getAntennaNumAll"></action>
+      <action name="AlarmRealTime" template="template/app/report/AlarmRealTime.html" data ="AlarmBean.getAlarmRealTime"></action>
+     <!-- 资源报表 -->
+     <action name="ResReportList" template="template/app/report/ResReportList.html"></action>
+     <action name="ResSurvey" template="template/app/report/ResSurvey.html" data ="ResBean.getResSurvey"></action>
+     <action name="AntennaAndTransmission" template="template/app/report/AntennaAndTransmission.html" data ="ResBean.getAntennaAndTransmission"></action>
+     <action name="NetworkRing" template="template/app/report/NetworkRing.html" data ="ResBean.getNetworkRing"></action>
+>>>>>>> .r7984
+     
+     <action name="ConfirmResNum" template="template/app/report/ConfirmResNum.html" data ="TowerBean.getConfirmResourceNum"></action>
+     <!-- 主页 -->
+    <action name="Main" template="template/app/Main.html"></action>
+    <action name="test1" template="template/app/interface/test1.html"></action>
+    <action name="test2" template="template/app/interface/test2.html"></action>
+    
+    
+    
+    <!--************ demo开始 *************-->
+    <!-- 主页 -->
+    <action name="Index" template="template/webapp/Index.html"></action>
+    
+	<!-- Plugin Demo -->
+	<action name="Basic" template="template/webapp/plugin/Basic.html"></action>
+	<action name="Network" template="template/webapp/plugin/Network.html"></action>
+	<!-- 地图 -->
+	<action name="Map" template="template/webapp/plugin/Map.html"></action>
+	<!-- 相机 -->
+	<action name="Photo" template="template/webapp/plugin/Photo.html"></action>
+	<!-- 文件 -->
+	<action name="File" template="template/webapp/plugin/File/File.html"></action>
+	<action name="FileDetail" template="template/webapp/plugin/File/FileDetail.html"></action>
+	<!-- 存储 -->
+	<action name="Storage" template="template/webapp/plugin/Storage.html"></action>
+	<!-- 二维码 -->
+	<action name="QR" template="template/webapp/plugin/QR.html"></action>
+	<!-- 提供给UI使用 -->
+	<action name="UI" template="template/webapp/plugin/UI/UI.html"></action>
+	<action name="UI-CustomDialog" template="template/webapp/plugin/UI/UI-CustomDialog.html"></action>
+	<action name="UI-CustomWindow" template="template/webapp/plugin/UI/UI-CustomWindow.html"></action>
+	<action name="UI-SlidingMenu" template="template/webapp/plugin/UI/UI-SlidingMenu.html"></action>
+	<!-- 音频 -->
+	<action name="Audio" template="template/webapp/plugin/Audio.html"></action>
+	<!-- 视频 -->
+	<action name="Video" template="template/webapp/plugin/Video.html"></action>
+	<!-- 上传下载 -->
+	<action name="UploadDownload" template="template/webapp/plugin/UploadDownload.html"></action>
+	<!-- 云巴推送 -->
+	<action name="YunbaPush" template="template/webapp/plugin/YunbaPush.html"></action>
+	<!-- 数据库 -->
+	<action name="Database" template="template/webapp/plugin/Database.html"></action>
+	<!-- 通讯录 -->
+	<action name="Contacts" template="template/webapp/plugin/Contacts.html"></action>
+	<!-- NFC -->
+	<action name="NFC" template="template/webapp/plugin/NFC.html"></action>
+	<!-- 手势 -->
+	<action name="Hammer" template="template/webapp/plugin/Hammer.html"></action>
+	
+	<!-- Web Component Demo-->
+	<action name="WmTab" template="template/webapp/tag/WmTab.html"></action>
+	<action name="WmTabbar" template="template/webapp/tag/WmTabbar.html"></action>
+	<action name="WmNavBar" template="template/webapp/tag/WmNavBar.html"></action>
+	<action name="WmDialog" template="template/webapp/tag/WmDialog.html"></action>
+	<action name="WmDialog2" template="template/webapp/tag/WmDialog2.html"></action>
+	<action name="WmToolTip" template="template/webapp/tag/WmToolTip.html"></action>
+	<action name="WmSlider" template="template/webapp/tag/WmSlider.html"></action>
+	<action name="WmDropmenu" template="template/webapp/tag/WmDropmenu.html"></action>
+	<action name="WmSlidingmenu" template="template/webapp/tag/WmSlidingmenu.html"></action>
+	<action name="WmProgress" template="template/webapp/tag/WmProgress.html"></action>
+	<action name="WmSwitch" template="template/webapp/tag/WmSwitch.html"></action>
+	<action name="WmSegment" template="template/webapp/tag/WmSegment.html"></action>
+	<action name="WmFlip" template="template/webapp/tag/WmFlip.html"></action>
+	<action name="WmRange" template="template/webapp/tag/WmRange.html"></action>
+	<action name="WmRefresh" template="template/webapp/tag/WmRefresh.html"></action>
+	
+	<action name="WmTabSrc" template="template/webapp/tag/WmTabSrc.html"></action>
+	<action name="WmTabbarSrc" template="template/webapp/tag/WmTabbarSrc.html"></action>
+	<action name="WmNavBarSrc" template="template/webapp/tag/WmNavBarSrc.html"></action>
+	<action name="WmDialogSrc" template="template/webapp/tag/WmDialogSrc.html"></action>
+	<action name="WmDialog2Src" template="template/webapp/tag/WmDialog2Src.html"></action>
+	<action name="WmToolTipSrc" template="template/webapp/tag/WmToolTipSrc.html"></action>
+	<action name="WmSliderSrc" template="template/webapp/tag/WmSliderSrc.html"></action>
+	<action name="WmDropmenuSrc" template="template/webapp/tag/WmDropmenuSrc.html"></action>
+	<action name="WmSlidingmenuSrc" template="template/webapp/tag/WmSlidingmenuSrc.html"></action>
+	<action name="WmProgressSrc" template="template/webapp/tag/WmProgressSrc.html"></action>
+	<action name="WmSwitchSrc" template="template/webapp/tag/WmSwitchSrc.html"></action>
+	<action name="WmSegmentSrc" template="template/webapp/tag/WmSegmentSrc.html"></action>
+	<action name="WmFlipSrc" template="template/webapp/tag/WmFlipSrc.html"></action>
+	<action name="WmRangeSrc" template="template/webapp/tag/WmRangeSrc.html"></action>
+	<action name="WmRefreshSrc" template="template/webapp/tag/WmRefreshSrc.html"></action>
+	
+	<!-- UI Demo -->
+	<action name="Button" template="template/webapp/ui/Button.html"></action>
+	<action name="Form" template="template/webapp/ui/Form.html"></action>
+	<action name="Icon" template="template/webapp/ui/Icon.html"></action>
+	<action name="List" template="template/webapp/ui/List.html"></action>
+	<action name="PicList" template="template/webapp/ui/PicList.html"></action>
+	<action name="Popup" template="template/webapp/ui/Popup.html"></action>
+	<action name="Progress" template="template/webapp/ui/Progress.html"></action>
+	<action name="Slider" template="template/webapp/ui/Slider.html"></action>
+	<action name="Tab" template="template/webapp/ui/Tab.html"></action>
+	<action name="Tip" template="template/webapp/ui/Tip.html"></action>
+	
+ 	<!-- More Demo-->
+ 	<!-- 图表展示 -->
+ 	<action name="Chart" template="template/webapp/more/chart/ChartIndex.html"></action>
+ 	<!-- Echarts -->
+ 	<action name="EchartsLine" template="template/webapp/more/chart/echarts/EchartsLine.html"></action>
+ 	<action name="EchartsHistogram" template="template/webapp/more/chart/echarts/EchartsHistogram.html"></action>
+ 	<action name="EchartsPie" template="template/webapp/more/chart/echarts/EchartsPie.html"></action>
+ 	<!-- Highcharts -->
+ 	<action name="HighchartsLine" template="template/webapp/more/chart/highcharts/HighchartsLine.html"></action>
+ 	<action name="HighchartsHistogram" template="template/webapp/more/chart/highcharts/HighchartsHistogram.html"></action>
+ 	<action name="HighchartsPie" template="template/webapp/more/chart/highcharts/HighchartsPie.html"></action>
+ 	<action name="HighchartsPie-3d" template="template/webapp/more/chart/highcharts/HighchartsPie-3d.html"></action>
+ 	<action name="HighchartsDashboard" template="template/webapp/more/chart/highcharts/HighchartsDashboard.html"></action>
+ 	<!-- icharts -->
+ 	<action name="ichartsLine" template="template/webapp/more/chart/icharts/ichartsLine.html"></action>
+ 	<action name="ichartsHistogram" template="template/webapp/more/chart/icharts/ichartsHistogram.html"></action>
+ 	<action name="ichartsPie" template="template/webapp/more/chart/icharts/ichartsPie.html"></action>
+ 	<action name="ichartsPie-3d" template="template/webapp/more/chart/icharts/ichartsPie-3d.html"></action>
+ 	
+ 	<!-- 模板语法 -->
+ 	<action name="Syntax" template="template/webapp/more/syntax/Syntax.html"></action>
+ 	<!-- 推送展示 -->
+ 	<action name="PushChat" template="template/webapp/more/push/PushChat.html"></action>
+ 	<action name="OnlineList" template="template/webapp/more/push/OnlineList.html"></action>
+ 	<action name="Chat" template="template/webapp/more/push/Chat.html"></action>
+ 	<action name="PushReceive" template="template/webapp/more/push/PushReceive.html"></action>
+    <!-- ##################################场景演示########################################################### -->
+	<action name="Scene" template="template/webapp/more/scene/Scene.html"></action>
+	<!-- 报表场景 -->
+	<action name="SceneBean_Demo" template="template/webapp/more/scene/demo/Demo.html"></action> 
+	<action name="SceneBean_DemoAdd" template="template/webapp/more/scene/demo/DemoAdd.html"></action>
+	<action name="SceneBean_DemoDetail" template="template/webapp/more/scene/demo/DemoDetail.html"></action>
+	<!-- 登录场景 -->
+	<action name="SceneBean_login_init" template="template/webapp/more/scene/Login.html"></action>
+	<!-- 数据请求场景 -->
+	<action name="SceneBean_dataRequest" template="template/webapp/more/scene/DataRequest.html"></action>
+	<!-- 解锁屏场景 -->
+	<action name="SceneBean_setScreenLock" template="template/webapp/more/scene/SetScreenLock.html"></action>
+	<!-- 键盘 场景-->
+	<action name="SceneBean_openKeyboard" template="template/webapp/more/scene/OpenKeyboard.html"></action>
+	<!-- 页面跳转（直接数据渲染）场景 -->
+	<action name="SceneBean_templateRedirect" template="template/webapp/more/scene/TemplateRedirect.html"></action>
+	<!-- 页面跳转(调用数据接口)场景-->
+	<action name="SceneBean_PageRedirect" template="template/webapp/more/scene/PageRedirect.html"></action>
+	<!-- 页面跳转(调用数据接口)场景-->
+	<action name="SceneBean_PageRedirectResult" template="template/webapp/more/scene/PageRedirectResult.html" data="SceneBean.openPageScene"></action>
+	<!-- 局部页面刷新（直接数据渲染）场景 -->
+	<action name="TemplateRefresh" template="template/webapp/more/scene/TemplateRefresh.html"></action>
+	<action name="TemplateRefresh.PersonDetailTemplate" template="template/webapp/more/scene/PersonDetailTemplate.html"></action>
+	<!-- 局部页面刷新调用数据接口)场景 -->
+	<action name="PageRefresh" template="template/webapp/more/scene/PageRefresh.html"></action>
+	<action name="PageRefresh.PersonDetailTemplateMore" template="template/webapp/more/scene/PersonDetailTemplateMore.html" data="SceneBean.getPersonDetailMore"></action>
+	<!--************ demo结束 *************-->
+	
+	
+	
+	
+	
+	
+	<!-- 集中监控相关 -->
+	
+	<!-- 登录 -->
+	<action name="OssLogin" template="template/webapp/oss/OssLogin.html"></action>
+	
+	
+</pages>

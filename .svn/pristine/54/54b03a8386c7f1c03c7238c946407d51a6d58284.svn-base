@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>推送展示</title>
+	{%>template/common/Head.html%}
+	<script type="text/javascript" src="biz/js/more/push/PushReceive.js"></script>
+</head>
+<body>
+
+<div class="c_navBar">
+	<div class="left">
+		<div class="back">
+			<span class="e_ico-back"></span>
+			<span class="text">推送</span>
+		</div>
+	</div>
+</div>
+
+<div class="m_content m_content-nofooter">
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div>
+		<div class="c_submit">
+			<ul>
+				<li><button class="e_button-ok" id="connect">连接</button></li>
+			</ul>
+		</div>
+		<br>
+		<div class="c_list" style="display:none" id="devicePart">
+			<ul>
+				<li>
+					<div class="content content-vertical">
+						<div class="label">设备标识:</div>
+						<div class="value">
+							<textarea id="deviceId" style="height:1rem;"></textarea>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+</body>
+</html>

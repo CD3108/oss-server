@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>web UI 组件</title>
+	{%>template/common/Head.html%}
+</head>
+<body>
+
+<div class="c_navBar">
+	<div class="back">
+		<span class="e_ico-back"></span>
+		<div class="text">WmRefreshSrc</div>
+	</div>
+</div>
+
+<div class="c-refresh-container" id="c-refresh">
+	<div id="c-refresh-wrapper" style="height:200px;">
+		<div id="c-refresh-scroller">
+			<div id="pullDown">
+				<span class="pullDownIcon"></span><span class="pullDownLabel">下拉刷新...</span>
+			</div>
+			<div class="c_list">
+				
+				第一行<br/>
+				第一行<br/>
+				第一行<br/>
+				第一行<br/>
+				第一行<br/>
+				第一行<br/>
+				第一行<br/>
+				第一行<br/>
+				<ul class="ul" id="thelist"></ul>
+			</div>
+			<div id="pullUp">
+				<span class="pullUpIcon"></span><span class="pullUpLabel">上拉加载更多...</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+<script>
+var generatedCount = 0
+function pullDownAction (scroller) {
+	setTimeout(function () {	
+		var el, li, i;
+		el = document.getElementById('thelist');
+		for (i=0; i<10; i++) {
+			li = document.createElement('li');
+			li.className = "li";
+			li.innerText = 'Generated row ' + (++generatedCount);
+			el.insertBefore(li, el.childNodes[0]);
+		}
+		scroller.refresh();		
+	}, 1000);	
+}
+
+
+function pullUpAction (scroller) {
+	setTimeout(function () {	
+		var el, li, i;
+		el = document.getElementById('thelist');
+		for (i=0; i<10; i++) {
+			li = document.createElement('li');
+			li.className = "li";
+			li.innerText = 'Generated row ' + (++generatedCount);
+			el.appendChild(li);
+		}
+		scroller.refresh();		
+	}, 1000);	
+}
+	require([ "wmRefresh" ], function(WmRefresh) {
+		
+		var refresh = new WmRefresh("c-refresh");
+		refresh.setPullDownAction(pullDownAction);
+		refresh.setPullUpAction(pullUpAction);
+	})
+</script>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>list组件</title>
+	{%>template/common/Head2.html%}
+	<script type="text/javascript" src="biz/js/oss/report/TowerFeesRate.js"></script>
+</head>
+<body>
+	<!--  小区匹配率（列名：地市、小区总数、匹配到天线的小区数、未匹配到小区数、匹配率） -->
+<div class="c_navBar ubb ubc">
+	<div class="left">
+		<div class="back">
+			<span class="e_ico-back"></span>
+		</div>
+	</div>
+	<div class="center">
+		<div class="logo">
+			<span class="text" id="title-text">铁塔计费匹配率</span>
+		</div>
+	</div>
+</div>
+
+<div class="m_content m_content-nofooter" id="content">
+	<div class="c_list" id="TowerList">
+		<div id="je" style="height:5rem;"></div>
+		<div class="ub ub-f1 ulev-1 uinn ub-ac c-gra1 txtcolor">
+            <div class=" ub-ac ub-pc ub" style="width:20%">
+                地市
+            </div>
+            <div class=" ub-ac ub-pc ub" style="width:20%">
+                铁塔提供费用（万元）
+            </div>
+            <div class=" ub-ac ub-pc ub" style="width:20%">
+                联通提供费用（万元）
+            </div>
+            <div class=" ub-ac ub-pc ub" style="width:20%">
+                匹配一致费用（万元）
+            </div>
+            <div class=" ub-ac ub-pc ub" style="width:20%">
+                匹配率
+            </div>
+        </div>
+        	{%#dataList%}
+        		<div class="ub ub-f1 ulev-1 uinn ub-ac umh4 {%.style%}">
+	                <div class=" ub-ac ub-pc ub" style="width:20%">
+	                    {%.city_name%}
+	                </div>
+	                <div class=" ub-ac ub-pc ub" style="width:20%">
+	                     {%.co_total_6%}
+	                </div>
+	                <div class=" ub-ac ub-pc ub" style="width:20%">
+	                     {%.cuc_total_6%}
+	                </div>
+	                <div class=" ub-ac ub-pc ub" style="width:20%">
+	                     {%.match_number_6%}
+	                </div>
+	                <div class=" ub-ac ub-pc ub" style="width:20%">
+	                     {%.match_rate%}%
+	                </div>
+            	</div>
+        	{%/dataList%}
+           
+            
+	</div>
+</div>
+</body>
+</html>

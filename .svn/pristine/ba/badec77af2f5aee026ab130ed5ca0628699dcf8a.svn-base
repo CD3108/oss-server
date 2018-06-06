@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>WmDropmenu</title>
+	<style type="text/css">
+		#consoleMenu  ul {
+			margin-bottom: 0.1rem;
+		}
+	</style>
+	{%>template/common/Head.html%}
+	<script type="text/javascript" src="biz/js/tag/WmDropmenu.js"></script>
+</head>
+<body>
+<div class="c_navBar">
+	<div class="left">
+		<div class="back">
+			<span class="e_ico-back"></span>
+			<span class="text">WmDropmenu</span>
+		</div>
+	</div>
+</div>
+<div class="m_content m_content-nofooter" id="content" style="position:absolute; top:0.7rem; bottom:0rem; left:0; right:0; ">
+	<div>
+		<div class="c_list">
+			<ul>
+				<li style="text-align: center; padding-top: 0.1rem; padding-bottom: 0.1rem;">
+					<!-- <wm-dropmenu id="myDropmenu" label="自定义下拉菜单" closeAction="console.log('关闭菜单')" oppenAction="console.log('打开菜单')"> -->
+					<!-- <wm-dropmenu-item action="console.log('选择选项1')">下拉选项1</wm-dropmenu-item> -->
+					<wm-dropmenu id="myDropmenu" label="自定义下拉菜单">
+						<wm-dropmenu-item>下拉菜单项1</wm-dropmenu-item>
+						<wm-dropmenu-item>下拉菜单项2</wm-dropmenu-item>
+						<wm-dropmenu-item><b>下拉菜单项3(粗体)</b></wm-dropmenu-item>
+						<wm-dropmenu-item>下拉菜单项4</wm-dropmenu-item>
+						<wm-dropmenu-item>下拉菜单项5</wm-dropmenu-item>
+					</wm-dropmenu>
+				</li>
+				<li ontap><!-- ontap增加触感 -->
+					<div class="content">
+						<div class="main">
+							<div class="title">描述：</div>
+							<div class="info"></div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<br><br><br><br><br><br><br><br><br>
+		<div class="c_submit">
+			<ul>
+				<li><button class="e_button-ok" id="testSwitch">打开菜单</button></li>
+			</ul>
+		</div>
+		<div class="c_submit">
+			<ul>
+				<li><button class="e_button-cancel" id="testSetLabel">清除文本</button></li>
+			</ul>
+		</div>
+		<div class="c_submit">
+			<ul>
+				<li><button class="e_button-ok"  id="testSetOpenAction">设置打开事件</button></li>
+			</ul>
+		</div>
+		<div class="c_submit">
+			<ul>
+				<li><button class="e_button-cancel" id="testSetCloseAction">设置关闭事件</button></li>
+			</ul>
+		</div>
+		<div class="c_submit">
+			<ul>
+				<li><button class="e_button-ok" id="testSetItemAction">设置菜单项事件</button></li>
+			</ul>
+		</div>
+		<!--  -->
+		<div class="c_submit">
+			<ul>
+				<li><button class="e_button-cancel" id="testRemoveAll">清除所有菜单项</button></li>
+			</ul>
+		</div>
+		<div class="c_submit">
+			<ul>
+				<li><button class="e_button-ok" id="testPush">添加菜单项</button></li>
+			</ul>
+		</div>
+		<div class="c_submit">
+			<ul>
+				<li><button class="e_button-cancel" id="testRemove">删除菜单项</button></li>
+			</ul>
+		</div>
+		<div class="c_submit">
+			<ul>
+				<li><button class="e_button-ok" id="testHtml">更改菜单项</button></li>
+			</ul>
+		</div>
+		
+		<div class="e_space"></div>
+	</div>
+</div>
+</body>
+</html>

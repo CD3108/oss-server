@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+<title>web UI 组件</title> {%>template/common/Head.html%}
+</head>
+<body>
+
+	<div class="c_navBar">
+		<div class="back">
+			<span class="e_ico-back"></span>
+			<div class="text">WmDialogSrc</div>
+		</div>
+	</div>
+
+	<div class="m_content m_content-nofooter" id="content">
+		<div class="c_title">弹窗中可以放置任意组件以保证弹窗的多样性</div>
+		<div class="c_list">
+			<ul>
+				<li>
+					<div class="content">
+						<div class="main">
+							<div class="title">进度显示</div>
+						</div>
+						<div class="fn fn-2" id="testButton_1">测试</div>
+					</div>
+				</li>
+				<li>
+					<div class="content">
+						<div class="main">
+							<div class="title">待选选项</div>
+						</div>
+						<div class="fn fn-2">测试</div>
+					</div>
+				</li>
+				<li>
+					<div class="content">
+						<div class="main">
+							<div class="title">确认对话框</div>
+						</div>
+						<div class="fn fn-2">测试</div>
+					</div>
+				</li>
+				<li>
+					<div class="content">
+						<div class="main">
+							<div class="title">数据展示</div>
+						</div>
+						<div class="fn fn-2">测试</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="s-dialog s-dialog-slip" id="mydialog">
+		<div class="s-dialog-content">
+			<h3 class="s-dialog-title">标题</h3>
+			<div class="s-dialog-mainview">
+				池塘边的榕树上<br />
+				知了在声声叫着夏天<br />
+				操场边的秋千上<br />
+				只有蝴蝶停在上面<br />
+				黑板上老师的粉笔<br />
+				还在拼命叽叽喳喳写个不停<br />
+				等待着下课<br />
+				等待着放学<br />
+				等待游戏的童年
+			</div>
+			<div class="s-dialog-buttons">
+				<button class="s-dialog-cancle">取消</button> 
+				<button class="s-dialog-ok">确定</button>
+			</div>
+		</div>
+	</div>
+	
+	<div id="outer-div">
+		I am an outer div;
+	</div>
+</body>
+<script>
+	
+	require([ "wmDialog2" ], function(WmDialog2) {
+		var dialog2 = new WmDialog2("mydialog");
+		var name = 'Shelomi';
+		dialog2.setTitle(name);
+		dialog2.setNegativeAction(function (){
+			alert(name);
+		},true);
+		dialog2.setPositiveAction(function (){
+			alert(name);
+		},true);
+		dialog2.setContentView("outer-div","html");
+		$("#testButton_1").tap(function() {
+			dialog2.show();
+		})
+	});
+</script>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>导航</title>
+	{%>template/common/Head.html%}
+</head>
+<body>
+
+<wm-navbar id="navbar" >
+	<wm-navbar-item type="back" title="WmNavBar" action="back"></wm-navbar-item>
+</wm-navbar>
+
+<wm-navbar id="navbar6" >
+	<wm-navbar-item type="tab" items="设置,关于我们,分享到..." action="item_0,item_1,item_2" ></wm-navbar-item>
+</wm-navbar>
+<wm-navbar id="navbar5" >
+	<wm-navbar-item type="tab" position="left" items="标签1,标签2,标签3" action="item_0,item_1,item_2" ></wm-navbar-item>
+	<wm-navbar-item type="icon" icons="add,search" action="add,search" ></wm-navbar-item>
+</wm-navbar>
+<wm-navbar id="navbar4" >
+	<wm-navbar-item type="tab" position="center" items="标签1,标签2,标签3" action="item_0,item_1,item_2"></wm-navbar-item>
+	<wm-navbar-item type="delete" position="right" text="删除" action="del" ></wm-navbar-item>
+</wm-navbar>
+
+<wm-navbar id="navbar3" >
+	<wm-navbar-item type="back" action="back" ></wm-navbar-item>
+	<wm-navbar-item type="title" text="我是标题" ></wm-navbar-item>
+	<wm-navbar-item type="delete" position="right" text="删除" action="del" ></wm-navbar-item>
+</wm-navbar>
+
+<wm-navbar id="navbar2" >
+	<wm-navbar-item type="back" title="哈哈我是标题" action="back"></wm-navbar-item>
+	<wm-navbar-item type="add" position="right" text="添加" action="add" ></wm-navbar-item>
+</wm-navbar>
+<wm-navbar id="navbar1" >
+	<wm-navbar-item type="add" position="right" text="添加" action="add"></wm-navbar-item>
+	<wm-navbar-item type="date" position="center" text="日期" action="date" ></wm-navbar-item>
+	<wm-navbar-item type="delete" position="left" text="删除" action="del"></wm-navbar-item>
+</wm-navbar>
+
+<wm-navbar id="navbar0" >
+	<wm-navbar-item type="tabgroup" position="left" text="添加1" items="标签1,标签2,标签3" action="item_0,item_1,item_2"></wm-navbar-item>
+	<wm-navbar-item type="tabgroup" position="center" text="添加2" items="标签1,标签2,标签3"  action="item_0,item_1,item_2"></wm-navbar-item>
+	<wm-navbar-item type="tabgroup" position="right" text="添加3" items="标签1,标签2,标签3"  action="item_0,item_1,item_2"></wm-navbar-item>
+</wm-navbar>
+
+<script type="text/javascript">
+function back(){
+	alert("back");
+}
+function add(){
+	alert("add");
+}
+function del(){
+	alert("del");
+}
+function date(){
+	alert("date");
+}
+function search(){
+	alert("search");
+}
+function item_0(){
+	alert("item_0");
+}
+function item_1(){
+	alert("item_1");
+}
+function item_2(){
+	alert("item_2");
+}
+
+</script>
+</body>
+</html>

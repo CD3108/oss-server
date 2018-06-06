@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+<title>上传下载</title>
+{%>template/common/Head.html%}
+<script type="text/javascript" src="biz/js/plugin/uploaddownload.js"></script>
+</head>
+<body>
+
+<div class="c_navBar">
+	<div class="left">
+		<div class="back">
+			<span class="e_ico-back"></span> <span class="text">上传下载</span>
+		</div>
+	</div>
+</div>
+
+<div class="m_content m_content-nofooter" id="content">
+	<div>
+		<div class="c_title">文件上传</div>
+		<div class="c_list">
+			<ul>
+				<li>
+					<div class="content">
+						<div class="main" id="getPicture">
+							<div class="title">选择上传图片</div>
+							<div class="info">
+								上传图片路径为：<span id="uploadFilePath"></span>
+							</div>
+						</div>
+						<div class="fn fn-2" id="upload">点击上传</div>
+					</div>
+				</li>
+				<li>
+					<div class="content content-vertical">
+						<div class="info">服务器路径：<span id="remoteFilePath"></span></div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="c_title">文件下载</div>
+		<div class="c_list">
+			<ul>
+				<li>
+					<div class="content">
+						<div class="main">
+							<div class="title">图片路径</div>
+							<div class="info">
+								本地路径为：<span id="downloadFilePath"></span>
+							</div>
+						</div>
+						<div class="fn fn-2" id="download">点击下载</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="content content-vertical" ontap>
+						<div class="label">下载图片</div>
+						<div class="value">
+							<span class="e_imagePlaceHolder" id="downloadPicture"></span>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="e_space"></div>
+	</div>
+</div>
+</body>
+</html>

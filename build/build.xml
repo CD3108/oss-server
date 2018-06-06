@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<!DOCTYPE project [<!ENTITY buildfile SYSTEM "file:../../wadelib/build/build_wadelib.xml">]>-->
+<!-- $Id: build.xml,v 1.4 2013/10/22 07:49:08 huangbo Exp $ -->
+<project name="${project_name}" default="all" basedir=".">
+    <!-- 指定参数文件 -->
+	<property file="build.properties"/>
+	<!-- 设置classpath -->
+	<path id="class.path">
+	    <pathelement path="${env.CLASSPATH}"/>
+	    <pathelement path="${classes}"/>        
+	    <fileset dir="${common_lib}">
+	        <include name="*.jar"/>
+	    </fileset>
+	</path>	
+	
+	<target name="all" depends="clean,copy,compile,encrypt,version,war"/>
+	<!-- 清楚classes和encrypt目录 -->
+	<target name="clean" description="cleanup the bin directory!">
+		<delete includeemptydirs="true" verbose="false" failonerror="false">
+		    <!-- 删除目录下的文件和子目录,但不包括本身 -->
+			<fileset dir="${classes}" includes="**/*" defaultexcludes="false"/>
+			<fileset dir="${encrypt}" includes="**/*" defaultexcludes="false"/>
+		</delete>
+	</target>
+	
+	<target name="copy">
+	    <!-- 复制配置目录到classes下 -->
+		<copy todir="${classes}">
+			<fileset dir="${config}">
+				<include name="**/**/*"/>
+	        </fileset>
+	    </copy>
+	    <!-- 复制需要下载的配置文件 -->
+		<copy todir="${template}" overwrite="true">
+			<fileset dir="${config}">
+				<include name="server-page.xml"/>
+				<include name="server-config.xml"/>
+				<include name="server-data.xml"/>
+	        </fileset>
+	    </copy>
+	    <!-- 复制需要下载的lua脚本 -->
+	    <copy todir="${template}" overwrite="true">
+			<fileset dir="${config}">
+				<include name="lua/**/*.lua"/>
+	        </fileset>
+	    </copy>
+	    <!-- 复制公共第三方jar包 -->
+		<copy todir="${lib}" overwrite="true">
+			<fileset dir="${common_lib}">
+				<include name="*.jar"/>
+				<exclude name="*.so" />
+				<exclude name="*.dll" />
+				<exclude name="**/**/*.lua" />
+				<exclude name="*servlet-api2.5.jar"/><!-- 引起tomcat的容器报错 -->
+			</fileset>
+		</copy>
+	</target>
+	<!-- 编译java生成classes -->
+	<target name="compile">
+		<mkdir dir="${classes}"/>
+		<echo message="begin to compile source without dependency"></echo>
+		<javac encoding="${encode}" debug="on" fork="yes" source="${jdk_version}" target="${jdk_version}" 
+			memoryInitialSize="128m" memoryMaximumSize="512m" srcdir="${source}" destdir="${classes}">
+			<include name="**/*.java"/>
+			<classpath refid="class.path"/> 
+		</javac>
+	</target>
+
+	<target name="war">
+		<echo message="begin to ${project_name} war"></echo>
+		<!-- 清除临时目录web -->
+		<mkdir dir="${build}/web"/>
+		<delete includeemptydirs="true">
+			<fileset dir="${build}/web" includes="**/*" defaultexcludes="false"/>
+		</delete>
+		<!-- 搬迁web目录下的所有资源 -->
+		<copy overwrite="true" todir="${build}/web/">
+			<fileset dir="${web}">
+				<exclude name="**/CVS/**/*.*"/>
+				<exclude name="**/.svn/**/*.*"/>
+				<exclude name="**/.gitignore"/>
+				<exclude name="**/*#*.*" />
+			</fileset>
+		</copy>
+		<!-- 将临时目录web下的资源打成war包 -->
+		<jar jarfile="${project_home}/${project_name}.war">
+			<zipfileset dir="${build}/web/" prefix="">
+				<include name="**/**/*"/>
+			</zipfileset>
+		</jar>
+		
+		<delete includeemptydirs="true">
+			<fileset dir="${build}/web" defaultexcludes="false"/>
+		</delete>
+	</target>
+
+	<target name="encrypt" description="create encrypt file" depends="compile">
+	    <echo message="create encrypt file"></echo>
+		<java classname="${encrypt_class}" fork="true">
+			<classpath refid="class.path"/>
+			<arg value="${encrypt_filter}"/>
+			<arg value="${is_debug}"/>
+		</java>
+		<delete includeemptydirs="true">
+			<fileset dir="${template}">
+				<include name="server-page.xml"/>
+				<include name="server-data.xml"/>
+				<include name="server-config.xml"/>
+	        </fileset>
+		</delete>
+	</target>
+	
+	<target name="version" description="create version file" depends="compile">
+	    <echo message="create version file"></echo>
+		<java classname="${version_class}" fork="true">
+			<classpath refid="class.path"/>
+			<arg value="${version_filter}"/>
+			<arg value="${is_debug}"/>
+		</java>
+	</target>
+</project>

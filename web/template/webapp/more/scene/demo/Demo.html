@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html class="s_bs">
+<head>
+<title>增删改查-报表演示-主界面</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<link rel="apple-touch-icon" href="touch-icon-iphone.png" />
+<link rel="apple-touch-icon-precomposed" href="touch-icon-iphone.png" />
+<style>
+</style>
+</head>
+<body>
+<div class="c_navBar">
+	<div class="left">
+		<div class="back">
+			<span class="e_ico-back"></span>
+			<span class="text">报表展示</span>
+		</div>
+	</div>
+	<div class="right">
+		<button class="ui-toolbar-btn fn-right" id="add">新增</button>
+	</div>
+</div>
+
+<div class="m_content m_content-nofooter">
+	<div class="query-wrap ptb-small">
+		<div class="c_list">
+			<ul>
+				<li tapfor="">
+					<div class="content">
+						<div class="label">客户名称：</div>
+						<div class="value"><input type="text" placeholder="客户名称" id="" maxlength="30"/></div>
+					</div>
+				</li>
+				<li>
+					<div class="content">
+						<div class="label">客户类型：</div>
+						<div class="value">
+							<select name="province" >
+								<option value="0">集团客户</option>
+								<option value="1">个人客户</option>
+							</select>
+						</div>
+					</div>
+				</li>
+				<li tapfor="" class="less-more">
+					<div class="content">
+						<div class="label">客户名称：</div>
+						<div class="value"><input type="text" placeholder="客户名称" id=""/></div>
+					</div>
+				</li>
+				<li tapfor="" class="less-more">
+					<div class="content">
+						<div class="label">客户名称：</div>
+						<div class="value"><input type="text" placeholder="客户名称" id=""/></div>
+					</div>
+				</li>
+				<li tapfor="" class="less-more">
+					<div class="content">
+						<div class="label">客户名称：</div>
+						<div class="value"><input type="text" placeholder="客户名称" id=""/></div>
+					</div>
+				</li>
+				<li tapfor="">
+					<div class="content">
+						<div class="label">&nbsp;</div>
+						<button class="e_button-ok" id="qryButton">查询</button>
+						<a id="showMore">more</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="scroll-wrap" id="scroll">
+		<div class="c_list">
+			<ul id="infoList">
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<textarea class="fn-hide" id="T_infoList">
+{{#if infoList}}
+{{#each infoList}}
+<li ontap="" class="" data-json="{{retJson2Str this}}">
+	<div class="content">
+		<div class="main">
+			<div class="title">客户名称：{{PARTY_ID}}</div>
+			<div class="info">地址：{{REG_AMOUNT}}</div>
+			<div class="info">CA编号：{{CREATE_ORG_ID}}</div>
+		</div>
+	</div>
+	<div class="press-wrap fn-hide">
+		<div class="press-btn">
+			<span class="del">删除</span>
+		</div>
+		<div class="icon"></div>
+	</div>
+</li>
+{{/each}}
+<li class="has-more"><div class="msg">点击加载更多......</div></li>
+{{else}}
+<li><div class="msg">未查询到相关信息！</div></li>
+{{/if}}
+</textarea>
+
+</body>
+{%>template/common/Head.html%}
+<script type="text/javascript" src="biz/js/more/scene/demo/Demo.js"></script>
+</html>

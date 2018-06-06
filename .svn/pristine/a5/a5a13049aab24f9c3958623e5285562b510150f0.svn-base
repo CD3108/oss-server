@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>web UI 组件</title>
+	{%>template/common/Head.html%}
+</head>
+<body>
+<wm-navbar id="navbar" >
+	<wm-navbar-item type="back" title="弹窗" action="back"></wm-navbar-item>
+</wm-navbar>
+<div class="m_content m_content-nofooter" id="content">
+	<div class="c_space"></div>
+	<div class="c_list">
+		<ul>
+			<li>
+				<div class="content">
+					<div class="main">
+						<div class="title">在 List 中的基准位置</div>
+					</div>
+					<div class="fn fn-2" id="ceshi">测试</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="c_title" id="duanluo">段落中的提示</div>
+	<div class="c_article">
+		池塘边的榕树上<br />
+		知了在声声叫着夏天<br />
+		操场边的秋千上<br />
+		只有蝴蝶停在上面<br />
+		黑板上老师的粉笔<br />
+		还在拼命<span class="e_green" >叽叽喳喳</span>写个不停<br />
+		等待着下课<br />
+		等待着放学<br />
+		等待游戏的童年
+	</div>
+	<div class="c_article">
+		池塘边的榕树上<br />
+		知了在声声叫着夏天<br />
+		操场边的秋千上<br />
+		只有蝴蝶停在上面<br />
+		黑板上老师的粉笔<br />
+		还在拼命<span class="e_green" id="jjzz">叽叽喳喳</span>写个不停<br />
+		等待着下课<br />
+		等待着放学<br />
+		等待游戏的童年
+	</div>
+</div>
+<wm-tooltip id="tooltip1" baseId="jjzz" align="left" position="up"  
+	text="我是个提示" textAlign="" buttonText="我知道了" action="action" > 
+</wm-tooltip>
+<script type="text/javascript">
+require(["util","mobile"], function(util,Mobile) {
+	new iScroll("content");
+	/*	iscroll.refresh();*/
+	window.action = function(a,b){
+		alert("action");
+	}
+});
+</script>
+</body>
+</html>

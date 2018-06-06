@@ -1,0 +1,15 @@
+<div class="wrapper">
+	<div class="c_title" id="refresh">点击刷新</div>
+	<div class="c_list">
+		<ul>
+			{%#ONLINE_STAFFS%}
+			<li ontap="chatByAccount('{%.ACCOUNT%}')">
+				<div class="content">
+					<div class="main">{%.ACCOUNT%}</div>
+				</div>
+			</li>
+			{%/ONLINE_STAFFS%}
+		</ul>
+	</div>
+	<div class="c_space"></div>
+</div>

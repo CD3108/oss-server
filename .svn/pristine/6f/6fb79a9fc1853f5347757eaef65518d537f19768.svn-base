@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+<title>web UI 组件</title>
+{%>template/common/Head.html%}
+<script type="text/javascript" src="biz/js/plugin/ui/ui.js"></script>
+</head>
+<body>
+
+<div class="c_navBar">
+	<div class="left">
+		<div class="back">
+			<span class="e_ico-back"></span>
+			<span class="text">UI组件</span>
+		</div>
+	</div>
+</div>
+
+<div class="m_content m_content-nofooter" id="content" >
+<div>
+	<div class="c_list l_mt">
+		<ul>
+			<li id="progressBar">
+				<div class="content">
+					<div class="main">加载进度</div>
+					<div class="fn fn-2">测试</div>
+				</div>
+			</li>
+			<li id="progressBar2">
+				<div class="content">
+					<div class="main">加载进度(可取消)</div>
+					<div class="fn fn-2">测试</div>
+				</div>
+			</li>
+			<li id="toastLong">
+				<div class="content">
+					<div class="main">提示信息（长）</div>
+					<div class="fn fn-2">测试</div>
+				</div>
+			</li>
+			<li id="toastShort">
+				<div class="content">
+					<div class="main">提示信息（短）</div>
+					<div class="fn fn-2">测试</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="c_title">日期选择</div>
+	<div class="c_list">
+		<ul>
+			<li id="date1">
+				<div class="content">
+					<div class="label">
+						<div class="title">年月日</div>
+					</div>
+					<div class="value" id="dateContent1">请选择</div>
+					<div class="more"></div>
+				</div>
+			</li>
+			<li id="date2">
+				<div class="content">
+					<div class="label">
+						<div class="title">年月</div>
+					</div>
+					<div class="value" id="dateContent2">请选择</div>
+					<div class="more"></div>
+				</div>
+			</li>
+			<li id="date3">
+				<div class="content">
+					<div class="label">
+						<div class="title">时分</div>
+					</div>
+					<div class="value" id="dateContent3">请选择</div>
+					<div class="more"></div>
+				</div>
+			</li>
+			<li id="date4">
+				<div class="content">
+					<div class="label">
+						<div class="title">年月日时分</div>
+					</div>
+					<div class="value" id="dateContent4">请选择</div>
+					<div class="more"></div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+	<div class="c_title">交互组件</div>
+	<div class="c_list">
+		<ul>
+			<li id="customDialog">
+				<div class="content">
+					<div class="label">
+						<div class="title">对话框</div>
+					</div>
+					<div class="value">请点击</div>
+					<div class="more"></div>
+				</div>
+			</li>
+			<li id="customWindow">
+				<div class="content">
+					<div class="label">
+						<div class="title">窗口</div>
+					</div>
+					<div class="value">请点击</div>
+					<div class="more"></div>
+				</div>
+			</li>
+			<li id="slidingMenu">
+				<div class="content">
+					<div class="label">
+						<div class="title">侧滑菜单</div>
+					</div>
+					<div class="value">请点击</div>
+					<div class="more"></div>
+				</div>
+			</li>
+			<li id="getContactsView">
+				<div class="content">
+					<div class="label">
+						<div class="title">通讯录UI</div>
+					</div>
+					<div class="value">请点击</div>
+					<div class="more"></div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="e_space"></div>
+</div>
+</div>
+</body>
+
+</html>

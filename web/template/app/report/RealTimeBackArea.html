@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>list组件</title>
+	{%>template/common/Head2.html%}
+	<!-- <script type="text/javascript" src="biz/js/oss/report/Antenna.js"></script> -->
+</head>
+<body>
+
+<div class="c_navBar ubb ubc">
+	<div class="left">
+		<div class="back">
+			<span class="e_ico-back"></span>
+		</div>
+	</div>
+	<div class="center">
+		<div class="logo">
+			<span class="text" id="title-text">告警准实时统计</span>
+		</div>
+	</div>
+</div>
+
+<div class="m_content m_content-nofooter" id="content">
+	<div class="c_list" id="TowerList">
+		<!-- <div  id="chart2" style="height:4rem;"  >
+		</div> -->
+		<div class="ub ub-f1 ulev-1 uinn ub-ac c-gra1 txtcolor">
+            <div class=" ub-ac ub-pc ub" style="width:25%">
+                地市
+            </div>
+            <div class=" ub-ac ub-pc ub" style="width:25%">
+               当日实时活动告警数
+            </div>
+            <div class=" ub-ac ub-pc ub" style="width:25%">
+                当日工单数
+            </div>
+            <div class=" ub-ac ub-pc ub" style="width:25%">
+             工单告警比=当日工单数/当日告警数
+            </div>
+            
+        </div>
+        	{%#dataList%}
+        		<div class="ub ub-f1 ulev-1 uinn ub-ac umh4 {%.style%}">
+	                <div class=" ub-ac ub-pc ub" style="width:25%">
+	                    {%.city_name%}
+	                </div>
+	                 <div class=" ub-ac ub-pc ub" style="width:25%">
+	                     {%.total%}
+	                </div>
+	                <div class=" ub-ac ub-pc ub" style="width:25%">
+	                     {%.match_number%}
+	                </div>
+	                <div class=" ub-ac ub-pc ub" style="width:25%">
+	                     {%.not_match_number%}
+	                </div>
+	                
+            	</div>
+        	{%/dataList%}
+           
+            
+	</div>
+</div>
+</body>
+</html>

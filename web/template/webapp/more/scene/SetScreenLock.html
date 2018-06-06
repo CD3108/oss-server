@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>解锁屏演示</title>
+	{%>template/common/Head.html%}
+	<script type="text/javascript" src="biz/js/more/scene/SetScreenLock.js"></script>
+</head>
+<body>
+<div class="c_navBar">
+	<div class="left">
+		<div class="back">
+			<span class="e_ico-back"></span>
+			<span class="text">解锁屏演示</span>
+		</div>
+	</div>
+</div>
+
+<div class="m_content m_content-nofooter">
+	<div class="c_title">手势锁状态</div>
+	<div class="c_list">
+		<ul>
+			<li>
+				<div class="content">
+					<div class="main">手势锁状态</div>
+					<div class="side">
+						<span id="stateOn" class="e_hide">ON</span>
+						<span id="stateOff">OFF</span>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+
+	<div class="c_title">锁屏</div>
+	<div class="c_list">
+		<ul>
+			<li>
+				<div class="content">
+					<div class="main">
+						<div class="title">锁屏</div>
+						<div class="info">来，设置一个炫酷的手势锁吧</div>
+					</div>
+					<div class="fn fn-2" id="setScreeLock">锁屏</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+	<div id="hiddenContent" class="e_hide">
+		<div class="c_title">解锁</div>
+		<div class="c_list">
+			<ul>
+				<li>
+					<div class="content">
+						<div class="main">
+							<div class="title">解锁</div>
+							<div class="info"></div>
+						</div>
+						<div class="fn fn-2" id="screenUnlock">解锁</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport"
+	content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+<title>导航</title>
+{%>template/common/Head.html%}
+<link href="biz/css/project.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="biz/js/tag/WmTabbar.js"></script>
+</head>
+<body>
+	<div class="c_navBar">
+		<div class="left">
+			<div class="back">
+				<span class="e_ico-back"></span>
+				<span class="text">WmTabbarSrc</span>
+			</div>
+		</div>
+	</div>
+	<div id="myTabbar">
+		<div class="m_nav">
+			<div class="wrapper">
+				<div class="nav">
+					<div class="c_submit">
+						<ul>
+							<li><button class="e_button-cancel" id="testAction">绑定标签项菜单2的事件</button></li>
+						</ul>
+					</div>
+					<div class="c_submit">
+						<ul>
+							<li><button class="e_button-ok" id="testActive">切换标签页面2</button></li>
+						</ul>
+					</div>
+					<div class="c_submit">
+						<ul>
+							<li><button class="e_button-cancel" id="testAnimation">关闭组件动画</button></li>
+						</ul>
+					</div>
+				</div>
+				<div class="nav">
+					<div class="c_list">
+						<ul>
+							<li>
+								<div class="content">
+									<div class="main">菜单二内容</div>
+									<div class="more"></div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="nav">
+					<div class="c_list">
+						<ul>
+							<li>
+								<div class="content">
+									<div class="main">菜单三内容</div>
+									<div class="more"></div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="nav">
+					<div class="c_list">
+						<ul>
+							<li>
+								<div class="content">
+									<div class="main">菜单四内容</div>
+									<div class="more"></div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="m_footer">
+			<ul>
+				<li><span class="e_ico-device"></span>
+					<div class="text">菜单1</div></li>
+				<li id="myTabbarItem"><span class="e_ico-component"></span>
+					<div class="text">菜单2</div></li>
+				<li><span class="e_ico-code"></span>
+					<div class="text">菜单3</div></li>
+				<li><span class="e_ico-about"></span>
+					<div class="text">菜单4</div></li>
+			</ul>
+		</div>
+	</div>
+	<script type="text/javascript">
+		require([ "wmTabbar" ], function(WmTabbar) {
+			var wmTabbar = new WmTabbar("myTabbar");
+			wmTabbar.create();
+		});
+	</script>
+</body>
+</html>

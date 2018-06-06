@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+<title>登陆</title> {%>template/common/Head2.html%}
+<script type="text/javascript" src="biz/js/oss/Login.js"></script>
+
+<style>
+.ui-input {
+	padding: 6px 9px;
+	line-height: 0.22rem;
+	height: 0.4rem;
+	width: 3rem;
+	border: 1px solid #BBBBBB;
+	font-size: 0.22rem;
+	color: #777;
+	background: transparent;
+	font-size: 0.22rem;
+}
+
+.reg_form {
+	background-color: #fff;
+	font-size: 0.22rem;
+	padding-top: 0.12rem;
+	box-shadow: 0 0.02rem 0 rgba(0, 0, 0, 0.1);
+	line-height: 1;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	background: #fff;
+}
+
+.reg_form .reg_table {
+	
+}
+
+.reg_form .reg_table td {
+	padding: 0 0 8px 0;
+	height: 32px;
+}
+
+.reg_form .reg_table td label.des {
+	text-align: right;
+	display: table-cell;
+	width: 1.5rem;
+	padding: 0.16rem;
+	line-height: 0.28rem;
+}
+
+.reg_form .reg_table .J_ver-wrap .ui-input {
+	width: 2rem;
+}
+
+.verifyImg {
+	width: 1rem;
+	height: 0.4rem;
+}
+
+#loginResult span {
+	line-height: 0.4rem;
+	height: 0.4rem;
+}
+</style>
+</head>
+<body>
+	<div class="c_navBar">
+		<div class="center">
+			<div class="logo">
+				<span class="text">登录</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="m_content m_content-nofooter" id="content">
+		<form class="reg_form">
+			<table class="reg_table" cellpadding="0" cellspacing="0" border="0"
+				width="100%" id="loginForm">
+				<tbody>
+					<tr>
+						<td width="30%"><label class="des">用户名：</label></td>
+						<td><input value="" type="text" id="username" name="username"
+							class="ui-input ui-nt" maxlength="20" require="true" title="用户名" /></td>
+					</tr>
+					<tr>
+						<td><label class="des">密码：</label></td>
+						<td><input value="" type="password" id="password"
+							name="password" class="ui-input" maxlength="50" require="true"
+							title="密码" /></td>
+					</tr>
+					<tr>
+						<td><label class="des">验证码：</label></td>
+						<td class="J_ver-wrap"><input value="" type="text"
+							id="verify" name="verify" class="ui-input" maxlength="4"
+							require="true" title="验证码" /> <img src="" id="verifyImg"
+							class="verifyImg"></td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>
+							<button class="e_button-ok" id="sceneLoginBtn"
+								onclick="javascript:return false;">登录</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<!-- <div id="loginResult" class="fn-hide" style="text-align: center;">
+				<img src="biz/img/scene/login_success.png"/><br><br>
+				<span id="retMsg"></span>
+			</div> -->
+		</form>
+	</div>
+</body>
+</html>

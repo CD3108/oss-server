@@ -1,0 +1,66 @@
+<ul id="plugin-menu">
+	<li action="Basic">
+		<div class="pic"><span class="e_ico-conect"></span></div>
+		<div class="text">基础</div>
+	</li>
+	<li action="Network">
+		<div class="pic"><span class="e_ico-net"></span></div>
+		<div class="text">网络</div>
+	</li>
+	<li action="Map">
+		<div class="pic"><span class="e_ico-position"></span></div>
+		<div class="text">地图</div>
+	</li>
+	<li action="Photo">
+		<div class="pic"><span class="e_ico-pic"></span></div>
+		<div class="text">相机</div>
+	</li>
+	<li action="File">
+		<div class="pic"><span class="e_ico-file"></span></div>
+		<div class="text">文件</div>
+	</li>
+	<li action="Storage">
+		<div class="pic"><span class="e_ico-storage"></span></div>
+		<div class="text">存储</div>
+	</li>
+	<li action="UI">
+		<div class="pic"><span class="e_ico-component"></span></div>
+		<div class="text">UI组件</div>
+	</li>
+	<li action="QR">
+		<div class="pic"><span class="e_ico-qr"></span></div>
+		<div class="text">二维码</div>
+	</li>
+	<li action="Audio">
+		<div class="pic"><span class="e_ico-audio"></span></div>
+		<div class="text">音频</div>
+	</li>
+	<li action="Video">
+		<div class="pic"><span class="e_ico-vedio"></span></div>
+		<div class="text">视频</div>
+	</li>
+	<li action="UploadDownload">
+		<div class="pic"><span class="e_ico-load"></span></div>
+		<div class="text">上传下载</div>
+	</li>
+	<li action="YunbaPush">
+		<div class="pic"><span class="e_ico-push"></span></div>
+		<div class="text">云巴推送</div>
+	</li>
+	<li action="Database">
+		<div class="pic"><span class="e_ico-data"></span></div>
+		<div class="text">数据库</div>
+	</li>
+	<li action="Contacts">
+		<div class="pic"><span class="e_ico-contact"></span></div>
+		<div class="text">通讯录</div>
+	</li>
+	<li action="NFC">
+		<div class="pic"><span class="e_ico-nfc"></span></div>
+		<div class="text">NFC</div>
+	</li>
+	<li action="Hammer">
+		<div class="pic"><span class="e_ico-nfc"></span></div>
+		<div class="text">手势</div>
+	</li>
+</ul>

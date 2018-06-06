@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <zydb
+        type="dbcp"
+        driver="oracle.jdbc.driver.OracleDriver"
+        url="jdbc:oracle:thin:@133.128.27.92:1521:zydb1"
+        user="pim"
+        passwd="pim"
+        initialSize="5"
+        maxActive="20"
+        maxIdle="5"
+        maxWait="1000"
+        />
+    <rmdb
+        type="dbcp"
+        driver="oracle.jdbc.driver.OracleDriver"
+        url="jdbc:oracle:thin:@133.128.27.68:1521:zydb1"
+        user="rm"
+        passwd="rm"
+        initialSize="5"
+        maxActive="20"
+        maxIdle="5"
+        maxWait="1000"
+        />
+</database>

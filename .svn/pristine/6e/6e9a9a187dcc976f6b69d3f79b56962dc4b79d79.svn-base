@@ -1,0 +1,28 @@
+<div class="main ubt ubc" id="report">
+	<ul>
+		<li class="gz-ilist ub ub-ac ub-pc ub-ver" action="TowerReportList"><span
+			class="ub ub-img1 icon9"></span>
+			<p class="p1">铁塔报表</p></li>
+		<li class="gz-ilist ub ub-ac ub-pc ub-ver" action="ResReportList"><span
+			class="ub ub-img1 icon10"></span>
+			<p class="p1">资源报表</p></li>
+	</ul>
+	<ul>
+		<li class="gz-ilist2 ub ub-ac ub-pc ub-ver" action="OrderReportList"><span
+			class="ub ub-img1 icon11"></span>
+			<p class="p1">工单报表</p></li>
+	</ul>
+	<ul>
+		<li class="gz-ilist ub ub-ac ub-pc ub-ver" action="AlarmList"><span
+			class="ub ub-img1 icon12"></span>
+			<p class="p1">告警报表</p></li>
+		<li class="gz-ilist ub ub-ac ub-pc ub-ver"><span
+			class="ub ub-img1 icon13"></span>
+			<p class="p1">性能报表</p></li>
+	</ul>
+	<ul>
+		<li class="gz-ilist2 ub ub-ac ub-pc ub-ver"><span
+			class="ub ub-img1 icon-more"></span>
+			<p class="p1">&nbsp;</p></li>
+	</ul>
+</div>

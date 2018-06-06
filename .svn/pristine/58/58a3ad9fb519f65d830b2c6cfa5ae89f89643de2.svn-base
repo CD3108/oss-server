@@ -1,0 +1,222 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>list组件</title>
+	{%>template/common/Head.html%}
+	<script type="text/javascript" src="biz/js/ui/ui.js"></script>
+</head>
+<body>
+
+<div class="c_navBar">
+	<div class="left">
+		<div class="back">
+			<span class="e_ico-back"></span>
+			<span class="text">列表</span>
+		</div>
+	</div>
+</div>
+
+<div class="m_content m_content-nofooter" id="content">
+<div>
+	<div class="c_title">普通项目</div>
+	<div class="c_list">
+		<ul>
+			<li ontap=";">
+				<div class="content">
+					<div class="main">基础模式</div>
+				</div>
+			</li>
+			<li ontap=";">
+				<div class="content">
+					<div class="main">带附注的项目</div>
+					<div class="side">附注</div>
+				</div>
+			</li>
+			<li ontap=";">
+				<div class="content">
+					<div class="main">
+						<div class="title">带描述的项目</div>
+						<div class="info">这是一段描述信息</div>
+						<div class="info">支持多条描述</div>
+					</div>
+				</div>
+			</li>
+			<li ontap=";">
+				<div class="content">
+					<div class="main">指向子目录的项目</div>
+					<div class="more"></div>
+				</div>
+			</li>
+			<li ontap=";">
+				<div class="content">
+					<div class="main">带功能的项目</div>
+					<div class="fn" ontap=";"><span class="e_ico-edit"></span></div>
+				</div>
+			</li>
+			<li ontap=";">
+				<div class="content">
+					<div class="main">
+						<div class="title">带子列表的项目</div>
+						<div class="innerList">
+							<ul>
+								<li ontap=";">
+									<div class="content">
+										<div class="main">子项</div>
+										<div class="side">子项附注</div>
+									</div>
+								</li>
+								<li ontap=";">
+									<div class="content">
+										<div class="main">子项</div>
+										<div class="side">子项附注</div>
+									</div>
+								</li>
+								<li ontap=";">
+									<div class="content">
+										<div class="main">子项</div>
+										<div class="side">子项附注</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="c_title">附属信息</div>
+	<div class="c_list c_list-hasDistance">
+		<ul>
+			<li ontap=";">
+				<div class="content">
+					<div class="main">附属文本</div>
+				</div>
+				<div class="sub">
+					<div class="text">附属文本信息</div>
+					<div class="fn"><span class="e_button" ontap=";">功能</span></div>
+				</div>
+			</li>
+			<li ontap=";">
+				<div class="content">
+					<div class="main">附属列表</div>
+				</div>
+				<div class="subList subList-readOnly">
+					<ul>
+						<li ontap=";">
+							<div class="content">
+								<div class="main">附属项目</div>
+								<div class="side">项目附注</div>
+							</div>
+						</li>
+						<li ontap=";">
+							<div class="content">
+								<div class="main">附属项目</div>
+								<div class="side">项目附注</div>
+							</div>
+						</li>
+						<li ontap=";">
+							<div class="content">
+								<div class="main">附属项目</div>
+								<div class="side">项目附注</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="c_title">分列</div>
+	<div class="c_list c_list-col-2">
+		<ul>
+			<li ontap=";">
+				<div class="content">
+					<div class="main">项目</div>
+				</div>
+			</li>
+			<li ontap=";">
+				<div class="content">
+					<div class="main">项目</div>
+				</div>
+			</li>
+			<li ontap=";">
+				<div class="content">
+					<div class="main">项目</div>
+				</div>
+			</li>
+			<li ontap=";">
+				<div class="content">
+					<div class="main">项目</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="c_list c_list-col-3 l_mt">
+		<ul>
+			<li ontap=";">
+				<div class="content">
+					<div class="main">项目</div>
+				</div>
+			</li>
+			<li ontap=";">
+				<div class="content">
+					<div class="main">项目</div>
+				</div>
+			</li>
+			<li ontap=";">
+				<div class="content">
+					<div class="main">项目</div>
+				</div>
+			</li>
+			<li ontap=";">
+				<div class="content">
+					<div class="main">项目</div>
+				</div>
+			</li>
+			<li ontap=";">
+				<div class="content">
+					<div class="main">项目</div>
+				</div>
+			</li>
+			<li ontap=";">
+				<div class="content">
+					<div class="main">项目</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="c_title">色彩标识（用于显示图表对应项目）</div>
+	<div class="c_list">
+		<ul>
+			<li class="chart-1" ontap=";">
+				<div class="content">
+					<div class="main">项目</div>
+				</div>
+			</li>
+			<li class="chart-2" ontap=";">
+				<div class="content">
+					<div class="main">项目</div>
+				</div>
+			</li>
+			<li class="chart-3" ontap=";">
+				<div class="content">
+					<div class="main">项目</div>
+				</div>
+			</li>
+			<li class="chart-4" ontap=";">
+				<div class="content">
+					<div class="main">项目</div>
+				</div>
+			</li>
+			<li class="chart-5" ontap=";">
+				<div class="content">
+					<div class="main">项目</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+<div>
+</div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+#hashing_alg:native_hash,new_compat_hash,old_compat_hash,consistent_hash
+#
+#memcache.session_cache.hashing_alg=native_hash
+#memcache.session_cache.init_conn=5
+#memcache.session_cache.min_conn=5
+#memcache.session_cache.max_conn=50
+#memcache.session_cache.max_idle=60000
+#memcache.session_cache.maint_sleep=30
+memcache.session_cache.cluster=192.168.128.77:10001
+

@@ -1,0 +1,32 @@
+<div class="wrapper">
+	<div class="c_title">详情</div>
+	<div class="c_list">
+		<ul>
+			<li tapfor="input-text">
+				<div class="content">
+					<div class="label">姓名</div>
+					<div class="info" id="name">{%name%}</div>
+				</div>
+			</li>
+			<li tapfor="input-text">
+				<div class="content">
+					<div class="label">年龄</div>
+					<div class="info" id="age">{%age%}</div>
+				</div>
+			</li>
+			<li tapfor="input-text">
+				<div class="content">
+					<div class="label">性别</div>
+					<div class="info" id="gender">{%gender%}</div>
+				</div>
+			</li>
+			<li tapfor="input-text">
+				<div class="content">
+					<div class="label">部门</div>
+					<div class="info" id="dept">{%dept%}</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="c_space"></div>
+</div>

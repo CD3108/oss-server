@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>WmTab演示</title>
+	{%>template/common/Head.html%}
+	<script type="text/javascript" src="biz/js/tag/WmTab.js"></script>
+</head>
+<body>
+
+<div class="c_navBar">
+	<div class="left">
+		<div class="back">
+			<span class="e_ico-back"></span>
+			<span class="text">WmTab</span>
+		</div>
+	</div>
+</div>
+
+<div class="m_content" id="content">
+	<div class="e_space"></div>
+	<wm-tab id="myTab">
+		<wm-tab-item title="第一页标签" active="true">
+		<div class="c_submit">
+			<ul>
+				<li><button class="e_button-ok" id="testAction">绑定选中事件</button></li>
+			</ul>
+		</div>
+		<div class="c_submit">
+			<ul>
+				<li><button class="e_button-cancel" id="testActive">切换标签页面</button></li>
+			</ul>
+		</div>
+		<div class="c_submit">
+			<ul>
+				<li><button class="e_button-ok" id="testAnimation">关闭组件动画</button></li>
+			</ul>
+		</div>
+		<div class="c_submit">
+			<ul>
+				<li><button class="e_button-cancel" id="testAdd">添加标签页</button></li>
+			</ul>
+		</div>
+		<div class="c_submit">
+			<ul>
+				<li><button class="e_button-ok" id="testRemove">删除标签页</button></li>
+			</ul>
+		</div>
+		</wm-tab-item>
+		<wm-tab-item title="第二页标签">
+			<div class="c_list">
+				<ul>
+					<li>
+						<div class="content">
+							<div class="main">第二页</div>
+							<div class="more"></div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</wm-tab-item>
+		<wm-tab-item title="第三页标签">
+			<div class="c_list">
+				<ul>
+					<li>
+						<div class="content">
+							<div class="main">第三页</div>
+							<div class="more"></div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</wm-tab-item>
+	</wm-tab>
+</div>
+</body>
+</html>

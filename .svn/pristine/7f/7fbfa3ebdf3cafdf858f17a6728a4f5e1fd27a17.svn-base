@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>Button组件</title>
+	{%>template/common/Head.html%}
+	<link href="biz/css/project.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="biz/js/ui/gesture.js"></script>
+</head>
+<body>
+
+<div class="c_navBar">
+	<div class="left">
+		<div class="back">
+			<span class="e_ico-back"></span>
+			<span class="text">back</span>
+		</div>
+	</div>
+</div>
+
+<div class="m_content m_content-nofooter" id="content">
+	<div>手势类型:单击、双击、长按、滑动、左滑、右滑、上滑、下滑</div>
+	<br>
+	<br>
+	<div id="gestureBlock" style="width:200px;height:200px;background:red;margin:20px;">手势操作区域</div>
+	<div id="msg"></div>
+	<div id="msgOther"></div>
+</div>
+</body>
+</html>

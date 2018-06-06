@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>list组件</title>
+	{%>template/common/Head2.html%}
+	<script type="text/javascript" src="biz/js/oss/report/ResSurvey.js"></script>
+</head>
+<body>
+	<!--  小区匹配率（列名：地市、小区总数、匹配到天线的小区数、未匹配到小区数、匹配率） -->
+<div class="c_navBar ubb ubc">
+	<div class="left">
+		<div class="back">
+			<span class="e_ico-back"></span>
+		</div>
+	</div>
+	<div class="center">
+		<div class="logo">
+			<span class="text" id="title-text">资源概况统计</span>
+		</div>
+	</div>
+</div>
+
+<div class="m_content m_content-nofooter" id=BaseStationRate>
+	<div class="c_list" id="TowerList">
+		<div id="je" style="height:5rem;"></div>
+		<div class="ub table table_10 umar-t ubt">
+		<div class="ub ub-ver table-left">
+			<ul class="ub ub-ac ub-pc ubb ">
+				<li class="ub ub-pc ub-ac g-w g-h ubr">地市</li>
+				<li class="ub ub-pc ub-ac g-w g-h ubr">资源总数</li>
+				<li class="ub ub-pc ub-ac g-w g-h ubr">总匹配率</li>
+			</ul>
+			{%#dataList%}
+			<ul class="ub ub-ac ub-pc ubb">
+				<li class="ub ub-pc ub-ac g-w g-h ubr">{%.city_name%}</li>
+				<li class="ub ub-pc ub-ac g-w g-h ubr">{%.all_TOTAL%}</li>
+				<li class="ub ub-pc ub-ac g-w g-h ubr">{%.rate_TOTAL%}</li>
+			</ul>
+			{%/dataList%}
+		</div><!-- table-left -->
+		<div class="table-right ub " id="content1">
+			<div class="ub right-w">
+				<div class="ub ub-ver">
+					<div class="g-h1 ub ub-ac ub-pc ubr">无线</div>
+					<div class="ub g-h2 ubb ubt">
+						<div class="g-w ubr ub ub-ac ub-pc">动态资源数</div>
+						<div class="g-w ubr ub ub-ac ub-pc">匹配数</div>
+						<div class="g-w ubr ub ub-ac ub-pc">匹配率</div>
+					</div>
+					{%#dataList%}
+					<ul class="ub ub-ac ub-pc ubb">
+						<li class="ub ub-pc ub-ac g-w g-h ubr">{%.all_WX%}</li>
+						<li class="ub ub-pc ub-ac g-w g-h ubr">{%.match_WX%}</li>
+						<li class="ub ub-pc ub-ac g-w g-h ubr">{%.rate_WX%}</li>
+					</ul>
+					{%/dataList%}
+				</div>
+				<div class="ub ub-ver">
+					<div class="g-h1 ub ub-ac ub-pc ubr">传输</div>
+					<div class="ub g-h2 ubb ubt">
+						<div class="g-w ubr ub ub-ac ub-pc">动态资源数</div>
+						<div class="g-w ubr ub ub-ac ub-pc">匹配数</div>
+						<div class="g-w ubr ub ub-ac ub-pc">匹配率</div>
+					</div>
+					{%#dataList%}
+					<ul class="ub ub-ac ub-pc ubb">
+						<li class="ub ub-pc ub-ac g-w g-h ubr">{%.all_CS%}</li>
+						<li class="ub ub-pc ub-ac g-w g-h ubr">{%.match_CS%}</li>
+						<li class="ub ub-pc ub-ac g-w g-h ubr">{%.rate_CS%}</li>
+					</ul>
+					{%/dataList%}
+				</div>
+				<div class="ub ub-ver">
+					<div class="g-h1 ub ub-ac ub-pc ubr">动力环境</div>
+					<div class="ub g-h2 ubb ubt">
+						<div class="g-w ubr ub ub-ac ub-pc">动态资源数</div>
+						<div class="g-w ubr ub ub-ac ub-pc">匹配数</div>
+						<div class="g-w ubr ub ub-ac ub-pc">匹配率</div>
+					</div>
+					{%#dataList%}
+					<ul class="ub ub-ac ub-pc ubb">
+						<li class="ub ub-pc ub-ac g-w g-h ubr">{%.all_DH%}</li>
+						<li class="ub ub-pc ub-ac g-w g-h ubr">{%.match_DH%}</li>
+						<li class="ub ub-pc ub-ac g-w g-h ubr">{%.rate_DH%}</li>
+					</ul>
+					{%/dataList%}
+				</div>
+			</div>
+		</div><!-- table-right-->
+		
+		
+	
+	</div><!--table -->
+	
+	</div>
+</div>
+</body>
+</html>

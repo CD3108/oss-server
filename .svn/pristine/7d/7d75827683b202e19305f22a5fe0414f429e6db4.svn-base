@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>tip组件</title>
+	{%>template/common/Head.html%}
+	<script type="text/javascript" src="biz/js/ui/ui.js"></script>
+</head>
+<body>
+
+<div class="c_navBar">
+	<div class="left">
+		<div class="back">
+			<span class="e_ico-back"></span>
+			<span class="text">提示</span>
+		</div>
+	</div>
+</div>
+
+<div class="m_content m_content-nofooter" id="content">
+<div>
+	<div class="c_title">成功提示</div>
+	<div class="c_tip c_tip-success" id="fixed">
+		<div class="ico"></div>
+		<div class="content">
+			<div class="main">业务受理成功！</div>
+			<div class="sub">发展员工：龚新步（10086）</div>
+		</div>
+	</div>
+	<div class="c_title">失败提示</div>
+	<div class="c_list">
+		<ul>
+			<li ontap=";">
+				<div class="content">
+					<div class="main">
+						<div class="title">失败提示</div>
+						<div class="info">显示成功提示时，需要展示已提交数据的信息，予用户确认；显示失败提示时并不跳转页面，直接在当前页面显示失败层，便于返回时保持数据，请点击按钮测试。</div>
+					</div>
+					<div class="fn fn-2" ontap=";">测试</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="c_title">页面载入提示</div>
+	<div class="c_list">
+		<ul>
+			<li ontap=";">
+				<div class="content">
+					<div class="main">
+						<div class="title">页面载入提示</div>
+					</div>
+					<div class="fn fn-2" ontap=";">测试</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="c_title">计算方式提示</div>
+	<div class="c_tooltip">
+		<div class="c_tooltipPointer" style="left:2.7rem;"></div>
+		<div class="c_tooltipContent">
+			<div class="c_formula">
+				<div class="ul" ontap=";">
+					<div class="li">
+						<div class="value e_red">88</div>
+						<div class="label">基本套餐</div>
+					</div>
+					<div class="symbol">＋</div>
+					<div class="li">
+						<div class="value e_red">40</div>
+						<div class="label">流量包</div>
+					</div>
+					<div class="symbol">＋</div>
+					<div class="li">
+						<div class="value e_red">10</div>
+						<div class="label">数据业务</div>
+					</div>
+					<div class="symbol">－</div>
+					<div class="li">
+						<div class="value e_green">49</div>
+						<div class="label">合约月赠</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="c_title">操作提示</div>
+	<div class="c_list">
+		<ul>
+			<li ontap=";">
+				<div class="content">
+					<div class="main">
+						<div class="title">操作提示</div>
+						<div class="info">操作提示一般用于生僻的操作体验提示，关闭后不再提示。</div>
+					</div>
+					<div class="fn fn-2" ontap=";">测试</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="c_toolTip" id="floatTip" style="top:1.34rem; left:50%; margin-left:-1.1rem;">
+		<div class="pointer"></div>
+		<div class="content">
+			<div class="ico"><span class="e_ico e_ico-swipe"></span></div>
+			<div class="detail e_center">向左滑动显示更多信息</div>
+			<div class="submit"><span class="e_button" id="removeTip">我知道了</span></div>
+		</div>
+	</div>
+</div>
+</div>
+</body>
+</html>

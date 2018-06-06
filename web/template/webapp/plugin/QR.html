@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+<title>二维码</title>
+{%>template/common/Head.html%}
+<script type="text/javascript" src="biz/js/plugin/qr.js" ></script>
+</head>
+<body>
+
+<div class="c_navBar">
+	<div class="left">
+		<div class="back">
+			<span class="e_ico-back"></span>
+			<span class="text">二维码</span>
+		</div>
+	</div>
+</div>
+
+<div class="m_content m_content-nofooter" id="content" >
+<div>
+	<div class="c_title">
+		<div class="text">单个扫描</div>
+	</div>
+	<div class="c_list">
+		<ul>
+			<li>
+				<div class="content">
+					<div class="main" ontap=";">
+						<div class="title">扫描结果</div>
+						<div class="info e_placeholder" id="resultSingle" >请点击右侧按钮开始扫描</div>
+					</div>
+					<div class="fn" id="scanSingle" ><span class="e_ico-scan"></span></div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+	<div class="c_title">
+		<div class="text">多个扫描</div>
+	</div>
+	<div class="c_list">
+		<ul>
+			<li>
+				<div class="content">
+					<div class="main" ontap=";">
+						<div class="title">扫描结果</div>
+						<div class="info e_placeholder" id="resultMultiple" >请点击右侧按钮开始扫描</div>
+					</div>
+					<div class="fn" id="scanMultiple" ><span class="e_ico-scan"></span></div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="c_title">
+		<div class="text">生成</div>
+	</div>
+	<div class="c_list">
+		<ul>
+			<li>
+				<div class="content">
+					<div class="main" ontap=";">
+						<div class="title">字符串</div>
+						<div class="info">
+							<textarea style="height:1rem;" id="info" >http://www.aiipu.com/
+							</textarea>
+						</div>
+					</div>
+					<div class="fn" id="create" ><span class="e_ico-qr"></span></div>
+				</div>
+			</li>
+			<li id="resultContent" class="fn-hide">
+				<div class="content">
+					<div class="main">
+						<div class="title">生成结果</div>
+						<div class="info e_center" id="img" >
+							<!--  <img src="temp/qr.png" alt="" id="qr"> -->
+							<!-- <div class="e_imagePlaceHolder"></div> -->
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+</div>
+</body>
+</html>

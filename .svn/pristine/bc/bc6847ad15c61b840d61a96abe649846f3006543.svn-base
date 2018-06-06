@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>数据请求</title>
+	{%>template/common/Head.html%}
+	<script type="text/javascript" src="biz/js/more/scene/DataRequest.js"></script>
+<style>
+.ui-input {
+	padding: 6px 9px;
+	line-height: 0.22rem;
+    height: 0.4rem;
+	width: 3rem;
+	border: 1px solid #BBBBBB;
+	font-size: 0.22rem;
+    color: #777;
+    background: transparent;
+    font-size: 0.22rem;
+}
+.reg_form {
+	background-color: #fff;
+	font-size: 0.22rem;
+	padding-top: 0.12rem;
+	box-shadow: 0 0.02rem 0 rgba(0,0,0,0.1);
+    line-height: 1;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    background: #fff;
+}
+.reg_form .reg_table {
+}
+.reg_form .reg_table td {
+	padding: 0 0 8px 0;
+	height: 32px;
+}
+.reg_form .reg_table td label.des {
+	text-align: right;
+	display: table-cell;
+    width: 1.5rem;
+    padding: 0.16rem;
+    line-height: 0.28rem;
+}
+.reg_form .reg_table .J_ver-wrap .ui-input {
+	width: 2rem;
+}
+</style>
+</head>
+<body>
+<div class="c_navBar">
+	<div class="left">
+		<div class="back">
+			<span class="e_ico-back"></span>
+			<span class="text">数据请求</span>
+		</div>
+	</div>
+</div>
+
+<div class="m_content m_content-nofooter" id="content">
+	<form class="reg_form">
+		<div id="mainTestCharacterContent">
+			<table class="reg_table" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tbody>
+					<tr>
+						<td width="30%"><label class="des">输入人名：</label></td>
+						<td><input value="{%TemplateRedirectData%}" type="text" id="J_username" name="J_username" class="ui-input ui-nt" maxlength="20" title="姓名"></td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>
+							<button class="e_button-ok" id="testCharacter" onclick="javascript:return false;">开始计算</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		
+		<div id="retTestCharacterContent" class="fn-hide">
+			<table class="reg_table" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tbody>
+					<tr>
+						<td width="30%"><label class="des">您的大名：</label></td>
+						<td id="retName"></td>
+					</tr>
+					<tr>
+						<td><label class="des">评价：</label></td>
+						<td id="retMsg"></td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>
+							<button class="e_button-ok" id="testCharacterAgain" onclick="javascript:return false;">再测一次</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		
+	</form>
+	
+</div>
+
+</body>
+</html>

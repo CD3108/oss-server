@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+<title>对话框</title>
+{%>template/common/Head.html%}
+<script type="text/javascript" src="biz/js/plugin/ui/ui-customDialog.js"></script>
+</head>
+<body>
+<div class="m_content m_content-nofooter" id="content">
+<div>
+	<div class="c_list">
+		<ul>
+			<li tapfor="msgContent">
+				<div class="content content-vertical">
+					<div class="label">输入返回值:</div>
+					<div class="value"><textarea id="result" style="height:1rem;">返回值测试</textarea></div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="c_submit">
+		<ul>
+			<li><button class="e_button-cancel" id="return">返回</button></li>
+			<li><button class="e_button-ok" id="cancel">取消</button></li>
+			<!-- <li><button class="e_button-cancel" id="openDialog">新开对话框</button></li> -->
+		</ul>
+	</div>
+</body>
+</html>

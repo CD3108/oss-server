@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+<title>地图</title>
+{%>template/common/Head.html%}
+<script type="text/javascript" src="biz/js/plugin/map.js" ></script>
+</head>
+<body>
+
+<div class="c_navBar">
+	<div class="left">
+		<div class="back">
+			<span class="e_ico-back"></span>
+			<span class="text">地图</span>
+		</div>
+	</div>
+</div>
+
+<div class="m_content m_content-nofooter" id="content">
+<div>
+	<div class="c_list l_mt">
+		<ul>
+			<li>
+				<div class="content">
+					<div class="main">
+						<div class="title">当前位置</div>
+						<div class="info" id="locationDesc">请获取</div>
+					</div>
+					<div class="fn fn-2" id="location">获取位置</div>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<div class="main">
+						<div class="title" id="selectLatLng">选定坐标：</div>
+						<div class="info" id="selectLocationDesc">选定地址：</div>
+					</div>
+					<div class="fn fn-2" id="selectLocation">选择位置</div>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<div class="main">
+						<div class="title">标记地图(多点)</div>
+						<div class="info">在地图上标记多个点</div>
+					</div>
+					<div class="fn fn-2" id="markMapMulti">查看</div>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<div class="main">
+						<div class="title">标记地图(单点)</div>
+						<div class="info">标记地图上标记单个点</div>
+					</div>
+					<div class="fn fn-2" id="markMapSingle">查看</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="e_space"></div>
+</div>
+</div>
+</body>
+</html>

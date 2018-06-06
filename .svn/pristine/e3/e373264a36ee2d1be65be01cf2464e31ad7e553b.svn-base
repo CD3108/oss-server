@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>Button组件</title>
+	{%>template/common/Head.html%}
+	<script type="text/javascript" src="biz/js/ui/button.js"></script>
+</head>
+<body>
+
+<div class="c_navBar">
+	<div class="left">
+		<div class="back">
+			<span class="e_ico-back"></span>
+			<span class="text">按钮</span>
+		</div>
+	</div>
+</div>
+
+<div class="m_content m_content-nofooter" id="content">
+	<div>
+		<div class="c_space"></div>
+		<div class="c_title" style="background:#ccc;">
+			<div class="text">标题中的按钮</div>
+			<div class="fn"><span class="e_button" ontap=";" id="title_button">按钮</span></div>
+		</div>
+		<div class="c_title" style="background:#ddd;">
+			<div class="text">标题中的按钮(下拉菜单1)</div>
+			<div class="fn">
+				<span class="e_button" id="dropbutton">下拉菜单1<span class="e_ico-unfold"></span></span>
+			</div>
+		</div>
+		<div class="c_title" style="background:#ddd;">
+			<div class="text">标题中的按钮(下拉菜单2)</div>
+			<div class="fn">
+				<span class="e_button" id="dropbutton2">下拉菜单2<span class="e_ico-unfold"></span></span>
+			</div>
+		</div>
+		<div class="c_title">
+			<div class="text">独立图标按钮（独立图标）</div>
+			<div class="fn"><span class="e_button e_button-singleIco" id="icon_button" ontap=";"><span class="e_ico-add"></span></span></div>
+		</div>
+		<div class="c_submit">
+			<ul>
+				<li><button class="e_button-cancel" id="cancel">取消按钮</button></li>
+			</ul>
+		</div>
+		<div class="c_submit">
+			<ul>
+				<li><button class="e_button-ok" id="submit">提交按钮</button></li>
+			</ul>
+		</div>
+		<div class="c_submit">
+			<ul>
+				<li><button class="e_button-red" id="delete">删除按钮</button></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="c_dropmenu" id="dropmenu" for="dropbutton">
+	<ul>
+		<li ontap=";">编辑</li>
+		<li ontap=";">删除</li>
+		<li ontap=";">屏蔽</li>
+	</ul>
+</div>
+<div class="c_dropmenu" id="dropmenu2" for="dropbutton2">
+	<ul>
+		<li ontap=";">编辑</li>
+		<li ontap=";">删除</li>
+		<li ontap=";">屏蔽</li>
+	</ul>
+</div>
+</body>
+</html>

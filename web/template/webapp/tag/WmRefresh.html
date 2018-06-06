@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>web UI 组件</title>
+	{%>template/common/Head.html%}
+</head>
+<body>
+
+<wm-navbar id="navbar" >
+	<wm-navbar-item type="back" title="WmRefresh" action="back"></wm-navbar-item>
+</wm-navbar>
+
+<wm-refresh id="c_refresh" pullDownAction="pullDownAction" pullUpAction="pullUpAction">
+				
+	第一行<br/>
+	第一行<br/>
+	第一行<br/>
+	第一行<br/>
+	第一行<br/>
+	第一行<br/>
+	第一行<br/>
+	第一行<br/>
+	<ul class="ul" id="thelist"></ul>
+</wm-refresh>
+			
+
+</body>
+<script>
+var generatedCount = 0;
+
+function pullDownAction (scroller) {
+	setTimeout(function () {	
+		var el, li, i;
+		el = document.getElementById('thelist');
+		for (i=0; i<10; i++) {
+			li = document.createElement('li');
+			li.className = "li";
+			li.innerText = 'Generated row ' + (++generatedCount);
+			el.insertBefore(li, el.childNodes[0]);
+		}
+		scroller.refresh();		
+	}, 1000);	
+};
+
+
+function pullUpAction (scroller) {
+	setTimeout(function () {	
+		var el, li, i;
+		el = document.getElementById('thelist');
+		for (i=0; i<10; i++) {
+			li = document.createElement('li');
+			li.className = "li";
+			li.innerText = 'Generated row ' + (++generatedCount);
+			el.appendChild(li, el.childNodes[0]);
+		}
+		scroller.refresh();		
+	}, 1000);	
+};
+
+</script>
+</html>

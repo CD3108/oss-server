@@ -1,0 +1,25 @@
+<link rel="stylesheet" type="text/css" href="res/css/base.css"/>
+<link href="biz/css/project.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="res/css/ui-base.css"/>
+<link rel="stylesheet" type="text/css" href="res/css/ui-box.css"/>
+
+<script src="res/js/base/require/require.js"></script>
+<script src="res/js/require-config.js" ></script>
+<script src="biz/js/common/require-config.js" ></script>
+<!--注:由于html页面会被加密,不能使用双斜杠作为注释符号-->
+<script language="javascript">
+/*自定义增加每个页面需要执行的公共逻辑*/
+require(["domReady!","mobile","handlebars","util"],function(doc, Mobile, Handlebars) {
+	/*每个页面的back样式都需要执行回退*/
+	$(".c_navBar").find(".back").tap(function(){
+		Mobile.back();
+	});
+	
+	/*json转换str*/
+	Handlebars.registerHelper('retJson2Str', function(json, options) {
+		return JSON.stringify(json);
+	});
+}); 
+</script>
+
+

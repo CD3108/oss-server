@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>web UI 组件</title>
+	{%>template/common/Head.html%}
+</head>
+<body>
+<div class="c_navBar">
+	<div class="back">
+		<span class="e_ico-back"></span>
+		<div class="text">WmToolTipSrc</div>
+	</div>
+</div>
+<div class="m_content m_content-nofooter" id="content">
+	<div class="c_space"></div>
+	<div class="c_list">
+		<ul>
+			<li>
+				<div class="content">
+					<div class="main">
+						<div class="title">在 List 中的基准位置</div>
+					</div>
+					<div class="fn fn-2" id="ceshi">测试</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="c_title" id="duanluo">段落中的提示</div>
+	<div class="c_article">
+		池塘边的榕树上<br />
+		知了在声声叫着夏天<br />
+		操场边的秋千上<br />
+		只有蝴蝶停在上面<br />
+		黑板上老师的粉笔<br />
+		还在拼命<span class="e_green" >叽叽喳喳</span>写个不停<br />
+		等待着下课<br />
+		等待着放学<br />
+		等待游戏的童年
+	</div>
+	<div class="c_article">
+		池塘边的榕树上<br />
+		知了在声声叫着夏天<br />
+		操场边的秋千上<br />
+		只有蝴蝶停在上面<br />
+		黑板上老师的粉笔<br />
+		还在拼命<span class="e_green" id="jjzz">叽叽喳喳</span>写个不停<br />
+		等待着下课<br />
+		等待着放学<br />
+		等待游戏的童年
+	</div>
+</div>
+<div class="c_toolTip c_toolTip-arrowRight " id="tooltip_1" >
+	<div class="pointer"></div>
+	<div class="content" >
+		<div class="ico"><span class="e_ico-add "></span></div>
+		<div class="detail e_center">向左滑动显示更多套餐</div>
+		<div class="submit"><span class="e_button">我知道了</span></div>
+	</div>
+</div>
+<div class="c_toolTip c_toolTip-arrowLeft" id="tooltip_2" >
+	<div class="pointer"></div>
+	<div class="content" style="width:3rem;" >
+		<div class="detail">
+			标准的提示信息，描述这个工具究竟是干什么用的
+		</div>
+		<div class="submit"><span class="e_button">我知道了</span></div>
+	</div>
+</div>
+<div class="c_toolTip c_toolTip-positionBottom" id="tooltip_3" >
+	<div class="pointer"></div>
+	<div class="content" ></div>
+</div>
+
+<script type="text/javascript">
+
+function action(){
+	console.log("触发关闭事件");
+}
+
+require(["wmToolTip"],function(WmToolTip) {
+  	var tooltip_1 = new WmToolTip("tooltip_1");
+  	tooltip_1.setCloseAction("action");//关闭按钮事件
+  	//尽量在样式改变后设置
+  	tooltip_1.setBaseElement("ceshi");//依据该元素id或对象定位
+  	tooltip_1.show();//显示
+  	
+  	var tooltip_2 = new WmToolTip("tooltip_2");
+  	tooltip_2.setCloseAction("action");//关闭按钮事件
+  	tooltip_2.setBaseElement("duanluo");//依据该元素id或对象定位
+  	tooltip_2.show();//显示
+  	
+  	var tooltip_3 = new WmToolTip("tooltip_3");
+  	tooltip_3.setIcon("e_ico-swipe");//设置图标
+  	tooltip_3.setContent("自定义信息");//设置提示内容
+  	tooltip_3.setButtonText("follow me");//设置按钮文本
+  	tooltip_3.setCloseAction(function(){
+  		action();
+  	});//关闭按钮事件
+  	tooltip_3.setBaseElement("jjzz");//依据该元素id或对象定位
+  	tooltip_3.show();//显示
+// 	tooltip_3.hide();//隐藏
+// 	tooltip_3.remove();//移除(移除后将无法继续操作)
+});
+</script>
+</body>
+</html>

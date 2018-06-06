@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<config name="name" value="DisplayServer"/>
+	<!-- 配置为true之后。服务端修改后，需要将资源版本号也修改。再重新build，最后发布 -->
+	<config name="productMode" value="false"/>
+	<!-- 服务端资源版本号 -->
+	<config name="resourceVersion" value="2.0"/>
+	<!-- 客户端版本号 -->
+	<config name="clientVersion" value="2.0"/>
+	<!-- 客户端是否强制更新 -->
+	<config name="isForceUpdate" value="true"/>
+	<!-- 服务端应用编码 -->
+	<config name="encode" value="UTF-8"/>
+	<!-- 缓存类型,目前支持mem和jvm -->
+	<config name="cache" value="jvm"/>
+	<!-- 初始页 -->
+	<config name="indexPage" value="OssLogin"/>
+	<!-- 文件是否加密 -->
+	<config name="fileEncrypt" value="true"/>
+	<!-- 自定义异常管理器 -->	
+	<config name="exceptionHandler" value="com.ai.server.core.handle.IpuExceptionHandler"/>
+	<!-- 自定义Session管理器 -->
+	<config name="sessionManager" value="com.ai.server.core.session.IpuSessionManager"/>
+	<!-- 自定义安全管理器 -->
+	<config name="securityHandler" value="com.ai.server.core.security.IpuSecurityHandler"/>
+	<!-- 是否运行标签引擎 -->
+	<config name="isUseTag" value="true"/>
+	
+	<!--调用第三方接口地址-->
+	<config name="serverUrl" value="http://134.0.133.53:8080/AsiainfoRS-MIS"/>
+	<config name="osiUrl" value="http://133.128.14.152:8093/osi/"/>
+	<config name="osiUrlTest" value="http://localhost:8080/oss-i/"/>
+</configs>
+
+
+
+
+

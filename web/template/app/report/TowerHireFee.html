@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>list组件</title>
+	{%>template/common/Head2.html%}
+	<script type="text/javascript" src="biz/js/oss/report/TowerReportList.js"></script>
+</head>
+<body>
+
+<div class="c_navBar ubb ubc">
+	<div class="left">
+		<div class="back">
+			<span class="e_ico-back"></span>
+		</div>
+	</div>
+	<div class="center">
+		<div class="logo">
+			<span class="text" id="title-text">铁塔租用费对比</span>
+		</div>
+	</div>
+</div>
+
+<div class="m_content m_content-nofooter" id="content">
+	<div class="c_list" id="TowerList">
+		<div class="ub ub-f1 ulev-1 uinn ub-ac c-gra1 txtcolor">
+            <div class=" ub-ac ub-pc ub" style="width:25%">
+                月份
+            </div>
+            <div class=" ub-ac ub-pc ub" style="width:25%">
+                铁塔出费
+            </div>
+            <div class=" ub-ac ub-pc ub" style="width:25%">
+                联通预测
+            </div>
+            <div class=" ub-ac ub-pc ub" style="width:25%">
+                差额
+            </div>
+        </div>
+        	{%#dataList%}
+        		<div class="ub ub-f1 ulev-1 uinn ub-ac umh4 {%.style%}">
+	                <div class=" ub-ac ub-pc ub" style="width:25%">
+	                    {%.year_month%}
+	                </div>
+	                <div class=" ub-ac ub-pc ub" style="width:25%">
+	                     {%.tower_fee%}
+	                </div>
+	                <div class=" ub-ac ub-pc ub" style="width:25%">
+	                     {%.lt_fee%}
+	                </div>
+	                <div class=" ub-ac ub-pc ub" style="width:25%">
+	                     {%.ce%}
+	                </div>
+            	</div>
+        	{%/dataList%}
+           
+            
+	</div>
+</div>
+</body>
+</html>

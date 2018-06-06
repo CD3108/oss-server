@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>导航</title>
+	{%>template/common/Head.html%}
+	<script type="text/javascript" src="biz/js/index.js"></script>
+	<link href="biz/css/project.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="c_navBar">
+	<div class="center">
+		<div class="logo">
+			<span class="text">展示平台</span>
+		</div>
+	</div>
+</div>
+<wm-tabbar id="myTabbar">
+	<wm-tabbar-item label="插件展示" icon="e_ico-device">
+		{%>template/webapp/PluginIndex.html%}
+	</wm-tabbar-item>
+	<wm-tabbar-item label="标签组件" icon="e_ico-component-tag"  id="myTabbarItem">
+		{%>template/webapp/TagIndex.html%}
+	</wm-tabbar-item>
+	<wm-tabbar-item label="静态组件" icon="e_ico-component">
+		{%>template/webapp/UIIndex.html%}
+	</wm-tabbar-item>
+	<wm-tabbar-item label="更多展示" icon="e_ico-code">
+		{%>template/webapp/More.html%}
+	</wm-tabbar-item>
+	<wm-tabbar-item label="关于" icon="e_ico-about">
+		{%>template/webapp/Building.html%}
+	</wm-tabbar-item>
+</wm-tabbar>
+</body>
+</html>

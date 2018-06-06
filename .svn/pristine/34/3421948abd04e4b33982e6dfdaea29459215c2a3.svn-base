@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>音频</title>
+	{%>template/common/Head.html%}
+	<script type="text/javascript" src="biz/js/plugin/audio.js"></script>
+</head>
+<body>
+
+<div class="c_navBar">
+	<div class="left">
+		<div class="back">
+			<span class="e_ico-back"></span>
+			<span class="text">音频</span>
+		</div>
+	</div>
+</div>
+
+<div class="m_content m_content-nofooter">
+	<div class="c_title">录制语音</div>
+	<div class="c_list">
+		<ul>
+			<li>
+				<div class="content">
+					<div class="main">
+						<div class="title">录音功能</div>
+						<div class="info">弹出一个录音界面，可选择按住按钮后录音。</div>
+					</div>
+					<div class="fn fn-2" id="record">录制</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div id="hiddenContent" class="fn-hide">
+		<div class="c_title">播放语音</div>
+		<div class="c_list">
+			<ul>
+				<li>
+					<div class="content">
+						<div class="main">
+							<div class="title">简单的播放器</div>
+							<div class="info">弹出一个简单原生的播放界面(或不弹出)</div>
+						</div>
+						<div class="fn fn-2" id="play">播放</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="c_title">清空语音</div>
+		<div class="c_list">
+			<ul>
+				<li>
+					<div class="content">
+						<div class="main">
+							<div class="title">清空语音</div>
+							<div class="info">清除录制的语音文件</div>
+						</div>
+						<div class="fn fn-2" id="cleanAudioResource">清空</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+</body>
+</html>

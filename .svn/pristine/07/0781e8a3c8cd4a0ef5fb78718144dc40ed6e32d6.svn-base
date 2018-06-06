@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>web UI 组件</title>
+	{%>template/common/Head.html%}
+</head>
+<body>
+
+<div class="c_navBar">
+	<div class="back">
+		<span class="e_ico-back"></span>
+		<div class="text">WmDialogSrc</div>
+	</div>
+</div>
+
+<div class="m_content m_content-nofooter" id="content">
+	<div class="c_title">弹窗中可以放置任意组件以保证弹窗的多样性</div>
+	<div class="c_list">
+		<ul>
+			<li>
+				<div class="content">
+					<div class="main">
+						<div class="title">进度显示</div>
+					</div>
+					<div class="fn fn-2" id="testButton_1">测试</div>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<div class="main">
+						<div class="title">待选选项</div>
+					</div>
+					<div class="fn fn-2">测试</div>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<div class="main">
+						<div class="title">确认对话框</div>
+					</div>
+					<div class="fn fn-2">测试</div>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<div class="main">
+						<div class="title">数据展示</div>
+					</div>
+					<div class="fn fn-2">测试</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="c_dialog" id="testDialog">
+	<div class="wrapper">
+		<div class="title">
+			<div class="text">标题</div>
+			<a href="#nogo" class="close"></a>
+		</div>
+		<div class="content">
+			<div class="c_list">
+				<ul>
+					<li id="setTitleButton">
+						<div class="content">
+							<div class="main">
+								设置标题为 WADE-Mobile
+							</div>
+						</div>
+					</li>
+					<li id="setContentButton">
+						<div class="content">
+							<div class="main">
+								设置内容为一段 html
+							</div>
+						</div>
+					</li>
+					<li id="setContentByStrButton">
+						<div class="content">
+							<div class="main">
+								设置内容为字符串
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="submit">
+			<ul>
+				<li><span class="e_button e_button-cancel">取消</span></li>
+				<li><span class="e_button e_button-ok" id="btn">确定</span></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="lyric" class="fn-hide">
+	<div class="c_article">
+		池塘边的榕树上<br />
+		知了在声声叫着夏天<br />
+		操场边的秋千上<br />
+		只有蝴蝶停在上面<br />
+		黑板上老师的粉笔<br />
+		还在拼命叽叽喳喳写个不停<br />
+		等待着下课<br />
+		等待着放学<br />
+		等待游戏的童年
+	</div>
+</div>
+</body>
+<script>
+require(["wmDialog"], function(wmDialog) {
+	var testDialog = new wmDialog("testDialog");
+	//打开测试
+	$("#testButton_1").tap(function(){testDialog.show()})
+	//确定/取消事件测试
+	function testSubmitAction() { alert("提交成功！")}
+	function testCancelAction() { alert("惨了，要被取消了！")}
+	testDialog.submitAction(testSubmitAction,false);
+	testDialog.cancelAction(testCancelAction);
+	//设置标题
+	$("#setTitleButton").tap(function(){testDialog.setTitle("WADE-Mobile")});
+	//设置内容
+	$("#setContentButton").tap(function(){testDialog.setContent("lyric","html")});
+	$("#setContentByStrButton").tap(function(){testDialog.setContent("大家好，我是字符串")});
+	//设置关闭/打开动作
+	function closeAction() {
+		alert("弹出窗口被关闭了");
+	}
+	function openAction() {
+		alert("弹出窗口被打开了");
+	}
+	testDialog.setHideAction(closeAction);
+	testDialog.setShowAction(openAction);
+});
+</script>
+</html>

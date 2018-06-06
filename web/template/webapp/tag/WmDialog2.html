@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>web UI 组件</title>
+	{%>template/common/Head.html%}
+</head>
+<body>
+
+<div class="c_navBar">
+	<div class="back">
+		<span class="e_ico-back"></span>
+		<div class="text">WmDialog</div>
+	</div>
+</div>
+
+<div class="m_content m_content-nofooter" id="content">
+	<div class="c_title">弹窗中可以放置任意组件以保证弹窗的多样性</div>
+	<div class="c_list">
+		<ul>
+			<li>
+				<div class="content">
+					<div class="main">
+						<div class="title">进度显示</div>
+					</div>
+					<div class="fn fn-2" id="testButton_1">测试</div>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<div class="main">
+						<div class="title">待选选项</div>
+					</div>
+					<div class="fn fn-2">测试</div>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<div class="main">
+						<div class="title">确认对话框</div>
+					</div>
+					<div class="fn fn-2">测试</div>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<div class="main">
+						<div class="title">数据展示</div>
+					</div>
+					<div class="fn fn-2">测试</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<wm-dialog2 id="testDialog" title="弹弹弹" positiveAction="submit,openAction,false" negativeAction="close,closeAction" contentview="outer-div,html">
+   <div id="outer-div">
+		I am an outer div;
+	</div>
+</wm-dialog2>
+
+
+</body>
+<script>
+	function testSubmitAction() { alert("提交成功！")}
+	function testCancelAction() { alert("惨了，要被取消了！")}
+	//设置关闭/打开动作
+	function closeAction() {
+		alert("弹出窗口被关闭了");
+	}
+	function openAction() {
+		alert("弹出窗口被打开了");
+	}
+	require(['util'], function() {
+		$("#testButton_1").tap(function(){
+			var dialog2 = WmWebUI.select("testDialog");
+			dialog2.show()
+		});
+	});
+</script>
+</html>

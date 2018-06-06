@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+<title>文件</title>
+{%>template/common/Head.html%}
+<script type="text/javascript" src="biz/js/plugin/file/file-detail.js"></script>
+</head>
+<body>
+
+<div class="c_navBar">
+	<div class="left">
+		<div class="back">
+			<span class="e_ico-back"></span>
+			<span class="text">文件详细</span>
+		</div>
+	</div>
+</div>
+
+<div class="m_content m_content-nofooter">
+	<div class="c_editor l_mt">
+<textarea id="content" ></textarea>
+	</div>
+	<div class="c_submit" id="save" >
+		<button class="e_button-ok">保存并关闭</button>
+	</div>
+</div>
+
+<input type="hidden" id="isSdcard" value="{%isSdcard%}" >
+<input type="hidden" id="fileName" value="{%fileName%}" >
+</body>
+</html>

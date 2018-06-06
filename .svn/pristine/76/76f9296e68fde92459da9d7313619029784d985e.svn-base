@@ -1,0 +1,50 @@
+<ul id="ui-menu">
+	<li action="Button">
+		<div class="pic"><span class="e_ico-ui-button"></span></div>
+		<div class="text">按钮</div>
+	</li>
+	<li action="Form">
+		<div class="pic"><span class="e_ico-ui-form"></span></div>
+		<div class="text">表单元素</div>
+	</li>
+	<li action="Icon">
+		<div class="pic"><span class="e_ico-ui-icon"></span></div>
+		<div class="text">图标</div>
+	</li>
+	<li action="List">
+		<div class="pic"><span class="e_ico-ui-list"></span></div>
+		<div class="text">列表</div>
+	</li>
+	<li action="PicList">
+		<div class="pic"><span class="e_ico-ui-picList"></span></div>
+		<div class="text">图片列表</div>
+	</li>
+	<li action="Popup">
+		<div class="pic"><span class="e_ico-ui-popup"></span></div>
+		<div class="text">弹出窗口</div>
+	</li>
+	<li action="Progress">
+		<div class="pic"><span class="e_ico-ui-progress"></span></div>
+		<div class="text">进度条</div>
+	</li>
+	<li action="Slider">
+		<div class="pic"><span class="e_ico-ui-slide"></span></div>
+		<div class="text">幻灯</div>
+	</li>
+	<li action="Tab">
+		<div class="pic"><span class="e_ico-ui-tab"></span></div>
+		<div class="text">分页标签</div>
+	</li>
+	<li action="Tip">
+		<div class="pic"><span class="e_ico-ui-tip"></span></div>
+		<div class="text">提示</div>
+	</li>
+	<li action="Gesture">
+		<div class="pic"><span class="e_ico-ui-tip"></span></div>
+		<div class="text">手势1</div>
+	</li>
+	<li action="HammerDemo">
+		<div class="pic"><span class="e_ico-ui-tip"></span></div>
+		<div class="text">手势2</div>
+	</li>
+</ul>

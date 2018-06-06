@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html class="s_bs">
+<head>
+<title>增删改查-报表演示-新增</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<link rel="apple-touch-icon" href="touch-icon-iphone.png" />
+<link rel="apple-touch-icon-precomposed" href="touch-icon-iphone.png" />
+<style>
+</style>
+</head>
+<body>
+<div class="c_navBar">
+	<div class="left">
+		<div class="back">
+			<span class="e_ico-back"></span>
+			<span class="text">新增报表</span>
+		</div>
+	</div>
+	<div class="right">
+		<button class="ui-toolbar-btn fn-right" id="save">保存</button>
+	</div>
+</div>
+
+<div class="m_content bottom-middle" id="content">
+<div class="query-wrap">
+	<div class="c_title">基本信息</div>
+	<div class="c_list">
+		<ul>
+			<li>
+				<div class="content">
+					<div class="label">客户名称：</div>
+					<div class="value"><input type="text" placeholder="客户名称" id="" maxlength="30" value=""/></div>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<div class="label">业务类型：</div>
+					<div class="value">
+						<select name="province" >
+							<option value="0">集团客户</option>
+							<option value="1">个人客户</option>
+						</select>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<div class="label">客户状态：</div>
+					<div class="value"><input type="text" placeholder="客户名称" id="" maxlength="30" value=""/></div>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<div class="label">证件类型：</div>
+					<div class="value">
+						<select name="province" >
+							<option value="0">集团客户</option>
+							<option value="1">个人客户</option>
+						</select>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<div class="label">证件号码：</div>
+					<div class="value"><input type="text" placeholder="证件号码" id="" maxlength="30" value=""/></div>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<div class="label">客户地址：</div>
+					<div class="value"><input type="text" placeholder="客户地址" id="" maxlength="30" value=""/></div>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<div class="label">主电话号码：</div>
+					<div class="value"><input type="text" placeholder="主电话号码" id="" maxlength="30" value=""/></div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="c_title">综合信息</div>
+	<div class="c_list">
+		<ul>
+			<li>
+				<div class="content">
+					<div class="label">客户经理：</div>
+					<div class="value"><input type="text" placeholder="客户经理" id="" maxlength="30" value=""/></div>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<div class="label">父客户：</div>
+					<div class="value"><input type="text" placeholder="父客户" id="" maxlength="30" value=""/></div>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<div class="label">发展渠道 ：</div>
+					<div class="value"><input type="text" placeholder="发展渠道 " id="" maxlength="30" value=""/></div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="c_submit">
+		<ul>
+			<li><button class="e_button-ok save-btn">保存</button></li>
+			<li><button class="e_button-cancel back-btn">返回</button></li>
+		</ul>
+	</div>
+</div>	
+</div>
+
+</body>
+{%>template/common/Head.html%}
+<script type="text/javascript" src="biz/js/more/scene/demo/DemoAdd.js"></script>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+<title>数据存储</title>
+{%>template/common/Head.html%}
+<script type="text/javascript" src="biz/js/plugin/storage.js"></script>
+</head>
+<body>
+
+<div class="c_navBar">
+	<div class="left">
+		<div class="back">
+			<span class="e_ico-back"></span>
+			<span class="text">数据存储</span>
+		</div>
+	</div>
+</div>
+
+<div class="m_content m_content-nofooter" id="content" >
+	<div class="c_title">
+		<div class="text">临时数据（退出应用后失效）</div>
+		<div class="fn"><div class="e_button e_button-singleIco" id="add1"><span class="e_ico-add"></span></div></div>
+	</div>
+	<div class="c_nodata" id="empty0" >
+		<div class="wrapper">
+			<div class="e_ico-tip"></div>
+			<div class="text">没有数据，请添加</div>
+		</div>
+	</div>
+	<div class="c_list fn-hide" id="list0">
+		<ul>
+		</ul>
+	</div>
+	
+	<div class="c_title">
+		<div class="text">本地数据（退出应用后依然存在）</div>
+		<div class="fn"><div class="e_button e_button-singleIco" id="add2"><span class="e_ico-add"></span></div></div>
+	</div>
+	<div class="c_nodata" id="empty1" >
+		<div class="wrapper">
+			<div class="e_ico-tip"></div>
+			<div class="text">没有数据，请添加</div>
+		</div>
+	</div>
+	<div class="c_list fn-hide" id="list1">
+		<ul>
+		</ul>
+	</div>
+	
+	<div class="c_submit">
+		<ul>
+			<li><button class="e_button-red" id="close">退出本应用</button></li>
+		</ul>
+	</div>
+</div>
+
+<div class="c_popup" id="editPopup">
+	<div class="wrapper">
+		<div class="title">
+			<div class="text">添加数据</div>
+		</div>
+		<div class="content">
+			<div class="c_list">
+				<ul>
+					<li>
+						<div class="dialog">
+							<div class="content">
+								<div class="label label-4">数据内容</div>
+								<div class="value"><input type="text" placeholder="请填写" id="contentVaule" /></div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="btn">
+			<button class="e_button e_button-cancel" id="cancel">取消</button>
+			<button class="e_button e_button-ok" id="confirm">确定</button>
+		</div>
+	</div>
+	<div class="e_space"></div>
+</div>
+</body>
+</html>

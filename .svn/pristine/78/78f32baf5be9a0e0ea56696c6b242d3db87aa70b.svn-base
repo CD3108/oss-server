@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+<title>导航</title>
+{%>template/common/Head.html%}
+<script type="text/javascript" src="biz/js/plugin/basic.js"></script>
+</head>
+<body>
+
+<div class="c_navBar">
+	<div class="left">
+		<div class="back">
+			<span class="e_ico-back"></span>
+			<span class="text">基础</span>
+		</div>
+	</div>
+</div>
+
+<div class="m_content m_content-nofooter" id="content">
+<div>
+	<div class="c_title">通讯</div>
+	<div class="c_list">
+		<ul>
+			<li>
+				<div class="content">
+					<div class="label">对方手机号码</div>
+					<div class="value"><input type="text" id="num" value="10086"/></div>
+				</div>
+			</li>
+			<li>
+				<div class="content content-vertical">
+					<div class="label">短信内容</div>
+					<div class="value"><textarea id="msg" style="height:1rem;">湖南移动开展客户回馈：现在回复“A”，关注湖南移动飞信公众帐号，就有机会获赠30M手机上网流量！回复仅收普通短信费，获赠流量下月15日前送达 回复QX不再接收【湖南移动】</textarea></div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="c_submit">
+		<ul>
+			<li><button class="e_button-cancel" id="call">打电话</button></li>
+			<li><button class="e_button-ok" id="sms">发短信</button></li>
+		</ul>
+	</div>
+	<div class="c_title">提醒方式</div>
+	<div class="c_list">
+		<ul>
+			<li>
+				<div class="content">
+					<div class="main">振动</div>
+					<div class="fn fn-2" id="shock">测试</div>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<div class="main">电话铃声</div>
+					<div class="fn fn-2" id="beep">测试</div>
+				</div>
+			</li>
+		</ul>
+	</div>	
+	<div class="c_title" >获取系统信息</div>
+	<div class="c_nodata" id="info_space">
+		<div class="wrapper" id="getInfo">
+			<button class="e_button-blue">请点击获取</button>
+			<div class="text">获取 IMEI / MAC / IP 信息</div>
+		</div>
+	</div>
+	<div class="c_list fn-hide" id="info_list">
+		<ul>
+			<li>
+				<div class="content">
+					<div class="main" id="info">
+						<div class="title">Android版本(点击获取数据)</div>
+						<div class="content info">
+							MAC：<span>暂未获取数据</span><br/>
+							IP：<span>暂未获取数据</span><br/>
+							IMEI：<span>暂未获取数据</span><br/>
+							IMSI：<span>暂未获取数据</span><br/>
+							MODEL：<span>暂未获取数据</span><br/>
+							UUID：<span>暂未获取数据</span><br/>
+							MANUFACTURER：<span>暂未获取数据</span><br/>
+							BRAND：<span>暂未获取数据</span><br/>
+							SDKVERSION：<span>暂未获取数据</span><br/>
+							SIMNUMBER：<span>暂未获取数据</span><br/>
+							TIMEZONEID：<span>暂未获取数据</span><br/>
+							PRODUCTNAME：<span>暂未获取数据</span><br/>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="e_space"></div>
+</div>
+</div>
+</body>
+</html>

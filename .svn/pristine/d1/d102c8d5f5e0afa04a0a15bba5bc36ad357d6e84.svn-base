@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+<title>Hammer</title>
+{%>template/common/Head.html%}
+<script type="text/javascript" src="biz/js/plugin/hammer.js"></script>
+</head>
+<style type="text/css">
+.hammer-wrap {
+	text-align: center;
+	margin-top: 0.22rem;
+}
+.hammer-wrap .hammer-icon {
+	width: 1rem;
+}
+.hammer-wrap h1 {
+	margin-top: 0.22rem;
+}
+.hammer-wrap h2 {
+	font-weight: normal;
+    line-height: 1.4;
+}
+.demo-box-wrap {
+  border: 1px solid #333;
+  /* font-family: sans-serif; */
+  background: #333;
+  text-align: center;
+  color: white;
+  width: 302px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3em;
+}
+.demo-box-wrap .demo-box {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+.demo-box-wrap .demo-box > img {
+  height: 400px;
+  width: 1900px;
+  position: absolute;
+  margin-left: -950px;
+  display: none;
+  pointer-events: none;
+  margin-top: -220px;
+  left: 50%;
+  top: 50%;
+  max-width: none;
+}
+.demo-box-wrap h2 {
+  pointer-events: none;
+  color: white;
+}
+.demo-box-wrap .demo-box img.active {
+  display: block;
+}
+.demo-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(70, 70, 70, 0.8);
+    display: none;
+}
+.demo-overlay img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -25px;
+    margin-top: -25px;
+}
+</style>
+<body>
+<div class="c_navBar">
+	<div class="left">
+		<div class="back">
+			<span class="e_ico-back"></span><span class="text">手势</span>
+		</div>
+	</div>
+</div>
+
+<div class="m_content" id="content">
+<div>
+	<div class="hammer-wrap">
+		<img src="biz/img/plugin/hammer/tap.png" class="hammer-icon">
+		<h1>Try it!</h1>
+		<h2 class="desc">你可以尝试单点图片，实现图片的切换</h2>
+		<div class="row">
+			<div class="column large-4 medium-6 small-12">
+				<div class="demo-box-wrap">
+					<h2>单点</h2>
+					<div class="demo-box tap" style="touch-action: pan-y; -webkit-user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+						<img class="active" src="biz/img/plugin/hammer/pano_1.jpg">
+						<img src="biz/img/plugin/hammer/pano_2.jpg">
+						<img src="biz/img/plugin/hammer/pano_3.jpg">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="hammer-wrap">
+		<img src="biz/img/plugin/hammer/press.png" class="hammer-icon">
+		<h1>Try it!</h1>
+		<h2 class="desc">您可以尝试按住图片，选中图片/取消选中</h2>
+		<div class="row">
+			<div class="column large-4 medium-6 small-12">
+				<div class="demo-box-wrap">
+				  	<h2>按住</h2>
+					<div class="demo-box press" style="touch-action: pan-y; -webkit-user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+						<img class="active" src="biz/img/plugin/hammer/pano_1.jpg">
+					 	<div class="demo-overlay">
+							<img src="biz/img/plugin/hammer/circle-check.svg">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="hammer-wrap">
+		<img src="biz/img/plugin/hammer/pan.png" class="hammer-icon">
+		<h1>Try it!</h1>
+		<h2 class="desc">您可以尝试平移图片，查看图片更多</h2>
+		<div class="row">
+			<div class="column large-4 medium-6 small-12">
+				<div class="demo-box-wrap">
+					<h2>平移</h2>
+					<div class="demo-box pan" style="touch-action: pan-y; -webkit-user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+						<img class="active" src="biz/img/plugin/hammer/pano_1.jpg">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="hammer-wrap">
+		<img src="biz/img/plugin/hammer/swipe.png" class="hammer-icon">
+		<h1>Try it!</h1>
+		<h2 class="desc">您可以尝试左右滑动，实现图片的切换</h2>
+		<div class="row">
+			<div class="column large-4 medium-6 small-12">
+				<div class="demo-box-wrap">
+					<h2>滑动</h2>
+					<div class="demo-box swipe" style="touch-action: pan-y; -webkit-user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+						<img class="active" src="biz/img/plugin/hammer/pano_1.jpg">
+						<img src="biz/img/plugin/hammer/pano_2.jpg">
+						<img src="biz/img/plugin/hammer/pano_3.jpg">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="hammer-wrap">
+		<img src="biz/img/plugin/hammer/rotate.png" class="hammer-icon">
+		<h1>Try it!</h1>
+		<h2 class="desc">您可以尝试旋转，实现图片的旋转</h2>
+		<div class="row">
+			<div class="column large-4 medium-6 small-12">
+				<div class="demo-box-wrap">
+					<h2>旋转</h2>
+					<div class="demo-box rotate" style="touch-action: none; -webkit-user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+						<img class="active" src="biz/img/plugin/hammer/pano_1.jpg" style="transform: rotate(-2deg);">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="hammer-wrap">
+		<img src="biz/img/plugin/hammer/pinch.png" class="hammer-icon">
+		<h1>Try it!</h1>
+		<h2 class="desc">您可以尝试捏放，实现图片的放大/缩小</h2>
+		<div class="row">
+			<div class="column large-4 medium-6 small-12">
+				<div class="demo-box-wrap">
+					<h2>捏放</h2>
+					<div class="demo-box pinch" style="touch-action: none; -webkit-user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+						<img class="active" src="biz/img/plugin/hammer/pano_1.jpg" style="width: 2269.85px; margin-left: -1134.93px; height: 477.864px; margin-top: -262.825px;">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</body>
+</html>

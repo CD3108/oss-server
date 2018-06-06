@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+<title>导航</title> {%>template/common/Head2.html%}
+<script type="text/javascript" src="biz/js/oss/Main.js"></script>
+<link href="biz/css/project.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div class="c_navBar ubb ubc" id="title1">
+		<div class="center ub ub-pc ub-ac">
+			<div class="logo-icon ub-img1"></div>
+		</div>
+	</div>
+	<div class="c_navBar ubb ubc uhide" id="title2">
+		<div class="center">
+			<div class="logo">
+				<span class="text" id="title-text">报表查询</span>
+			</div>
+		</div>
+	</div>
+
+
+	<wm-tabbar id="myTabbar"> <wm-tabbar-item label="首页"
+		icon="e_ico-device">
+	{%>template/app/TabbarItem1.html%} </wm-tabbar-item> <wm-tabbar-item label="报表查询"
+		icon="e_ico-ui-chart">
+	{%>template/app/TabbarItem2.html%} </wm-tabbar-item> <wm-tabbar-item label="工作平台"
+		icon="e_ico-position">
+	{%>template/app/TabbarItem3.html%} </wm-tabbar-item> <wm-tabbar-item label="我的"
+		icon="e_ico-ui-list">
+	{%>template/app/TabbarItem4.html%} </wm-tabbar-item> </wm-tabbar>
+
+</body>
+</html>

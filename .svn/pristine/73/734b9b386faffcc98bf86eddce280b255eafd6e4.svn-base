@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>list组件</title>
+	{%>template/common/Head2.html%}
+	<script type="text/javascript" src="biz/js/oss/report/ConfirmResNum.js"></script>
+</head>
+<body>
+
+<div class="c_navBar ubb ubc">
+	<div class="left">
+		<div class="back">
+			<span class="e_ico-back"></span>
+		</div>
+	</div>
+	<div class="center">
+		<div class="logo">
+			<span class="text" id="title-text">确定资源量</span>
+		</div>
+	</div>
+</div>
+
+<div class="m_content m_content-nofooter" >
+	<div class="c_tab"  id="tab1">
+		<div class="title" style="margin:0.1rem">
+			<ul>
+				<li class="on">铁塔总数</li>
+				<li>独享数量</li>
+				<li>两家共享</li>
+				<li>三家共享</li>
+			</ul>
+		</div>
+		<div class="pages">
+			<div class="page">
+				{%>template/app/report/TowerTable1.html%}
+			</div><!-- page1-->
+			<div class="page">
+				{%>template/app/report/TowerTable2.html%}
+			</div><!-- page2-->
+			<div class="page">
+				{%>template/app/report/TowerTable3.html%}
+			</div><!-- page3-->
+			<div class="page">
+				{%>template/app/report/TowerTable4.html%}
+			</div><!-- page4-->
+		</div>
+	</div>
+	
+</div>
+</body>
+</html>

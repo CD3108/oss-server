@@ -1,0 +1,212 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport"
+	content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+<title>WM-Switch演示</title>
+<link href="res/css/base.css" rel="stylesheet" type="text/css" />
+<script src="res/js/base/require.js"></script>
+<script src="res/js/require-config.js"></script>
+</head>
+<body>
+	<div class="value">
+		<span class="e_switch e_switch-on" id="TestSwitchID1"> <span
+			class="e_switchOn">开</span> <span class="e_switchOff">关</span> <span
+			class="e_switchBar" style="transform: translateX(-100%)"></span> <input
+			type="hidden" value="false">
+		</span>
+	</div>
+	<script>
+		require([ "iScroll", "wmSwitch" ], function(iScroll, wmSwitch) {
+			var obj = new wmSwitch("TestSwitchID1");
+			var i = 0;
+			obj.setOnAction(function() {
+				console.log('开')
+			});
+			obj.setOffAction(function() {
+				console.log('关')
+			});
+			obj.setChangeAction(function() {
+				console.log('变化')
+			});
+			obj.isEnable(false);
+			obj.create();
+		});
+	</script>
+	<br />
+	<br />
+	<br />
+	<div class="value">
+		<span class="e_switch e_switch-on" id="TestSwitchID2"> <span
+			class="e_switchOn">开</span> <span class="e_switchOff">关</span> <span
+			class="e_switchBar" style=""></span> <input type="hidden"
+			value="true">
+		</span>
+	</div>
+	<script>
+		require([ "iScroll", "wmSwitch" ], function(iScroll, wmSwitch) {
+			var obj = new wmSwitch("TestSwitchID2");
+			var i = 0;
+			obj.setOnAction(function() {
+				console.log('开2')
+			});
+			obj.setOffAction(function() {
+				console.log('关2')
+			});
+			obj.setChangeAction(function() {
+				console.log('变化2')
+			});
+			obj.isEnable(true);
+			obj.create();
+		});
+	</script>
+
+
+	<br />
+	<br />
+	<br />
+	<div class="value">
+		<span class="e_switch e_switch-on" id="TestSwitchID3"> <span
+			class="e_switchOn">开</span> <span class="e_switchOff">关</span> <span
+			class="e_switchBar" style="transform: translateX(-100%)"></span> <input
+			type="hidden" value="false">
+		</span>
+	</div>
+	<script>
+		require([ "iScroll", "wmSwitch"], function(iScroll, wmSwitch) {
+			var obj = new wmSwitch("TestSwitchID3");
+			var i = 0;
+			obj.setOnAction(function() {
+				console.log('开2')
+			});
+			obj.setOffAction(function() {
+				console.log('Off')
+			});
+			obj.setChangeAction(function() {
+				console.log('onChange')
+			});
+			obj.isEnable(true);
+			obj.create();
+		});
+	</script>
+
+
+	<br />
+	<br />
+	<br />
+	<div class="value">
+		<span class="e_switch e_switch-on" id="TestSwitchID4"> <span
+			class="e_switchOn">On</span> <span class="e_switchOff">Off</span> <span
+			class="e_switchBar" style=""></span> <input type="hidden"
+			value="true">
+		</span>
+	</div>
+	<script>
+		require([ "iScroll", "wmSwitch"], function(iScroll, wmSwitch) {
+			var obj = new wmSwitch("TestSwitchID4");
+			var i = 0;
+			obj.setOnAction(function() {
+				console.log('On')
+			});
+			obj.setOffAction(function() {
+				console.log('Off')
+			});
+			obj.setChangeAction(function() {
+				console.log('变化2')
+			});
+			obj.isEnable(false);
+			obj.create();
+		});
+	</script>
+
+
+	<br />
+	<br />
+	<br />
+	<div class="value">
+		<span class="e_switch e_switch-on" id="TestSwitchID5"> <span
+			class="e_switchOn">On</span> <span class="e_switchOff">Off</span> <span
+			class="e_switchBar" style=""></span> <input type="hidden"
+			value="true">
+		</span>
+	</div>
+	<script>
+		require([ "iScroll", "wmSwitch"], function(iScroll, wmSwitch) {
+			var obj = new wmSwitch("TestSwitchID5");
+			var i = 0;
+			obj.setOnAction(function() {
+				console.log('On')
+			});
+			obj.setOffAction(function() {
+				console.log('Off')
+			});
+			obj.setChangeAction(function() {
+				console.log('onChange')
+			});
+			obj.isEnable(true);
+			obj.create();
+		});
+	</script>
+
+
+	<br />
+	<br />
+	<br />
+	<div class="value">
+		<span class="e_switch e_switch-on" id="TestSwitchID6"> <span
+			class="e_switchOn">On</span> <span class="e_switchOff">Off</span> <span
+			class="e_switchBar" style="transform: translateX(-100%)"></span> <input
+			type="hidden" value="false">
+		</span>
+	</div>
+	<script>
+		require([ "iScroll", "wmSwitch" ], function(iScroll, wmSwitch) {
+			var obj = new wmSwitch("TestSwitchID6");
+			var i = 0;
+			obj.setOnAction(function() {
+				console.log('On')
+			});
+			obj.setOffAction(function() {
+				console.log('Off')
+			});
+			obj.setChangeAction(function() {
+				console.log('onChange')
+			});
+			obj.isEnable(true);
+			obj.create();
+		});
+	</script>
+
+
+	<br />
+	<br />
+	<br />
+	<div class="value">
+		<span class="e_switch e_switch-on" id="TestSwitchID7"> <span
+			class="e_switchOn">On</span> <span class="e_switchOff">Off</span> <span
+			class="e_switchBar" style=""></span> <input type="hidden"
+			value="true">
+		</span>
+	</div>
+	<script>
+		require([ "iScroll", "wmSwitch" ], function(iScroll, wmSwitch) {
+			var obj = new wmSwitch("TestSwitchID7");
+			var i = 0;
+			obj.setOnAction(function() {
+				console.log('On')
+			});
+			obj.setOffAction(function() {
+				console.log('Off')
+			});
+			obj.setChangeAction(function() {
+				console.log('onChange')
+			});
+			obj.isEnable(false);
+			obj.create();
+		});
+	</script>
+
+
+</body>
+</html>

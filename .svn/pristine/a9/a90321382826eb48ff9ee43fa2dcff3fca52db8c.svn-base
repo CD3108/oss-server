@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>推送展示</title>
+	{%>template/common/Head.html%}
+	<script type="text/javascript" src="biz/js/more/push/PushChat.js"></script>
+</head>
+<body>
+
+<div class="c_navBar">
+	<div class="left">
+		<div class="back">
+			<span class="e_ico-back"></span>
+			<span class="text">推送</span>
+		</div>
+	</div>
+</div>
+
+<div class="c_list">
+	<ul>
+		<li>
+			<div class="content">
+				<div class="value"><input type="text" class="e_left" id="account" placeholder="昵称" /></div>
+				<div class="fn fn-2" id="register">连接</div>
+			</div>
+		</li>
+	</ul>
+</div>
+<div class="c_scroll c_scroll-mix c_scroll-fixed l_padding" style="top:1.22rem; bottom:0;" id="content">
+</div>
+</body>
+</html>

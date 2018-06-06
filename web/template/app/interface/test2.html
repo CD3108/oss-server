@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>导航</title>
+	{%>template/common/Head.html%}
+	<script type="text/javascript" src="biz/js/oss/if/test2.js"></script>
+	<link href="biz/css/project.css" rel="stylesheet" type="text/css" />
+	<link href="res/css/ui-base.css" rel="stylesheet" type="text/css" />
+	<link href="res/css/ui-box.css" rel="stylesheet" type="text/css" />
+	
+</head>
+<body>
+<div class="c_navBar">
+	<div class="left">
+		<div class="back">
+			<span class="e_ico-back"></span>
+		</div>
+	</div>
+	<div class="center">
+		<div class="logo">
+			<span class="text">测试本地数据库</span>
+		</div>
+	</div>
+</div>
+<div class="m_content m_content-nofooter" id="content">
+	<div class="c_title">数据库操作：{%hello%}</div>
+	<div class="c_submit">
+		<ul>
+			<li><button class="e_button-ok" id="create">建表</button></li>
+			<li><button class="e_button-red" id="drop">删表</button></li>
+			<li><button class="e_button-blue" id="insert">➕</button></li>
+		</ul>
+	</div>
+	
+	<div class="c_title"><p></p></div>
+	<div class="c_table">
+		<table>
+			<tr>
+				<th>姓名</th>
+				<th>年龄</th>
+				<th>性别</th>
+				<th>操作</th>
+			</tr>
+			<tbody id="tbody">
+			</tbody>
+		</table>
+	</div>
+	
+</div>
+
+</body>
+</html>

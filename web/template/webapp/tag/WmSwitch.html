@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>WM-Switch演示</title>
+	<style type="text/css">
+		#consoleMenu  ul {
+			margin-bottom: 0.1rem;
+		}
+	</style>
+	{%>template/common/Head.html%}
+	<script type="text/javascript" src="biz/js/tag/WmSwitch.js"></script>
+</head>
+<body>
+<div class="c_navBar">
+	<div class="left">
+		<div class="back">
+			<span class="e_ico-back"></span>
+			<span class="text">WmSwitch</span>
+		</div>
+	</div>
+</div>
+<div class="m_content m_content-nofooter" id="content" style="position:absolute; top:0.7rem; bottom:0rem; left:0; right:0; ">
+	<div>
+		<div class="c_list">
+			<ul>
+				<li style="text-align:center;padding-top: 0.1rem;padding-bottom: 0.1rem;">
+					<wm-switch id="mySwitch" value="false" label="开|关">
+					</wm-switch>
+				</li>
+				<li ontap>
+					<div class="content">
+						<div class="main">
+							<div class="title">描述：</div>
+							<div class="info"></div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="c_title">控制台</div>
+		<div class="c_submit" id="consoleMenu" >
+			<ul>
+				<li><button class="e_button-ok" id="testSwitch">打开开关</button></li>
+			</ul>
+			<ul>
+				<li><button class="e_button-ok" id="testSetDisabled">禁用开关</button></li>
+			</ul>
+			<ul>
+				<li><button class="e_button-ok" id="testSetLable">设置文本</button></li>
+			</ul>
+			<ul>
+				<li><button class="e_button-ok" id="testSetAction">设置事件</button></li>
+			</ul>
+		</div>
+		<div class="e_space"></div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datas>
+    
+    <!-- oss登录 -->
+    <action name="OssLogin.login" class="com.ai.server.core.bean.OssLogin" method="login" verify="false"></action>
+    
+    
+    <!-- 对接第三方通用接口 -->
+    
+    <action name="InterfaceBean.commonInterface" class="com.ai.server.core.bean.InterfaceBean" method="commonInterface" verify="true"></action>
+  
+    <!--初始化验证码 -->
+    <action name="LoginBean.initVerifyCode" class="com.ai.server.bean.LoginBean" method="initVerifyCode" verify="false"></action>
+	<!-- 登陆 -->
+	<action name="LoginBean.login" class="com.ai.server.bean.LoginBean" method="login" verify="false"  encrypt="false"></action>
+	<!-- 刷新验证码 -->
+	<action name="LoginBean.refreshVerifyCode" class="com.ai.server.bean.LoginBean" method="refreshVerifyCode" verify="false"></action>
+	
+	<!-- 获取工单信息 -->
+	<action name="OrderBean.getOrderInfos" class="com.ai.server.bean.order.OrderBean" method="getOrderInfos" verify="false"></action>
+	<action name="TowerBean.getMainPageInfos" class="com.ai.server.bean.tower.TowerBean" method="getMainPageInfos" verify="false"></action>
+	<action name="TowerBean.getTowerHireFeeAll" class="com.ai.server.bean.tower.TowerBean" method="getTowerHireFeeAll" verify="false"></action>
+	<action name="TowerBean.getTowerNumAll" class="com.ai.server.bean.tower.TowerBean" method="getTowerNumAll" verify="false"></action>
+	
+	<action name="AntennaBean.getAntennaNumAll" class="com.ai.server.bean.alarm.AntennaBean" method="getAntennaNumAll" verify="false"></action>
+	<action name="AlarmBean.getAlarmRealTime" class="com.ai.server.bean.alarm.AlarmBean" method="getAntennaNumAll" verify="false"></action>
+	<!-- 铁塔报表 -->
+	<action name="TowerBean.getConfirmResourceNum" class="com.ai.server.bean.tower.TowerBean" method="getConfirmResourceNum" verify="false"></action>
+    <action name="TowerBean.getResourceAdapter" class="com.ai.server.bean.tower.TowerBean" method="getResourceAdapter" verify="false"></action>
+
+    <action name="OrderBean.getMonitorDayReport" class="com.ai.server.bean.order.OrderBean" method="getMonitorDayReport" verify="false"></action>
+    <action name="TowerBean.getTowerProductRate" class="com.ai.server.bean.tower.TowerBean" method="getTowerProductRate" verify="false"></action>
+    <action name="TowerBean.getTowerFeesRate" class="com.ai.server.bean.tower.TowerBean" method="getTowerFeesRate" verify="false"></action>
+    <action name="TowerBean.getTowerImportResSuccess" class="com.ai.server.bean.tower.TowerBean" method="getTowerImportResSuccess" verify="false"></action>
+    <action name="TowerBean.getBaseStationRate" class="com.ai.server.bean.tower.TowerBean" method="getBaseStationRate" verify="false"></action>
+	<action name="TowerBean.getBaseRoomRate" class="com.ai.server.bean.tower.TowerBean" method="getBaseRoomRate" verify="false"></action>
+    <action name="TowerBean.getTowerNumber" class="com.ai.server.bean.tower.TowerBean" method="getTowerNumber" verify="false"></action>
+    <action name="TowerBean.getRoomNum" class="com.ai.server.bean.tower.TowerBean" method="getRoomNum" verify="false"></action>
+    <!-- 资源报表 -->
+    <action name="ResBean.getResSurvey" class="com.ai.server.bean.res.ResBean" method="getResSurvey" verify="false"></action>
+    <action name="ResBean.getAntennaAndTransmission" class="com.ai.server.bean.res.ResBean" method="getAntennaAndTransmission" verify="false"></action>
+    <action name="ResBean.getNetworkRing" class="com.ai.server.bean.res.ResBean" method="getNetworkRing" verify="false"></action>
+    
+    <!-- 告警报表 -->
+    <action name="AlarmBean.getAlarmTrueTime" class="com.ai.server.bean.alarm.AlarmBean" method="getAlarmTrueTime" verify="false"></action>
+    <action name="AlarmBean.getTrueTimeOutVillge" class="com.ai.server.bean.alarm.AlarmBean" method="getTrueTimeOutVillge" verify="false"></action>
+    
+    
+
+    <!-- **********演示程序开始********* --> 
+    <!-- 上传下载 -->
+	<action name="UploadDownloadBean.download" class="com.ai.server.bean.demo.UploadDownloadBean" method="download" verify="false"></action>
+	<action name="UploadDownloadBean.upload" class="com.ai.server.bean.demo.UploadDownloadBean" method="upload" verify="false"></action>
+	
+	<!-- 登录场景*******************初始化验证码 -->
+	<action name="SceneBean.initVerifyCode" class="com.ai.server.bean.demo.SceneBean" method="initVerifyCode" verify="false"></action>
+	<!-- 登陆 -->
+	<action name="SceneBean.login" class="com.ai.server.bean.demo.SceneBean" method="login" verify="false"  encrypt="false"></action>
+	<!-- 刷新验证码 -->
+	<action name="SceneBean.refreshVerifyCode" class="com.ai.server.bean.demo.SceneBean" method="refreshVerifyCode" verify="false"></action>
+	
+	<!-- 数据请求场景***************测试您的人品 -->
+	<action name="SceneBean.dataRequestScene" class="com.ai.server.bean.demo.SceneBean" method="dataRequestScene" verify="false"></action>
+	<!-- 页面跳转(调用数据接口)场景***************脑筋急转弯 -->
+	<action name="SceneBean.openPageScene" class="com.ai.server.bean.demo.SceneBean" method="openPageScene" verify="false"></action>
+	<!-- 局部刷新(调用数据接口) -->
+	<action name="SceneBean.getPersonDetailMore" class="com.ai.server.bean.demo.SceneBean" method="getPersonDetailMore" verify="false"></action>
+	
+	<!-- Demo added by wyj -->   
+	<action name="Demo.getInfoList" class="com.ailk.mobile.frame.bean.SimulatedBean" method="invoke" verify="false"></action> 
+	<action name="Demo.delete" class="com.ailk.mobile.frame.bean.SimulatedBean" method="invoke" verify="false"></action> 
+	<action name="Demo.update" class="com.ailk.mobile.frame.bean.SimulatedBean" method="invoke" verify="false"></action> 
+	<action name="Demo.save" class="com.ailk.mobile.frame.bean.SimulatedBean" method="invoke" verify="false"></action>
+	 <!-- **********演示程序结束********* -->  
+ 
+</datas>

@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>云巴推送</title>
+	{%>template/common/Head.html%}
+	<script type="text/javascript" src="biz/js/push/YunbaPush.js"></script>
+</head>
+<body>
+<div class="c_navBar">
+	<div class="left">
+		<div class="back">
+			<span class="e_ico-back"></span>
+			<span class="text">云巴推送</span>
+		</div>
+	</div>
+</div>
+
+<div class="c_list">
+	<ul>
+		<li ontap=";">
+			<div class="content">
+				
+			</div>
+		</li>
+	</ul>
+</div>
+<div class="c_list">
+	<ul>
+		<li>
+			<div class="content">
+				<div class="value"><input type="text" class="e_left" id="alias" placeholder="昵称[字母/数字/下划线]" /></div>
+				<div class="fn fn-2" id="register">连接</div>
+			</div>
+		</li>
+	</ul>
+</div>
+<div class="c_list">
+	<ul>
+		<li>
+			<div class="content">
+				<div class="value"><input type="text" class="e_left" id="msgForSend" placeholder="发送信息" /></div>
+				<div class="fn fn-2" id="send">发送</div>
+			</div>
+		</li>
+		<li>
+			<div class="content">
+				<div id="msgForReceive" style="background-color:gray;color:white;height:190px;overflow-x:auto;overflow-y:auto;" class="panel panel-default col-sm-7 col-sm-offset-2">
+					
+				</div>
+			</div>
+		</li>
+	</ul>
+</div>
+<div class="c_scroll c_scroll-mix c_scroll-fixed l_padding" style="top:2.22rem; bottom:0;" id="content">
+</div>
+</body>
+</html>

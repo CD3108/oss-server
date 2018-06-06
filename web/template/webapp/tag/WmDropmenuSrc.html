@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>WM-Dropmenu演示</title>
+	{%>template/common/Head.html%}
+</head>
+<body>
+	<div id="dropmenu01">
+      <div class="fn">
+        <span class="e_button"><span>下拉菜单</span><span class="e_ico-unfold"></span></span>
+      </div>
+      <div class="c_dropmenu">
+        <ul>
+		    <li>编辑</li> 
+		    <li>删除</li> 
+		    <li>001</li> 
+		    <li><div>ABC</div></li> 
+		    <li>编辑</li> 
+	     </ul>
+      </div>
+    </div>
+    <script>
+  require(["wmDropmenu","util"],function(WmDropmenu) {
+      var wmDropmenu=new WmDropmenu(dropmenu01);
+      wmDropmenu.create();
+      var items=wmDropmenu.getItems();
+       items[1].click(function(){
+          console.log('删除')      
+        });
+            items[3].click(function(){
+          console.log('ABC')      
+        });
+            items[4].click(function(){
+          console.log('编辑')      
+        });
+      });
+  </script>
+  
+</body>
+</html>

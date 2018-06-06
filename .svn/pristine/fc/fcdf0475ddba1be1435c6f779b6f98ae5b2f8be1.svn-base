@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>progress组件</title>
+	{%>template/common/Head.html%}
+	<script type="text/javascript" src="biz/js/ui/ui.js"></script>
+</head>
+<body>
+
+<div class="c_navBar">
+	<div class="left">
+		<div class="back">
+			<span class="e_ico-back"></span>
+			<span class="text">进度条</span>
+		</div>
+	</div>
+</div>
+
+<div class="m_content m_content-nofooter" id="content">
+	<div class="c_list l_mt">
+		<ul>
+			<li ontap=";">
+				<div class="content">
+					<div class="main">
+						<div class="title">一般</div>
+						<div class="e_progress">
+							<div class="e_progressUse">
+								<div class="e_progressUseValue">83</div>
+								<div class="e_progressUseTip">已使用</div>
+							</div>
+							<div class="e_progressBar"><span style="width:27.7%;"></span></div>
+							<div class="e_progressTotal">共300分钟</div>
+							<div class="e_progressSurplus">
+								<div class="e_progressSurplusTip">剩余</div>
+								<div class="e_progressSurplusValue">217</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li ontap=";">
+				<div class="content">
+					<div class="main">
+						<div class="title">警告</div>
+						<div class="e_progress e_progress-warn">
+							<div class="e_progressUse">
+								<div class="e_progressUseValue">56.7%</div>
+							</div>
+							<div class="e_progressBar"><span style="width:56.7%;"></span></div>
+							<div class="e_progressSurplus">
+								<div class="e_progressSurplusValue">43.3%</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li ontap=";">
+				<div class="content">
+					<div class="main">
+						<div class="title">危机</div>
+						<div class="e_progress e_progress-error">
+							<div class="e_progressUse">
+								<div class="e_progressUseValue">94.3%</div>
+							</div>
+							<div class="e_progressBar"><span style="width:94.3%;"></span></div>
+							<div class="e_progressSurplus">
+								<div class="e_progressSurplusValue">5.7%</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<div class="ub table umar-t ubt">
+		<div class="ub ub-ver table-left">
+			<ul class="ub ub-ac ub-pc ubb ">
+				<li class="ub ub-pc ub-ac g-w g-h ubr">产品</li>
+				<li class="ub ub-pc ub-ac g-w g-h ubr">产品种类</li>
+				<li class="ub ub-pc ub-ac g-w g-h ubr">挂高(m)</li>
+			</ul>
+			<ul class="ub ub-ac ub-pc ubb ubt">
+				<li class="g-w ub ub-pc ub-ac">地面塔</li>
+				<li class ="ub ub-ver ubl">
+					<div class="ub ub-ac ub-pc ubb">
+						<div class="g-w g-m-5h ub ub-ac ub-pc">
+							普通地面塔
+						</div>
+						<div class="ub ub-ver ub-ac ub-pc ubl">
+							<div class ="g-w g-m-h ub ub-ac ub-pc ubb ubr">H<30</div>
+							<div class ="g-w g-m-h ub ub-ac ub-pc ubb ubr">30≤H<35</div>
+							<div class ="g-w g-m-h ub ub-ac ub-pc ubb ubr">40≤H<45</div>
+							<div class ="g-w g-m-h ub ub-ac ub-pc ubb ubr">45≤H≤50</div>
+							<div class ="g-w g-m-h ub ub-ac ub-pc ubr ">45≤H≤50</div>
+						</div>
+					</div>
+					<div class="ub ub-ac ub-pc ubb">
+						<div  class="g-w g-m-5h ub ub-ac ub-pc ">
+							景观塔
+						</div>
+						<div class="ub ub-ver ub-ac ub-pc ubl">
+							<div class ="g-w g-m-h ub ub-ac ub-pc ubb ubr">H<30</div>
+							<div class ="g-w g-m-h ub ub-ac ub-pc ubb ubr">30≤H<35</div>
+							<div class ="g-w g-m-h ub ub-ac ub-pc ubb ubr">40≤H<45</div>
+							<div class ="g-w g-m-h ub ub-ac ub-pc ubb ubr">45≤H≤50</div>
+							<div class ="g-w g-m-h ub ub-ac ub-pc ubr">45≤H≤50</div>
+						</div>
+					</div>
+					<div class="ub ub-ac ub-pc">
+						<div class="g-w g-m-h ub ub-ac ub-pc ">
+							简易塔
+						</div>
+						<div class="ub ub-ver ub-ac ub-pc ubl">
+							<div class ="g-w g-m-h ub ub-ac ub-pc ubr">H<30</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<ul class="ub ub-ac ub-pc ubb">
+				<li class="g-w g-h ub ub-pc ub-ac">楼面塔</li>
+				<li class ="ub ub-ver ubl ">
+					<div class="ub ub-ac ub-pc ubb ">
+						<div class="g-w g-m-h ub ub-ac ub-pc ubr">
+							普通楼面塔
+						</div>
+						<div class="ub ub-ver">
+							<div class="g-w g-m-h ubr">&nbsp</div>
+						</div>
+					</div>
+					<div class="ub">
+						<div class ="g-w g-m-h ub ub-ac ub-pc ubr">
+							楼面抱杆
+						</div>
+						<div class="ub ub-ver">
+							<div class="g-w g-m-h ubr">&nbsp</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div><!-- table-left -->
+		<div class="table-right ub " id="content3">
+			<div class="ub right-w">
+				<div class="ub ub-ver">
+					<div class="g-h1 ub ub-ac ub-pc ubr">存量</div>
+					<div class="ub g-h2 ubb ubt">
+						<div class="g-w ubr ub ub-ac ub-pc">铁塔（无机房及配套）</div>
+						<div class="g-w ubr ub ub-ac ub-pc">自有机房+配套</div>
+						<div class="g-w ubr ub ub-ac ub-pc">租赁机房+配套</div>
+						<div class="g-w ubr ub ub-ac ub-pc">一体化柜+配套</div>
+						<div class="g-w ub ub-ac ub-pc ubr">RRU拉远+配套</div>
+					</div>
+					
+					<div class="ub g-m-h ubb">
+						{%#stock20%}
+						  <div class="g-w ubr ub ub-ac ub-pc">{%.%}</div>
+						{%/stock20%}
+					</div>
+					<div class="ub g-m-h ubb">
+						{%#stock21%}
+						  <div class="g-w ubr ub ub-ac ub-pc">{%.%}</div>
+						{%/stock21%}
+					</div>
+					<div class="ub g-m-h ubb">
+						{%#stock22%}
+						  <div class="g-w ubr ub ub-ac ub-pc">{%.%}</div>
+						{%/stock22%}
+					</div>
+					<div class="ub g-m-h ubb">
+						{%#stock23%}
+						  <div class="g-w ubr ub ub-ac ub-pc">{%.%}</div>
+						{%/stock23%}
+					</div>
+					<div class="ub g-m-h ubb">
+						{%#stock24%}
+						  <div class="g-w ubr ub ub-ac ub-pc">{%.%}</div>
+						{%/stock24%}
+					</div>
+					<div class="ub g-m-h ubb">
+						{%#stock25%}
+						  <div class="g-w ubr ub ub-ac ub-pc">{%.%}</div>
+						{%/stock25%}
+					</div>
+					<div class="ub g-m-h ubb">
+						{%#stock26%}
+						  <div class="g-w ubr ub ub-ac ub-pc">{%.%}</div>
+						{%/stock26%}
+					</div>
+					<div class="ub g-m-h ubb">
+						{%#stock27%}
+						  <div class="g-w ubr ub ub-ac ub-pc">{%.%}</div>
+						{%/stock27%}
+					</div>
+					<div class="ub g-m-h ubb">
+						{%#stock28%}
+						  <div class="g-w ubr ub ub-ac ub-pc">{%.%}</div>
+						{%/stock28%}
+					</div>
+					<div class="ub g-m-h ubb">
+						{%#stock29%}
+						  <div class="g-w ubr ub ub-ac ub-pc">{%.%}</div>
+						{%/stock29%}
+					</div>
+					<div class="ub g-m-h ubb">
+						{%#stock210%}
+						  <div class="g-w ubr ub ub-ac ub-pc">{%.%}</div>
+						{%/stock210%}
+					</div>
+					<div class="ub g-m-h ubb">
+						{%#stock211%}
+						  <div class="g-w ubr ub ub-ac ub-pc">{%.%}</div>
+						{%/stock211%}
+					</div>
+					<div class="ub g-m-h ubb">
+						{%#stock212%}
+						  <div class="g-w ubr ub ub-ac ub-pc">{%.%}</div>
+						{%/stock212%}
+					</div>
+					
+				</div>
+				
+				<div class="ub ub-ver">
+					<div class="g-h1 ub ub-ac ub-pc ubr">新建</div>
+					<div class="ub g-h2 ubb ubt">
+						<div class="g-w ubr ub ub-ac ub-pc">铁塔（无机房及配套）</div>
+						<div class="g-w ubr ub ub-ac ub-pc">自有机房+配套</div>
+						<div class="g-w ubr ub ub-ac ub-pc">租赁机房+配套</div>
+						<div class="g-w ubr ub ub-ac ub-pc">一体化柜+配套</div>
+						<div class="g-w ub ub-ac ub-pc ubr">RRU拉远+配套</div>
+					</div>
+					<div class="ub g-m-h ubb">
+						{%#new20%}
+						  <div class="g-w ubr ub ub-ac ub-pc">{%.%}</div>
+						{%/new20%}
+					</div>
+					<div class="ub g-m-h ubb">
+						{%#new21%}
+						  <div class="g-w ubr ub ub-ac ub-pc">{%.%}</div>
+						{%/new21%}
+					</div>
+					<div class="ub g-m-h ubb">
+						{%#new22%}
+						  <div class="g-w ubr ub ub-ac ub-pc">{%.%}</div>
+						{%/new22%}
+					</div>
+					<div class="ub g-m-h ubb">
+						{%#new23%}
+						  <div class="g-w ubr ub ub-ac ub-pc">{%.%}</div>
+						{%/new23%}
+					</div>
+					<div class="ub g-m-h ubb">
+						{%#new24%}
+						  <div class="g-w ubr ub ub-ac ub-pc">{%.%}</div>
+						{%/new24%}
+					</div>
+					<div class="ub g-m-h ubb">
+						{%#new25%}
+						  <div class="g-w ubr ub ub-ac ub-pc">{%.%}</div>
+						{%/new25%}
+					</div>
+					<div class="ub g-m-h ubb">
+						{%#new26%}
+						  <div class="g-w ubr ub ub-ac ub-pc">{%.%}</div>
+						{%/new26%}
+					</div>
+					<div class="ub g-m-h ubb">
+						{%#new27%}
+						  <div class="g-w ubr ub ub-ac ub-pc">{%.%}</div>
+						{%/new27%}
+					</div>
+					<div class="ub g-m-h ubb">
+						{%#new28%}
+						  <div class="g-w ubr ub ub-ac ub-pc">{%.%}</div>
+						{%/new28%}
+					</div>
+					<div class="ub g-m-h ubb">
+						{%#new29%}
+						  <div class="g-w ubr ub ub-ac ub-pc">{%.%}</div>
+						{%/new29%}
+					</div>
+					<div class="ub g-m-h ubb">
+						{%#new210%}
+						  <div class="g-w ubr ub ub-ac ub-pc">{%.%}</div>
+						{%/new210%}
+					</div>
+					<div class="ub g-m-h ubb">
+						{%#new211%}
+						  <div class="g-w ubr ub ub-ac ub-pc">{%.%}</div>
+						{%/new211%}
+					</div>
+					<div class="ub g-m-h ubb">
+						{%#new212%}
+						  <div class="g-w ubr ub ub-ac ub-pc">{%.%}</div>
+						{%/new212%}
+					</div>
+					
+				</div>
+				
+				
+			</div>
+			
+		</div><!-- table-right-->
+		
+		
+	
+	</div><!--table -->
+	

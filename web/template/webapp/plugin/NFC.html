@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>NFC</title>
+	{%>template/common/Head.html%}
+	<script type="text/javascript" src="biz/js/plugin/nfc.js"></script>
+</head>
+<body>
+
+<div class="c_navBar">
+	<div class="left">
+		<div class="back">
+			<span class="e_ico-back"></span>
+			<span class="text">NFC</span>
+		</div>
+	</div>
+</div>
+
+<div class="m_content m_content-nofooter" id="content" >
+	<div class="c_title">读取NFC</div>
+	<div class="c_list">
+		<ul>
+			<li>
+				<div class="content">
+					<div class="main">
+						<div class="title">读取北京公交卡</div>
+						<div class="info">通过参数不同，理论上可以读取任何类型的芯片卡。</div>
+					</div>
+					<div class="fn fn-2" id="read">读取</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+	<div id="result" class="fn-hide">
+		<div class="c_title">读取结果</div>
+		<div class="c_list">
+			<ul>
+				<li>
+					<div class="content">
+						<div class="label">余额</div>
+						<div class="value"><span id="cash"></span></div>
+					</div>
+				</li>
+				<li>
+					<label class="content content-vertical">
+						<div class="label">最近10条交易记录</div>
+						<div class="value">
+							<div id="log"></div>
+						</div>
+					</label>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+</body>
+</html>

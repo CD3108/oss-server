@@ -1,0 +1,26 @@
+<ul id="plugin-menu">
+	<li action="Syntax">
+		<div class="pic"><span class="e_ico-code"></span></div>
+		<div class="text">模板语法</div>
+	</li>
+	<li action="PushChat">
+		<div class="pic"><span class="e_ico-chat"></span></div>
+		<div class="text">聊天演示</div>
+	</li>
+	<li action="PushReceive">
+		<div class="pic"><span class="e_ico-chat"></span></div>
+		<div class="text">推送演示</div>
+	</li>
+	<li action="Scene">
+		<div class="pic"><span class="e_ico-scene"></span></div>
+		<div class="text">场景展示</div>
+	</li>
+    <li action="Chart">
+		<div class="pic"><span class="e_ico-ui-chart"></span></div>
+		<div class="text">图表展示</div>
+	</li>
+    <li type="openNative" packageName="com.ai.mobile.multiple" className="com.ai.mobile.multiple.MainActivity" downloadUrl="http://114.215.100.48:8080/mult/setup/display-multiple-client.apk" >
+		<div class="pic"><span class="e_ico-app"></span></div>
+		<div class="text">应用演示</div>
+	</li>
+</ul>

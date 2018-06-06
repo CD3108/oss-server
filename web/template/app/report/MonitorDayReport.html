@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>list组件</title>
+	{%>template/common/Head2.html%}
+	<script type="text/javascript" src="biz/js/oss/report/MonitorDayReport.js"></script>
+</head>
+<body>
+	<!--  小区匹配率（列名：地市、小区总数、匹配到天线的小区数、未匹配到小区数、匹配率） -->
+<div class="c_navBar ubb ubc">
+	<div class="left">
+		<div class="back">
+			<span class="e_ico-back"></span>
+		</div>
+	</div>
+	<div class="center">
+		<div class="logo">
+			<span class="text" id="title-text">集中监控运行日报</span>
+		</div>
+	</div>
+</div>
+
+<div class="m_content m_content-nofooter" id=BaseStationRate>
+	<div class="c_list" id="TowerList">
+		<div id="je" style="height:5rem;"></div>
+		<div class="ub table table_11 umar-t ubt">
+		<div class="table-right ub ">
+			<div class="ub right-w">
+				<div class="ub ub-ver">
+					<div class="ub ub-ver table-left">
+						<ul class="ub ub-ac ub-pc ubb ">
+							<li class="ub ub-pc ub-ac g-w g-h ubr">地市</li>
+							<li class="ub ub-pc ub-ac g-w g-h ubr">本月截止到今日回单率</li>
+						</ul>
+						{%#dataList%}
+						<ul class="ub ub-ac ub-pc ubb">
+							<li class="ub ub-pc ub-ac g-w g-h ubr">{%.area_name%}</li>
+							<li class="ub ub-pc ub-ac g-w g-h ubr">{%.thismonthrate%}</li>
+						</ul>
+						{%/dataList%}
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<div class="table-right ub " id="content1">
+			<div class="ub right-w">
+				<div class="ub ub-ver">
+					<div class="g-h1 ub ub-ac ub-pc ubr">上月日均</div>
+					<div class="ub g-h2 ubb ubt">
+						<div class="g-w ubr ub ub-ac ub-pc">工单数</div>
+						<div class="g-w ubr ub ub-ac ub-pc">回单率</div>
+					</div>
+					{%#dataList%}
+					<ul class="ub ub-ac ub-pc ubb">
+						<li class="ub ub-pc ub-ac g-w g-h ubr">{%.intavgordernum%}</li>
+						<li class="ub ub-pc ub-ac g-w g-h ubr">{%.avgreceiptrate%}</li>
+					</ul>
+					{%/dataList%}
+				</div>
+				
+				<div class="ub ub-ver table-left">
+						<ul class="ub ub-ac ub-pc ubb ">
+							<li class="ub ub-pc ub-ac g-w g-h ubr">工单数</li>
+							<li class="ub ub-pc ub-ac g-w g-h ubr">工单较上月日均环比</li>
+							<li class="ub ub-pc ub-ac g-w g-h ubr">回单率</li>
+							<li class="ub ub-pc ub-ac g-w g-h ubr">签收率</li>
+							<li class="ub ub-pc ub-ac g-w g-h ubr">超时率</li>
+							<li class="ub ub-pc ub-ac g-w g-h ubr">未修先销率</li>
+							<li class="ub ub-pc ub-ac g-w g-h ubr">掌上回单率</li>
+						</ul>
+						{%#dataList%}
+						<ul class="ub ub-ac ub-pc ubb">
+							<li class="ub ub-pc ub-ac g-w g-h ubr">{%.ordernum%}</li>
+							<li class="ub ub-pc ub-ac g-w g-h ubr">{%.huanbi%}</li>
+							<li class="ub ub-pc ub-ac g-w g-h ubr">{%.receiptrate%}</li>
+							<li class="ub ub-pc ub-ac g-w g-h ubr">{%.signrate%}</li>
+							<li class="ub ub-pc ub-ac g-w g-h ubr">{%.overrate%}</li>
+							<li class="ub ub-pc ub-ac g-w g-h ubr">{%.norepairrate%}</li>
+							<li class="ub ub-pc ub-ac g-w g-h ubr">{%.appbackrate%}</li>
+						</ul>
+						{%/dataList%}
+				</div>
+				
+		</div><!-- table-right-->
+		
+		
+	
+	</div><!--table -->
+	
+	</div>
+</div>
+</div>
+</body>
+</html>

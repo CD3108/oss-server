@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+<title>导航</title>
+{%>template/common/Head.html%}
+<script type="text/javascript" src="biz/js/more/chart/ChartIndex.js"></script>
+</head>
+<body>
+<div class="c_navBar">
+	<div class="left">
+		<div class="back">
+			<span class="e_ico-back"></span>
+			<span class="text">图表演示</span>
+		</div>
+	</div>
+</div>
+<div class="m_content" id="content">
+<div class="e_space"></div>
+<wm-tab id="myTab">
+	<wm-tab-item title="Echarts" active="true">
+	<div class="c_list">
+		<ul id="EchartsMenus">
+			<li>
+				<div class="content">
+					<div class="main">EchartsLine</div>
+					<div class="more"></div>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<div class="main">EchartsHistogram</div>
+					<div class="more"></div>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<div class="main">EchartsPie</div>
+					<div class="more"></div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	</wm-tab-item>
+	<wm-tab-item title="Highcharts">
+	<div class="c_list">
+		<ul id="HighchartsMenus">
+			<li>
+				<div class="content">
+					<div class="main">HighchartsLine</div>
+					<div class="more"></div>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<div class="main">HighchartsHistogram</div>
+					<div class="more"></div>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<div class="main">HighchartsPie</div>
+					<div class="more"></div>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<div class="main">HighchartsPie-3d</div>
+					<div class="more"></div>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<div class="main">HighchartsDashboard</div>
+					<div class="more"></div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	</wm-tab-item>
+	<wm-tab-item title="ichart">
+	<div class="c_list">
+		<ul id="ichartsMenus">
+			<li>
+				<div class="content">
+					<div class="main">ichartsLine</div>
+					<div class="more"></div>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<div class="main">ichartsHistogram</div>
+					<div class="more"></div>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<div class="main">ichartsPie</div>
+					<div class="more"></div>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<div class="main">ichartsPie-3d</div>
+					<div class="more"></div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	</wm-tab-item>
+</wm-tab>
+</div>	
+
+</body>
+</html>

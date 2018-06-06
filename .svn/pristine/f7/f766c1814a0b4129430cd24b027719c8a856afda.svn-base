@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>list组件</title>
+	{%>template/common/Head2.html%}
+	<script type="text/javascript" src="biz/js/oss/report/AlarmTrueTime.js"></script>
+</head>
+<body>
+<div class="c_navBar ubb ubc">
+	<div class="left">
+		<div class="back">
+			<span class="e_ico-back"></span>
+		</div>
+	</div>
+	<div class="center">
+		<div class="logo">
+			<span class="text" id="title-text">告警准实时报表(全)</span>
+		</div>
+	</div>
+</div>
+
+<div class="m_content m_content-nofooter" id=BaseStationRate>
+	<div class="c_list" id="TowerList">
+		<div id="je" style="height:5rem;"></div>
+		<div class="ub table table_10 umar-t ubt">
+		<div class="ub ub-ver table-left">
+			<ul class="ub ub-ac ub-pc ubb ">
+				<li class="ub ub-pc ub-ac g-w g-h ubr">地市</li>
+				<li class="ub ub-pc ub-ac g-w g-h ubr">总实时活动告警</li>
+				<li class="ub ub-pc ub-ac g-w g-h ubr">当日实时活动告警</li>
+			</ul>
+			{%#dataList%}
+			<ul class="ub ub-ac ub-pc ubb">
+				<li class="ub ub-pc ub-ac g-w g-h ubr">{%.area_name%}</li>
+				<li class="ub ub-pc ub-ac g-w g-h ubr">{%.active_alarm_all%}</li>
+				<li class="ub ub-pc ub-ac g-w g-h ubr">{%.daliy_active_alarm%}</li>
+			</ul>
+			{%/dataList%}
+		</div><!-- table-left -->
+		<div class="table-right ub " id="content1">
+			<div class="ub right-w">
+				
+				<div class="ub ub-ver table-left">
+					<ul class="ub ub-ac ub-pc ubb ">
+						<li class="ub ub-pc ub-ac g-w g-h ubr">当日告警</li>
+						<li class="ub ub-pc ub-ac g-w g-h ubr">当日满足派单告警</li>
+						<li class="ub ub-pc ub-ac g-w g-h ubr">当日工单</li>
+						<li class="ub ub-pc ub-ac g-w g-h ubr">当日工单告警比</li>
+<!-- 						<li class="ub ub-pc ub-ac g-w g-h ubr">本月工单数</li> -->
+					</ul>
+					{%#dataList%}
+					<ul class="ub ub-ac ub-pc ubb">
+						<li class="ub ub-pc ub-ac g-w g-h ubr">{%.daliy_alarm_all%}</li>
+						<li class="ub ub-pc ub-ac g-w g-h ubr">{%.daliy_need_send_sheet_alarm%}</li>
+						<li class="ub ub-pc ub-ac g-w g-h ubr">{%.ordernum%}</li>
+						<li class="ub ub-pc ub-ac g-w g-h ubr">{%.orderalarm%}%</li>
+<!-- 						<li class="ub ub-pc ub-ac g-w g-h ubr">{%.rate_TOTAL%}</li> -->
+					</ul>
+					{%/dataList%}
+				</div>
+				
+				
+				<div class="ub ub-ver">
+					<div class="g-h1 ub ub-ac ub-pc ubr">无线网</div>
+					<div class="ub g-h2 ubb ubt">
+						<div class="g-w ubr ub ub-ac ub-pc">当日告警</div>
+						<div class="g-w ubr ub ub-ac ub-pc">当日工单</div>
+					</div>
+					{%#dataList%}
+					<ul class="ub ub-ac ub-pc ubb">
+						<li class="ub ub-pc ub-ac g-w g-h ubr">{%.daliy_alarm_all_wuxian%}</li>
+						<li class="ub ub-pc ub-ac g-w g-h ubr">{%.wx%}</li>
+					</ul>
+					{%/dataList%}
+				</div>
+				<div class="ub ub-ver">
+					<div class="g-h1 ub ub-ac ub-pc ubr">宽带接入网</div>
+					<div class="ub g-h2 ubb ubt">
+						<div class="g-w ubr ub ub-ac ub-pc">当日告警</div>
+						<div class="g-w ubr ub ub-ac ub-pc">当日工单</div>
+					</div>
+					{%#dataList%}
+					<ul class="ub ub-ac ub-pc ubb">
+						<li class="ub ub-pc ub-ac g-w g-h ubr">{%.daliy_alarm_all_kuandai%}</li>
+						<li class="ub ub-pc ub-ac g-w g-h ubr">{%.jr%}</li>
+					</ul>
+					{%/dataList%}
+				</div>
+				<div class="ub ub-ver">
+					<div class="g-h1 ub ub-ac ub-pc ubr">传输网</div>
+					<div class="ub g-h2 ubb ubt">
+						<div class="g-w ubr ub ub-ac ub-pc">当日告警</div>
+						<div class="g-w ubr ub ub-ac ub-pc">当日工单</div>
+					</div>
+					{%#dataList%}
+					<ul class="ub ub-ac ub-pc ubb">
+						<li class="ub ub-pc ub-ac g-w g-h ubr">{%.daliy_alarm_all_chuanshu%}</li>
+						<li class="ub ub-pc ub-ac g-w g-h ubr">{%.cs%}</li>
+					</ul>
+					{%/dataList%}
+				</div>
+				<div class="ub ub-ver">
+					<div class="g-h1 ub ub-ac ub-pc ubr">动力网</div>
+					<div class="ub g-h2 ubb ubt">
+						<div class="g-w ubr ub ub-ac ub-pc">当日告警</div>
+						<div class="g-w ubr ub ub-ac ub-pc">当日工单</div>
+					</div>
+					{%#dataList%}
+					<ul class="ub ub-ac ub-pc ubb">
+						<li class="ub ub-pc ub-ac g-w g-h ubr">{%.daliy_alarm_all_dongliwang%}</li>
+						<li class="ub ub-pc ub-ac g-w g-h ubr">{%.dh%}</li>
+					</ul>
+					{%/dataList%}
+				</div>
+			</div>
+		</div><!-- table-right-->
+		
+		
+	
+	</div><!--table -->
+	
+	</div>
+</div>
+</body>
+</html>

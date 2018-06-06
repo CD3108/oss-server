@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>键盘</title>
+	{%>template/common/Head.html%}
+	<script type="text/javascript" src="biz/js/more/scene/OpenKeyboard.js"></script>
+<style>
+#retMsg {
+	margin: 0.22rem 0;
+}
+</style>
+</head>
+<body>
+
+<div class="c_navBar">
+	<div class="left">
+		<div class="back">
+			<span class="e_ico-back"></span>
+			<span class="text">键盘</span>
+		</div>
+	</div>
+</div>
+
+<div class="m_content m_content-nofooter" id="content">
+	<div id="main">
+		<div class="c_title">芝麻开门，通关密语</div>
+		<div class="c_list">
+			<ul>
+				<li tapfor="input-text">
+					<div class="content">
+						<div class="label">密语</div>
+						<div class="value"><input type="password" placeholder="请输入通关密语" id="pwd"/></div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="c_title">提示：1234</div>
+		<div class="c_submit">
+			<ul>
+				<li><button class="e_button-ok" id="submit">开启</button></li>
+			</ul>
+		</div>
+	</div>
+	<div id="hiddenContent" class="fn-hide" style="text-align: center;" >
+		<div id="retMsg">嘿嘿嘿嘿，恭喜发财，红包拿来~</div>
+		<img src="biz/img/scene/zmkm.jpg"/><br><br>
+	</div>
+</div>
+</body>
+</html>

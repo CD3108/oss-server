@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>web UI 组件</title>
+	{%>template/common/Head.html%}
+</head>
+<body>
+
+<div class="c_navBar">
+	<div class="back">
+		<span class="e_ico-back"></span>
+		<div class="text">进度条</div>
+	</div>
+</div>
+<div class="m_content m_content-nofooter" id="content">
+	<div class="c_list l_mt">
+		<ul>
+			<li>
+				<div class="content">
+					<div class="main">
+						<div class="title">一般</div>
+						<div class="e_progress" id="progress_1">
+							<div class="e_progressUse">
+								<div class="e_progressUseValue">83</div>
+								<div class="e_progressUseTip">已使用</div>
+							</div>
+							<div class="e_progressBar"><span style="width:27.7%;"></span></div>
+							<div class="e_progressTotal"></div>
+							<div class="e_progressSurplus">
+								<div class="e_progressSurplusTip">剩余</div>
+								<div class="e_progressSurplusValue">217</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<div class="main">
+						<div class="title">警告</div>
+						<div class="e_progress e_progress-warn" id="progress_2">
+							<div class="e_progressUse">
+								<div class="e_progressUseValue">56.7%</div>
+							</div>
+							<div class="e_progressBar"><span style="width:56.7%;"></span></div>
+							<div class="e_progressSurplus">
+								<div class="e_progressSurplusValue">43.3%</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<div class="main">
+						<div class="title">危机</div>
+						<div class="e_progress e_progress-error" id="progress_3">
+							<div class="e_progressUse">
+								<div class="e_progressUseValue">94.3%</div>
+							</div>
+							<div class="e_progressBar"><span style="width:94%;"></span></div>
+							<div class="e_progressSurplus">
+								<div class="e_progressSurplusValue">5.7%</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<script type="text/javascript">
+require(["wmProgress"],function(WmProgress) {
+  	var progress = new WmProgress("progress_1");//初始化对象，false表示后面会设置触发事件setAction
+  	progress.setProgress("80");//设置进度 范围0-100
+  	progress.setLevel("warn");//info warn error 警示级别
+  	alert(progress.getProgress());//返回进度0-100
+  	progress.setTotalTip("共300分钟");//设置总量提示
+  	progress.setPastTip("已完成");//设置已完成提示
+  	progress.setSpaceTip("剩余");//设置未完成提示
+   	progress.showPastTip();//显示已完成提示
+ // 	progress.hidePastTip();//隐藏已完成提示
+  	progress.showSpaceTip();//显示未完成提示
+ // 	progress.hideSpaceTip();//隐藏未完成提示
+  	progress.showTotalTip();//显示总量提示
+  //	progress.hideTotaTip();//隐藏总量提示
+  	
+  	
+  	
+});
+</script>
+</body>
+</html>

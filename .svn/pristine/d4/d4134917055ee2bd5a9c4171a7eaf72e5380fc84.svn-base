@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>聊天窗口</title>
+	{%>template/common/Head.html%}
+	<script type="text/javascript" src="biz/js/more/push/Chat.js"></script>
+</head>
+
+<body>
+
+
+<div class="c_navBar">
+	<div class="left">
+		<div class="back">
+			<span class="e_ico-back"></span>
+			<span class="text">和 {%OTHER_ACCOUNT%}聊天中...</span>
+		</div>
+	</div>
+	<div class="right" class="fn-hide">
+		<div class="buttonList" ontap="">
+			<div class="tip">{%OWN_ACCOUNT%}<span class="e_ico-unfold"></span></div>
+		</div>
+	</div>
+</div>
+<div class="c_scroll c_scroll-fixed" style="top:0.6rem; bottom:0.6rem;" id="content">
+	<div class="wrapper">
+		<div class="c_chat">
+			<!-- <div class="i">
+				<div class="head"><img src="biz/img/temp/male.png" alt="" /></div>
+				<div class="dialog">
+					<div class="info">黄大波 2015-04-22 14:58:54 </div>
+					<div class="content">
+						Hello World！
+					</div>
+				</div>
+			</div>
+			<div class="u">
+				<div class="head"><img src="biz/img/temp/female.png" alt="" /></div>
+				<div class="dialog">
+					<div class="info">World 2015-04-22 14:58:54 </div>
+					<div class="content">
+						maybe it's myth i'm seekingyou say.
+						maybe it's a wild dragon chase anyway.
+						but still i'm gonna listen to my heart and try;
+						pack up all my load,
+						so long, goodbye!
+					</div>
+				</div>
+			</div>
+			<div class="i">
+				<div class="head"><img src="biz/img/temp/male.png" alt="" /></div>
+				<div class="dialog">
+					<div class="info">黄大波 2015-04-22 14:58:54 </div>
+					<div class="content">
+						Hello World！
+					</div>
+				</div>
+			</div> -->
+		</div>
+	</div>
+</div>
+<div class="c_list e_fix-bottom">
+	<ul>
+		<li>
+			<div class="content">
+				<div class="value"><input type="text" class="e_left" id="msg" placeholder="请输入文字" /></div>
+				<div class="fn fn-4" id="send">发送消息</div>
+			</div>
+		</li>
+	</ul>
+</div>
+<input type="hidden" value="{%OTHER_ACCOUNT%}" id="receiver"/>
+<input type="hidden" value="{%OWN_ACCOUNT%}" id="sender"/>
+</body>
+</html>

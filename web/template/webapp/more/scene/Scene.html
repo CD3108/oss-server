@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>场景演示</title>
+	{%>template/common/Head.html%}
+</head>
+<body>
+<div class="c_navBar">
+	<div class="left">
+		<div class="back">
+			<span class="e_ico-back"></span>
+			<span class="text">场景演示</span>
+		</div>
+	</div>
+</div>
+
+<div class="m_content m_content-nofooter" id="content">
+<div>
+	<div class="c_list">
+		<ul id="scene-menu">
+			<li action="SceneBean_Demo">
+				<div class="content">
+					<div class="main">
+						<div class="title">报表</div>
+						<div class="info">增删改查样例代码，集成了手势、模板引擎、数据交互、界面交互，供大家参考。</div>
+					</div>
+				</div>
+			</li>
+			<li action="SceneBean_login_init">
+				<div class="content">
+					<div class="main">
+						<div class="title">登陆</div>
+						<div class="info">输入账号、密码以及图片验证码登陆，服务端校验成功以后创建Session，
+						同时客户端存储SessionId，提供给其他接口使用。</div>
+					</div>
+				</div>
+			</li>
+			<li action="SceneBean_setScreenLock">
+				<div class="content">
+					<div class="main">
+						<div class="title">解锁屏</div>
+						<div class="info">设置手势锁~</div>
+					</div>
+				</div>
+			</li>
+			<li action="SceneBean_openKeyboard">
+				<div class="content">
+					<div class="main">
+						<div class="title">键盘</div>
+						<div class="info">原生UI键盘</div>
+					</div>
+				</div>
+			</li>
+			<li action="SceneBean_dataRequest">
+				<div class="content">
+					<div class="main">
+						<div class="title">数据请求</div>
+						<div class="info">客户端访问时则是原生实现的访问请求，可以通过配置实现加密方式的传输安全，
+						开发阶段，使用浏览器网页形式访问时是基于ajax的访问请求。</div>
+					</div>
+				</div>
+			</li>
+			<li action="SceneBean_templateRedirect">
+				<div class="content">
+					<div class="main">
+						<div class="title">页面跳转(直接数据渲染)</div>
+						<div class="info">没有数据请求，传入的参数直接用于页面渲染。</div>
+					</div>
+				</div>
+			</li>
+			<li action="SceneBean_PageRedirect">
+				<div class="content">
+					<div class="main">
+						<div class="title">页面跳转(调用数据接口)</div>
+						<div class="info">调用数据请求，传入的参数先用于请求数据接口，得到的结果集用于页面渲染。</div>
+					</div>
+				</div>
+			</li>
+			<li action="TemplateRefresh">
+				<div class="content">
+					<div class="main">
+						<div class="title">局部刷新(直接数据渲染)</div>
+						<div class="info">没有数据请求，传入的参数直接用于解析模板得到html。</div>
+					</div>
+				</div>
+			</li>
+			<li action="PageRefresh">
+				<div class="content">
+					<div class="main">
+						<div class="title">局部刷新(调用数据接口)</div>
+						<div class="info">调用数据请求，传入的参数先用于请求数据接口，得到的结果集用于解析模板得到html。</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="e_space"></div>
+</div>
+</div>
+</body>
+<script type="text/javascript">
+require(["mobile","iScroll","util"], function(Mobile,iScroll) {
+	new iScroll("content");
+	
+	$("#scene-menu > li").each(function(index, item) {
+		if (item.getAttribute("action") != "null") {
+			$(item).tap(function() {
+				Mobile.openPage(item.getAttribute("action"));
+			});
+		} else {
+			item.onclick = function() {
+				alert("敬请期待……");
+			};
+		}
+	});
+});
+</script>
+</html>

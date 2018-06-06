@@ -1,0 +1,169 @@
+body,h1,h2,h3,h4,h5,ul,li,dl,dd,dt,div,img,a,p,span,i,em,td,tr,table{
+	margin: 0;
+	border: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+	list-style-type: none;
+	font-weight: 100;
+	text-decoration: none;
+	color: #525252;
+	font-size: 10;
+}
+
+body{
+	background:#f6f6f6;	}
+
+/*登录*/
+
+.login {
+	background-image: url(../../img/login/login_bg.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.login .logo{
+	text-align: center;
+	padding-top: 8%;
+	margin-right: 34%;
+	margin-left: 34%;
+}
+
+.login .logo img {
+	width: 100%;
+}
+
+.login .login-wrap {
+	background-color: #FFF;
+	width: 80%;
+	text-align: center;
+	border-radius: 0.2rem;
+	padding-top: 4%;
+	padding-right: 3%;
+	padding-bottom: 4%;
+	padding-left: 3%;
+	margin-top: 8%;
+	margin-right: 7%;
+	margin-bottom: 1%;
+	margin-left: 7%;
+}
+
+.login .login-wrap .login-input {
+	height:0.6rem;
+}
+
+.login .login-wrap .login-input .input-icon {
+	float: left;
+	text-align: center;
+	height: 0.2rem;
+	padding-top: 0.12rem;
+	padding-bottom: 0.12rem;
+}
+.login .login-wrap .login-input .input-field {
+	float: left;
+	width: 80%;
+	padding-left: 0.3rem;
+}
+
+.login .login-wrap .login-input .input-field input {
+	height: 0.4rem;
+}
+.login .login-wrap .login-input .input-icon img {
+	height: 0.35rem;
+}
+.login .login-wrap .login-input .input-field input {
+	width: 100%;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	height:0.46rem;
+	padding:0;
+	border:0;
+	font-size:0.25rem;
+	width:100%;
+	line-height:0.3rem;
+	margin-top: 0.12rem;
+	margin-right: 0;
+	margin-bottom: 0.3rem;
+	margin-left: 0;
+}
+.login .login-wrap hr {
+	borber:1px blue solid;
+}
+.login .login-wrap .login-hr {
+	background-color: #c7c7c7;
+	height: 1px;
+	width: 100%;
+	margin-top: 4%;
+	margin-bottom: 4%;
+}
+.button {
+	width: 86%;
+	margin-left: 7%;
+	height: 0.8rem;
+	line-height: 0.5rem;
+	background: #ff7200;
+	border: 0;
+	border-radius: 0.12rem;
+	font-size: 0.4rem;
+	color: #fff;
+	margin-top: 18%;
+	margin-bottom: 38%;
+}
+.login .radio {
+	float: right;
+	margin-right: 7%;
+	font-size: 0.1rem;
+	text-align: center;
+}
+ 
+/*工作平台*/
+.main .gz-ilist {
+	width: 33.333%;
+	float: left;
+	text-align: center;
+	background-color: #FFFFFF;
+	border-right-width: 1px;
+	border-bottom-width: 0.1rem;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-right-color: #dddddd;
+	border-bottom-color: #dddddd;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-top: 8%;
+	padding-bottom: 8%;
+}
+.main .gz-ilist2 {
+	width: 33.333%;
+	float: left;
+	text-align: center;
+	background-color: #FFFFFF;
+	border-bottom-width: 0.1rem;
+	border-bottom-style: solid;
+	border-bottom-color: #dddddd;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-top: 8%;
+	padding-bottom: 8%;
+}
+
+.p1 {
+	font-size: 1rem;
+	padding-top: 3%;
+}
+.main ul .gz-ilist img {
+	width: 30%;
+}
+.main ul .gz-ilist2 img {
+	width: 30%;
+}
+.login .radio span {
+	font-size: 0.25rem;
+	line-height: 0.3rem;
+
+}
+.login-input input{
+	outline:none;
+}

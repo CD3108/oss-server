@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>web UI 组件</title>
+	{%>template/common/Head.html%}
+</head>
+<body>
+<wm-navbar id="navbar2" >
+	<wm-navbar-item type="back" title="表单元素" action="back"></wm-navbar-item>
+</wm-navbar>
+<div class="m_content m_content-nofooter" id="content">
+	<div>
+		<div class="c_title">输入</div>
+		<div class="c_list">
+			<ul>
+				<li id="c">
+					<div class="content">
+						<div class="label">输入框</div>
+						<div class="value"><input type="text" placeholder="请输入文字" /></div>
+					</div>
+				</li>
+				<li>
+					<label class="content">
+						<div class="label">搜索框</div>
+						<div class="value"><input type="text" placeholder="名称/编号" /></div>
+					</label>
+				</li>
+				<li>
+					<label class="content content-vertical">
+						<div class="label">文本域</div>
+						<div class="value">
+							<textarea placeholder="请输入文字" style="height:0.5rem;"></textarea>
+						</div>
+					</label>
+				</li>
+			</ul>
+		</div>
+		<div class="c_title">切换</div>
+		<div class="c_list">
+			<ul>
+				<li>
+					<div class="content">
+						<div class="label">开关</div>
+						<div class="value">
+							<span class="e_switch e_switch-on" id="wmSwitchDemo">
+								<span class="e_switchOn">On</span>
+								<span class="e_switchOff">Off</span>
+								<span class="e_switchBar"></span>
+								<input type="hidden" value="true" >
+							</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="content">
+						<div class="label">开关</div>
+						<div class="value">
+							<span class="e_switch e_switch-on" id="wmSwitchDemo2">
+								<span class="e_switchOn">On</span>
+								<span class="e_switchOff">Off</span>
+								<span class="e_switchBar"></span>
+								<input type="hidden" value="true" >
+							</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="content">
+						<div class="label">分段器</div>
+						<div class="value">
+							<wm-segment id="segment" name="segmentInput" texts="按周,按月,按年" values="week,month,year" selected="year" action="action"></wm-segment>
+							
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="c_title">调节</div>
+		<div class="c_list" >
+			<ul>
+				<li>
+					<div class="content">
+						<div class="label">百分比调节</div>
+						<div class="value">
+							<input type="range" id="xx" name="xx" min="0" max="100" step="1" value="32" onclick="alert(this.value)" />
+							28.5%
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="e_flip e_flip-noprice">
+						<div class="e_flipDesc">
+							<div class="e_flipTitle">数值调节</div>
+						</div>
+						<div class="e_flipReduce"></div>
+						<div class="e_flipValue" style="width:0.5rem;">
+							<span class="e_flipSymbol">&times;</span>
+							<span class="e_flipCount">0</span>
+							<input class="e_flipInput" type="text" value="0" />
+						</div>
+						<div class="e_flipAdd"></div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="c_title">选择</div>
+		<div class="c_list">
+			<ul>
+				<li>
+					<div class="content">
+						<div class="label">单选</div>
+						<div class="value"><span class="e_placeholder">请选择</span></div>
+						<div class="more"></div>
+					</div>
+				</li>
+				<li>
+					<div class="content">
+						<div class="main">复选</div>
+						<label class="fn"><input type="checkbox" /></label>
+					</div>
+				</li>
+				<li>
+					<label class="content">
+						<div class="label">日期</div>
+						<div class="value"><input type="date" /></div>
+					</label>
+				</li>
+			</ul>
+		</div>
+		<div class="e_space"></div>
+	</div>
+</div>
+
+<script type="text/javascript">
+require(["util","mobile"], function(util,Mobile) {
+	new iScroll("content");
+	
+	window.action = function(a,b){
+		alert(a+b);
+	}
+});
+</script>
+</body>
+</html>
+

@@ -1,0 +1,115 @@
+获取组件对象： WmWebUI.select("组件id");
+
+对话框组件
+标签：wm-dialog
+属性
+id：组件id
+title：标题
+contentText：对话框文本内容
+contentId：对话框HTML内容id，取id元素的innerHTML
+hideAction：隐藏对话框触发事件
+showAction：显示对话框触发事件
+submitAction：确定按钮触发事件
+cancelAction：取消按钮触发事件
+示例：
+<wm-dialog id="testDialog" title="弹弹弹" 
+	hideAction="closeAction" showAction="openAction" 
+	submitAction="testSubmitAction" cancelAction="testCancelAction"  >
+</wm-dialog>
+
+
+
+进度条组件
+标签：wm-progress
+属性
+id：组件id
+progress：进度，值在0-100之间
+level：警示级别，值为info、warn、error，默认info
+totalTip：总量提示文本
+pastTip：已完成提示文本
+spaceTip：未完成提示文本
+示例：
+<wm-progress id="progress1" progress="80" totalTip="共5000条" pastTip="完成" spaceTip="剩余"  ></wm-progress>
+<wm-progress id="progress2" level="warn" progress="50" totalTip="共5000条" pastTip="完成" spaceTip="剩余"  ></wm-progress>
+<wm-progress id="progress3" level="error" progress="20" totalTip="共5000条" pastTip="完成" spaceTip="剩余"  ></wm-progress>
+
+
+分段组件
+标签：wm-segment
+属性
+id：组件id
+name：隐藏域name及id值，不要与组件id相同，值为选中段value
+texts：分段文本，值为列表，以英文逗号“,”分割，如 按周,按月,按年
+values：分段值，值为列表，以英文逗号“,”分割，如 week,month,year
+selected：选中分段值，为values中某个值，默认选中第一个分段
+action：切换分段时执行事件
+示例：<wm-segment id="segment" texts="按周,按月,按年" values="week,month,year" selected="year" action="action"></wm-segment>
+
+
+浮动框组件
+标签：wm-tooltip
+属性
+id：组件id
+baseId：参照物元素id
+align：对齐方式，分为左对齐、居中对齐、右对齐，值分别为left、center、right，默认居中对齐
+position：浮动框位置，值为up、down
+text：提示内容
+textAlign：提示内容对齐方式，分为；left、center
+buttonText：按钮文本，为空不显示按钮
+action：点击按钮事件
+示例：
+<wm-tooltip id="tooltip1" baseId="jjzz" align="left" position="up"  
+	text="我是个提示" textAlign="" buttonText="我知道了" action="action" > 
+</wm-tooltip>
+
+
+导航栏组件
+标签：wm-navbar 
+属性
+id: 组件id
+标签：wm-navbar-item 
+属性
+type：项目类型，值为：back、title、delete、add、date、icon、tab、tabgroup
+title：标题，当type为back时有效，与back图标一起居左
+position：子项位置，组合时注意位置不要冲突，值分为：left、center、right；type为title时，默认居中；type为back时默认居左，
+text：文本信息
+icons:图标按钮，仅type为icon时有效，值为列表，以英文逗号“,”分割，如：add,search，目前支持add,search,delete,date
+items：tab子项，仅type为tab、tabgroup时有效，值为item显示文本，如：标签1,标签2,标签3
+action：绑定的事件，当有多组事件情况时，如type为icon、tab、tabgroup时，为事件列表，事件名字以英文逗号“,”分割
+
+示例：
+<wm-navbar id="navbar6" >
+	<wm-navbar-item type="tab" items="设置,关于我们,分享到..." action="item_0,item_1,item_2" ></wm-navbar-item>
+</wm-navbar>
+<wm-navbar id="navbar5" >
+	<wm-navbar-item type="tab" position="left" items="标签1,标签2,标签3" action="item_0,item_1,item_2" ></wm-navbar-item>
+	<wm-navbar-item type="icon" icons="add,search" action="add,search" ></wm-navbar-item>
+</wm-navbar>
+<wm-navbar id="navbar4" >
+	<wm-navbar-item type="tab" position="center" items="标签1,标签2,标签3" action="item_0,item_1,item_2"></wm-navbar-item>
+	<wm-navbar-item type="delete" position="right" text="删除" action="del" ></wm-navbar-item>
+</wm-navbar>
+
+<wm-navbar id="navbar3" >
+	<wm-navbar-item type="back" action="back" ></wm-navbar-item>
+	<wm-navbar-item type="title" text="我是标题" ></wm-navbar-item>
+	<wm-navbar-item type="delete" position="right" text="删除" action="del" ></wm-navbar-item>
+</wm-navbar>
+
+<wm-navbar id="navbar2" >
+	<wm-navbar-item type="back" title="哈哈我是标题" action="back"></wm-navbar-item>
+	<wm-navbar-item type="add" position="right" text="添加" action="add" ></wm-navbar-item>
+</wm-navbar>
+<wm-navbar id="navbar1" >
+	<wm-navbar-item type="add" position="right" text="添加" action="add"></wm-navbar-item>
+	<wm-navbar-item type="date" position="center" text="日期" action="date" ></wm-navbar-item>
+	<wm-navbar-item type="delete" position="left" text="删除" action="del"></wm-navbar-item>
+</wm-navbar>
+
+<wm-navbar id="navbar0" >
+	<wm-navbar-item type="tabgroup" position="left" text="添加1" items="标签1,标签2,标签3" action="item_0,item_1,item_2"></wm-navbar-item>
+	<wm-navbar-item type="tabgroup" position="center" text="添加2" items="标签1,标签2,标签3"  action="item_0,item_1,item_2"></wm-navbar-item>
+	<wm-navbar-item type="tabgroup" position="right" text="添加3" items="标签1,标签2,标签3"  action="item_0,item_1,item_2"></wm-navbar-item>
+</wm-navbar>
+
+

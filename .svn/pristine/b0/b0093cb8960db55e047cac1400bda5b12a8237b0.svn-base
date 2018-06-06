@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html class="s_bs">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>slider组件</title>
+	{%>template/common/Head.html%}
+	<script type="text/javascript" src="biz/js/ui/ui.js"></script>
+</head>
+<body>
+
+<div class="c_navBar">
+	<div class="left">
+		<div class="back">
+			<span class="e_ico-back"></span>
+			<span class="text">幻灯</span>
+		</div>
+	</div>
+</div>
+
+<div class="m_content m_content-nofooter" id="content">
+
+	<div class="c_slide c_slide-col-4 l_mt" id="sliderDemo">
+		<div class="frame">
+			<div class="wrapper">
+				<ul>
+					<li><img src="biz/img/temp/slider3.jpg" alt=""></li>
+					<li><img src="biz/img/temp/slider2.jpg" alt=""></li>
+					<li><img src="biz/img/temp/slider1.jpg" alt=""></li>
+					<li><img src="biz/img/temp/slider4.jpg" alt=""></li>
+				</ul>
+			</div>
+		</div>
+		<div class="page">
+			<div class="on"></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+
+	<!-- 以下测试API使用，不是组件结构的一部分 -->
+	<div class="c_submit">
+		<ul>
+			<li><button class="e_button-cancel" id="prev">上一页</button></li>
+			<li><button class="e_button-ok" id="next">下一页</button></li>
+			<li><button class="e_button-ok" id="goFrame" value="2">第三页</button></li>
+		</ul>
+	</div>
+</div>
